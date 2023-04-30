@@ -1,0 +1,22 @@
+:root {
+    --verde: #8FBC8B;
+    --clarito: #FFEBCD;
+}
+
+body {
+    background-color: var(--clarito);
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#banner {
+    margin: auto;
+    width: 100%;
+}
+
+#banner img {
+    width: 100%;
+}
