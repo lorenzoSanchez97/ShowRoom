@@ -25,6 +25,7 @@ main {
     text-align: center;
     margin-top: 50px;
     font-size: 37px;
+    margin-bottom: 50px;
 }
 
 
@@ -48,4 +49,37 @@ main {
     position: relative;
     vertical-align: middle;
     width: 30%;
+}
+
+.seccion-principal {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.producto {
+    border-radius: 20px;
+    background-color: white;
+    width: 25%;
+    max-width: 275px;
+}
+
+.producto img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.nombre-producto {
+    color: black;
+}
+
+.precio-producto {
+    display: inline-block;
+    color: gray;
+}
+
+.descuento-producto {
+    display: inline-block;
 }
