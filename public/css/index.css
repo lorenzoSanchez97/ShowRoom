@@ -1,6 +1,6 @@
 :root {
     --verde: #8FBC8B;
-    --clarito: #FFEBCD;
+    --clarito: #f5e8d4;
 }
 
 body {
@@ -24,6 +24,7 @@ main {
 .title {
     text-align: center;
     margin-top: 50px;
+    font-size: 37px;
 }
 
 
