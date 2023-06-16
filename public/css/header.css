@@ -137,13 +137,10 @@ li {
 }
 
 .cat {
-    position: absolute;
-    z-index: 9999;
-    top: 2vh;
+    position: fixed;
+    top: 13vh;
     left: -2%;
     max-height: 300px;
-    animation: michi 4s;
-    animation-fill-mode: forwards;
 }
 
 @keyframes opacity-animation {
@@ -153,15 +150,5 @@ li {
 
     to {
         opacity: 1;
-    }
-}
-
-@keyframes michi {
-    from {
-        top: 2%;
-    }
-
-    to {
-        top: 100%
     }
 }
