@@ -1,0 +1,18 @@
+/* Estilos generales */
+
+:root {
+    --verde: #8FBC8B;
+    --clarito: #f5e8d4;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    color: var(--verde);
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--clarito);
+}
