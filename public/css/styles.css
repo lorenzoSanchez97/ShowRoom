@@ -15,4 +15,6 @@
 
 body {
     background-color: var(--clarito);
+    position: relative;
+    z-index: -2;
 }
