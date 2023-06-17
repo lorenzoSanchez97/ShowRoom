@@ -6,6 +6,8 @@ main {
 #banner {
     margin: auto;
     width: 100%;
+    position: relative;
+    z-index: -2;
 }
 
 #banner img {
