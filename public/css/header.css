@@ -119,13 +119,14 @@ li {
 
 .lista-desplegable-mostrar {
     display: block;
-    animation: list-animation 400ms;
+    animation: list-animation 400ms forwards;
 }
 
 .subcategoria {
     margin: 10px 0px;
     padding: 5px 10px;
 }
+
 .subcategoria:hover {
     text-decoration-color: var(--verde);
     font-weight: 900;
@@ -141,9 +142,11 @@ li {
 @keyframes list-animation {
     from {
         top: -40vh;
+        box-shadow: none;
     }
 
     to {
         top: 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     }
 }
