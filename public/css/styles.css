@@ -3,6 +3,8 @@
 :root {
     --verde: #9370DB;
     --clarito: #f0efef;
+    --color3: grey;
+    --bordes: rgb(206, 205, 205);
 }
 
 * {
