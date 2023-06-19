@@ -1,5 +1,9 @@
 footer {
     background-color: var(--verde);
+}
+
+.footer-main-container {
+    background-color: var(--verde);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -16,4 +20,15 @@ footer {
 footer i {
     color: var(--clarito);
     font-size: 35px;
+}
+
+.made-by {
+    text-align: center;
+}
+
+.made-by a {
+    font-family: 'Lora', serif;
+    text-decoration: none;
+    color: var(--clarito);
+    font-size: 22px;
 }
