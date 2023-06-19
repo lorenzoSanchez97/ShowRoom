@@ -103,13 +103,13 @@ li {
 .lista-desplegable {
     position: relative;
     z-index: -1;
-    display: none;
     list-style-type: none;
     background-color: var(--clarito);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border: solid 2px var(--verde);
     margin-top: 11px;
+    top: -50vh;
 }
 
 .lista-desplegable li {
@@ -120,6 +120,10 @@ li {
 .lista-desplegable-mostrar {
     display: block;
     animation: list-animation 400ms forwards;
+}
+
+.lista-desplegable-ocultar {
+    animation: list-animation-reverse 400ms forwards;
 }
 
 .subcategoria {
@@ -141,12 +145,23 @@ li {
 
 @keyframes list-animation {
     from {
-        top: -40vh;
+        top: -50vh;
         box-shadow: none;
     }
 
     to {
         top: 0;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+}
+
+@keyframes list-animation-reverse {
+    from {
+        top: 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+    to {
+        top: -50vh;
+        box-shadow: none;
     }
 }
