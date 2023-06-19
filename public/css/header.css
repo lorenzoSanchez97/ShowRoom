@@ -118,7 +118,6 @@ li {
 }
 
 .lista-desplegable-mostrar {
-    display: block;
     animation: list-animation 400ms forwards;
 }
 
