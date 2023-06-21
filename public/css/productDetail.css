@@ -3,7 +3,7 @@ main {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    gap: 7%;
+    align-items: center;
 }
 
 .imagen-producto {
@@ -26,6 +26,13 @@ main {
     border-radius: 20px;
     padding: 15px;
     height: fit-content;
+    margin-left: 7%;
+}
+
+.imagen-producto,
+.detalle-producto {
+    border: 1px solid var(--bordes);
+    box-shadow: 0px 0px 10px 1px rgb(105, 104, 104);
 }
 
 .detalle-producto h1 {
@@ -118,4 +125,16 @@ main {
 
 .incons-container {
     margin-bottom: 8px;
+}
+
+.image-button {
+    border-radius: 5px;
+    border: none;
+    background-color: none;
+    margin: 0 7px;
+    padding: 5px;
+}
+
+.image-button i {
+    font-size: 20px;
 }
