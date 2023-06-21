@@ -8,8 +8,8 @@ main {
 
 .imagen-producto {
     background-color: white;
-    width: 40%;
-    max-height: 550px;
+    max-width: 50%;
+    max-height: 561px;
     border-radius: 20px;
     padding: 15px;
 }
@@ -40,25 +40,16 @@ main {
 
 .precio-producto {
     font-size: 1.8rem;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
     color: black;
 }
 
 .stock-producto {
     font-size: 1rem;
     color: black;
-    padding-bottom: 10px;
-}
-
-.cuotas {
-    color: black;
-    font-size: 1.2rem;
-}
-
-.descuento {
-    color: black;
-    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .cantidad-formulario label {
@@ -110,22 +101,21 @@ main {
     font-size: 1.1rem;
 }
 
-.cuotas-contenedor {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 10px;
+.envio-producto,
+.descuento,
+.cuotas {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: rgb(22, 165, 41);
 }
 
-.descuento-contenedor {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.cuotas-contenedor i,
-.descuento-contenedor i {
+#envio-producto-icon,
+#cuotas-producto-icon,
+#descuento-producto-icon {
     margin-right: 7px;
-    color: black;
+    color: rgb(22, 165, 41);
+}
+
+.incons-container {
+    margin-bottom: 8px;
 }
