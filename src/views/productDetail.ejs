@@ -9,8 +9,12 @@
                 <section class="detalle-producto">
                     <h1 class="titulo-producto">Titulo producto</h1>
                     <h1 class="precio-producto">$9999</h1>
-                    <h1 class="cuotas"><i class="fa-solid fa-credit-card"></i> 12 cuotas sin interés</h1>
-                    <h1 class="descuento"><i class="fa-solid fa-hand-holding-dollar"></i> 10% de descuento</h1>
+                    <div class="cuotas-contenedor">
+                        <i class="fa-solid fa-credit-card"></i><h1 class="cuotas"> 12 cuotas sin interés</h1>
+                    </div>
+                    <div class="descuento-contenedor">
+                        <i class="fa-solid fa-hand-holding-dollar"></i><h1 class="descuento"> 10% de descuento</h1>
+                    </div>
                     <h1 class="stock-producto">Stock: 25</h1>
                     <form class="cantidad-formulario" action="" method="">
                         <label for="cantidad">Cantidad</label>
@@ -18,7 +22,9 @@
                         <button class="agregar-carrito">Agregar al carrito</button>
                     </form>
                     <h1 class="descripcion-producto-titulo">Descripción</h1>
-                    <p class="descripcion-producto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores doloremque consequatur cumque eius, provident excepturi laudantium officia incidunt corrupti optio ratione omnis tempore quaerat eveniet? Fuga quos delectus repellendus in?</p>
+                    <p class="descripcion-producto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
+                        doloremque consequatur cumque eius, provident excepturi laudantium officia incidunt corrupti
+                        optio ratione omnis tempore quaerat eveniet? Fuga quos delectus repellendus in?</p>
                 </section>
             </main>
             <%- include("./partials/footer") %>

@@ -39,7 +39,7 @@ main {
 }
 
 .precio-producto {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-top: 10px;
     padding-bottom: 5px;
     color: black;
@@ -52,13 +52,13 @@ main {
 }
 
 .cuotas {
-    padding-bottom: 10px;
     color: black;
+    font-size: 1.2rem;
 }
 
 .descuento {
-    padding-bottom: 15px;
     color: black;
+    font-size: 1.2rem;
 }
 
 .cantidad-formulario label {
@@ -108,4 +108,24 @@ main {
 .descripcion-producto {
     color: black;
     font-size: 1.1rem;
+}
+
+.cuotas-contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.descuento-contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cuotas-contenedor i,
+.descuento-contenedor i {
+    margin-right: 7px;
+    color: black;
 }
