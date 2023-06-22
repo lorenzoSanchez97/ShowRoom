@@ -4,36 +4,65 @@
         <%- include("./partials/header") %>
             <main>
                 <h1 class="titulo-carrito">Tu carrito de compras</h1>
-                <section class="main-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Producto</th>
-                                <th>Precio</th>
-                                <th>Cantidad</th>
-                                <th>Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Mascarilla de Coco</td>
-                                <td>$1111</td>
-                                <td>5u</td>
-                                <td>$5555</td>
-                            </tr>
-                            <!-- <tr>
-                                <td class="imagen-titulo-color-producto-container">
-                                    <img>IMAGEN</img>
-                                    <h4>Mascarilla de Coco</h4>
-                                    <p>Color: Negro</p>
-                                </td>
-                                <td>$1111</td>
-                                <td>5u</td>
-                                <td>$5555</td>
-                            </tr> -->
-                        </tbody>
-                    </table>
-                </section>
+                <div  class="carrito-main-container">
+                    <section class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="/images/mascarilla.png" alt=""> </td>
+                                    <td>Mascarilla de Coco <br>
+                                        Color: blanco</td>
+                                    <td>$1111</td>
+                                    <td>5u</td>
+                                    <td class="total-producto">$5555</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/images/mascarilla.png" alt=""></td>
+                                    <td>Mascarilla de Coco <br>
+                                        Color: negro</td>
+                                    <td>$2222</td>
+                                    <td>22u</td>
+                                    <td class="total-producto">$99999</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/images/mascarilla.png" alt=""></td>
+                                    <td>Mascarilla de Aloe Vera <br>
+                                        Color: verde</td>
+                                    <td>$9741</td>
+                                    <td>1u</td>
+                                    <td class="total-producto">$777</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section class="resumen">
+                        <h1>Resumen</h1>
+                        <div class="resumen-info-container">
+                            <p>3 artículos</p>
+                            <p>$106.331</p>
+                        </div>
+                        <div class="resumen-info-container">
+                            <p>Costo de envío</p>
+                            <p>$2000</p>
+                        </div>
+                        <div class="total-final">
+                            <p>Total</p>
+                            <p>$108.331</p>
+                        </div>
+                        <form action="">
+                            <button class="boton-compra">Finalizar compra</button>
+                        </form>
+                    </section>
+                </div>
             </main>
             <%- include("./partials/footer") %>
                 <script src="/js/desplegable.js"></script>

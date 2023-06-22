@@ -22,6 +22,10 @@ app.use("/carrito", (req, res) => {
     res.render("carrito")
 })
 
+app.use("/productDetail", (req, res) => {
+    res.render("productDetail")
+})
+
 app.use("/", (req, res) => {
     res.render("index")
 })

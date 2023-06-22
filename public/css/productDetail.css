@@ -89,10 +89,12 @@ main {
     background-color: var(--verde);
     color: var(--clarito);
     font-size: 1.2rem;
+    transition: 300ms all;
 }
 
 .cantidad-formulario button:hover {
     cursor: pointer;
+    background-color: var(--color3);
 }
 
 .descripcion-producto-titulo {
