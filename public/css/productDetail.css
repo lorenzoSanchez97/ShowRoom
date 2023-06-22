@@ -149,7 +149,7 @@ main {
     font-size: 20px;
 }
 
-.mini-imagenes {
+.mini-imagenes-container {
     display: flex;
     flex-direction: column;
     width: 7%;
@@ -158,12 +158,12 @@ main {
     align-self: flex-start;   
 }
 
-.mini-imagenes img {
+.slide-mini {
     border-radius: 10px;
     border: var(--bordes) solid 1px;
 }
 
-.mini-imagenes img:hover {
+.mini-imagenes-hover {
     border: var(--color3) solid 1px;
     cursor: pointer;
 }
