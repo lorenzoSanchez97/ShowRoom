@@ -42,13 +42,14 @@ main {
     font-size: 2rem;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--bordes);
+    color: black;
 }
 
 .precio-producto {
     font-size: 1.8rem;
     margin-top: 10px;
     margin-bottom: 15px;
-    color: black;
+    color: var(--color3);
 }
 
 .stock-producto {
@@ -96,7 +97,7 @@ main {
 
 .descripcion-producto-titulo {
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding-top: 10px;
     color: black;
     border-top: 1px solid var(--bordes);
