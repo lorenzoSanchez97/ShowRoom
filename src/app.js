@@ -18,6 +18,10 @@ app.use(express.json());
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Servidor corriendo en puerto ${port}`));
 
+app.use("/carrito", (req, res) => {
+    res.render("carrito")
+})
+
 app.use("/", (req, res) => {
-    res.render("productDetail")
+    res.render("index")
 })
