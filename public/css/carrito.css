@@ -8,3 +8,16 @@
     padding: 15px;
     border-radius: 20px;
 }
+
+table {
+    width: 100%;
+    table-layout: fixed
+}
+
+thead tr th {
+    color: var(--color3);
+}
+
+tr {
+    text-align: center;
+}
