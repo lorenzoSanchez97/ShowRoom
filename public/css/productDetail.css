@@ -26,13 +26,12 @@ main {
     border-radius: 20px;
     padding: 15px;
     height: fit-content;
-    margin-left: 7%;
+    margin-left: 2%;
 }
 
 .imagen-producto,
 .detalle-producto {
     border: 1px solid var(--bordes);
-    box-shadow: 0px 0px 10px 1px rgb(105, 104, 104);
 }
 
 .detalle-producto h1 {
@@ -127,14 +126,44 @@ main {
     margin-bottom: 8px;
 }
 
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .image-button {
     border-radius: 5px;
     border: none;
     background-color: transparent;
-    margin: 0 10px;
-    padding: 5px;
+    margin: 0 7px;
+    padding: 15px;
+}
+
+.image-button:hover {
+    cursor: pointer;
+    background-color: var(--bordes);
 }
 
 .image-button i {
     font-size: 20px;
+}
+
+.mini-imagenes {
+    display: flex;
+    flex-direction: column;
+    width: 7%;
+    gap: 10px;
+    margin-right: 13px;
+    align-self: flex-start;   
+}
+
+.mini-imagenes img {
+    border-radius: 10px;
+    border: var(--bordes) solid 1px;
+}
+
+.mini-imagenes img:hover {
+    border: var(--color3) solid 1px;
+    cursor: pointer;
 }
