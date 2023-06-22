@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
     let buttonNext = document.querySelector(".next")
 
     miniSlides[0].classList.add("mini-imagenes-hover")
-
+    
     miniSlides.forEach(miniSlide => {
         miniSlide.addEventListener("mouseover", () => {
             miniSlides.forEach(slide => {
@@ -41,7 +41,6 @@ window.addEventListener("load", () => {
         } else {
             miniSlides[0].classList.add("mini-imagenes-hover");
             mainSlide.src = miniSlides[0].src;
-
         }
     })
 })

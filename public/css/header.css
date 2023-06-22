@@ -39,8 +39,15 @@ li {
 }
 
 
-.sesion {
+.sesion,
+.carrito {
     font-size: 20px;
+    text-decoration: none;
+}
+
+.sesion:hover,
+.carrito:hover {
+    font-weight: 600;
 }
 
 .nav-bar-category:hover>a {
@@ -117,11 +124,11 @@ li {
 }
 
 .lista-desplegable-mostrar {
-    animation: list-animation 400ms forwards;
+    animation: list-animation 200ms forwards;
 }
 
 .lista-desplegable-ocultar {
-    animation: list-animation-reverse 400ms forwards;
+    animation: list-animation-reverse 200ms forwards;
 }
 
 .subcategoria {
@@ -131,7 +138,7 @@ li {
 
 .subcategoria:hover {
     text-decoration-color: var(--verde);
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .cat {
@@ -158,6 +165,7 @@ li {
         top: 0;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     }
+
     to {
         top: -50vh;
         box-shadow: none;
