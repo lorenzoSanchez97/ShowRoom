@@ -1,0 +1,172 @@
+.product-detail-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-producto {
+    background-color: white;
+    max-width: 50%;
+    max-height: 600px;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.imagen-producto img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.detalle-producto {
+    background-color: white;
+    width: 35%;
+    border-radius: 20px;
+    padding: 15px;
+    height: fit-content;
+    margin-left: 2%;
+}
+
+.imagen-producto,
+.detalle-producto {
+    border: 1px solid var(--bordes);
+}
+
+.detalle-producto h1 {
+    font-weight: 200;
+}
+
+.titulo-producto {
+    font-size: 2rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--bordes);
+    color: black;
+}
+
+.precio-producto {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: var(--color3);
+}
+
+.stock-producto {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.cantidad-formulario label {
+    display: block;
+    color: black;
+    margin-bottom: 2px;
+}
+
+.cantidad-formulario input {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: var(--bordes) solid 1px;
+    padding: 0 0 0 10px;
+    font-size: 20px;
+    color: var(--color3);
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.cantidad-formulario input:focus {
+    outline: none;
+}
+
+.cantidad-formulario button {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: var(--bordes) solid 1px;
+    background-color: var(--verde);
+    color: var(--clarito);
+    font-size: 1.2rem;
+    transition: 300ms all;
+}
+
+.cantidad-formulario button:hover {
+    cursor: pointer;
+    background-color: var(--color3);
+}
+
+.descripcion-producto-titulo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color: black;
+    border-top: 1px solid var(--bordes);
+}
+
+.descripcion-producto {
+    color: black;
+    font-size: 1.1rem;
+}
+
+.envio-producto,
+.descuento,
+.cuotas {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: rgb(22, 165, 41);
+}
+
+#envio-producto-icon,
+#cuotas-producto-icon,
+#descuento-producto-icon {
+    margin-right: 7px;
+    color: rgb(22, 165, 41);
+}
+
+.incons-container {
+    margin-bottom: 8px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-button {
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    margin: 0 7px;
+    padding: 15px;
+}
+
+.image-button:hover {
+    cursor: pointer;
+    background-color: var(--bordes);
+}
+
+.image-button i {
+    font-size: 20px;
+}
+
+.mini-imagenes-container {
+    display: flex;
+    flex-direction: column;
+    width: 7%;
+    gap: 10px;
+    margin-right: 13px;
+    align-self: flex-start;   
+}
+
+.slide-mini {
+    border-radius: 10px;
+    border: var(--bordes) solid 1px;
+}
+
+.mini-imagenes-hover {
+    border: var(--color3) solid 1px;
+    cursor: pointer;
+}

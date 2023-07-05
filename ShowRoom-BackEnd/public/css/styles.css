@@ -1,0 +1,35 @@
+/* Estilos generales */
+
+:root {
+    --verde: #9370DB;
+    --clarito: #f0efef;
+    --color3: grey;
+    --bordes: rgb(206, 205, 205);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    color: var(--verde);
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--clarito);
+    position: relative;
+    z-index: -2;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    z-index: -2;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+i {
+    font-size: 17px;
+}
