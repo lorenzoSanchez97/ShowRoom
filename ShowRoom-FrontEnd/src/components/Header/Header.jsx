@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React  from "react";
 import "./header.css";
 
 function Header() {
@@ -20,10 +20,6 @@ function Header() {
             setMouseEvent(4);
         }
     };
-
-    useEffect(() => {
-        console.log(mouseEvent);
-    }, [mouseEvent])
 
     return (
         <header>

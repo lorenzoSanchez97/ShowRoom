@@ -6,20 +6,6 @@
     align-items: center;
 }
 
-.imagen-producto {
-    background-color: white;
-    max-width: 50%;
-    max-height: 600px;
-    border-radius: 20px;
-    padding: 15px;
-}
-
-.imagen-producto img {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
-
 .detalle-producto {
     background-color: white;
     width: 35%;
@@ -29,7 +15,6 @@
     margin-left: 2%;
 }
 
-.imagen-producto,
 .detalle-producto {
     border: 1px solid var(--bordes);
 }
@@ -81,22 +66,6 @@
     outline: none;
 }
 
-.cantidad-formulario button {
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    border: var(--bordes) solid 1px;
-    background-color: var(--verde);
-    color: var(--clarito);
-    font-size: 1.2rem;
-    transition: 300ms all;
-}
-
-.cantidad-formulario button:hover {
-    cursor: pointer;
-    background-color: var(--color3);
-}
-
 .descripcion-producto-titulo {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -127,46 +96,4 @@
 
 .incons-container {
     margin-bottom: 8px;
-}
-
-.botones {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.image-button {
-    border-radius: 5px;
-    border: none;
-    background-color: transparent;
-    margin: 0 7px;
-    padding: 15px;
-}
-
-.image-button:hover {
-    cursor: pointer;
-    background-color: var(--bordes);
-}
-
-.image-button i {
-    font-size: 20px;
-}
-
-.mini-imagenes-container {
-    display: flex;
-    flex-direction: column;
-    width: 7%;
-    gap: 10px;
-    margin-right: 13px;
-    align-self: flex-start;   
-}
-
-.slide-mini {
-    border-radius: 10px;
-    border: var(--bordes) solid 1px;
-}
-
-.mini-imagenes-hover {
-    border: var(--color3) solid 1px;
-    cursor: pointer;
 }
