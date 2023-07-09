@@ -13,14 +13,6 @@ function Header() {
         }
     }
 
-    const handleMouseLeave = (action) => {
-        if (action === "l1") {
-            setMouseEvent(2);
-        } else if (action === "l2") {
-            setMouseEvent(4);
-        }
-    };
-
     return (
         <header>
             <div className="cat">
@@ -44,9 +36,8 @@ function Header() {
             <nav className="nav-bar">
                 <ul className="nav-bar-list">
                     <li className="nav-bar-category"><a href="/">Inicio</a></li>
-                    <li className="nav-bar-category desplegable" onMouseEnter={() => handleMouseEnter("e1")} onMouseLeave={() => handleMouseLeave("l1")}><a href="">Productos</a>
-                        <ul className={`lista-desplegable ${mouseEvent === 1 ? "lista-desplegable-mostrar" :
-                            mouseEvent === 2 ? "lista-desplegable-ocultar" : ""}`}>
+                    <li className="nav-bar-category desplegable" onMouseEnter={() => handleMouseEnter("e1")} onMouseLeave={() => setMouseEvent(5)}><a href="">Productos</a>
+                        <ul className={`lista-desplegable ${mouseEvent === 1 ? "lista-desplegable-mostrar" : ""}`}>
                             <li className="subcategoria"><a href="">Mascarillas</a></li>
                             <li className="subcategoria"><a href="">Depilación</a></li>
                             <li className="subcategoria"><a href="">Limpieza</a></li>
@@ -56,9 +47,8 @@ function Header() {
                     </li>
                     <li className="nav-bar-category"><a href="">Ofertas</a></li>
                     <li className="nav-bar-category"><a href="">Novedades</a></li>
-                    <li className="nav-bar-category desplegable" onMouseEnter={() => handleMouseEnter("e2")} onMouseLeave={() => handleMouseLeave("l2")}><a href="">Información</a>
-                        <ul className={`lista-desplegable ${mouseEvent === 3 ? "lista-desplegable-mostrar" :
-                            mouseEvent === 4 ? "lista-desplegable-ocultar" : ""}`}>
+                    <li className="nav-bar-category desplegable" onMouseEnter={() => handleMouseEnter("e2")} onMouseLeave={() => setMouseEvent(5)}><a href="">Información</a>
+                        <ul className={`lista-desplegable ${mouseEvent === 3 ? "lista-desplegable-mostrar" : ""}`}>
                             <li className="subcategoria"><a href="">Cómo comprar</a></li>
                             <li className="subcategoria"><a href="">Envíos</a></li>
                             <li className="subcategoria"><a href="">Sobre nosotras</a></li>

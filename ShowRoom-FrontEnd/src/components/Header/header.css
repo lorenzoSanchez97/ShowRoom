@@ -124,11 +124,7 @@ li {
 }
 
 .lista-desplegable-mostrar {
-    animation: list-animation 200ms forwards;
-}
-
-.lista-desplegable-ocultar {
-    animation: list-animation-reverse 200ms forwards;
+    animation: list-animation 300ms forwards;
 }
 
 .subcategoria {
@@ -157,17 +153,5 @@ li {
     to {
         top: 0;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-    }
-}
-
-@keyframes list-animation-reverse {
-    from {
-        top: 0;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-    }
-
-    to {
-        top: -50vh;
-        box-shadow: none;
     }
 }
