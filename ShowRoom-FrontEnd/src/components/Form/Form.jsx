@@ -4,6 +4,7 @@ import "./form.css"
 function Form({ title, labels, labelIcons, inputTypes, button }) {
 
     return (
+        <div className="form-cover">
             <div className="form-main-container">
                 <h2>{title}</h2>
                 <form action="">
@@ -13,9 +14,10 @@ function Form({ title, labels, labelIcons, inputTypes, button }) {
                             <input type={inputTypes[index]} />
                         </React.Fragment>
                     ))}
-                    <button type="submit" className="form-button">{button}</button>       
+                    <button type="submit" className="form-button">{button}</button>
                 </form>
             </div>
+        </div>
     )
 }
 

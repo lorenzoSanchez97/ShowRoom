@@ -2,7 +2,8 @@
     background-color: white;
     border-radius: 20px;
     padding: 40px;
-    width: 50%;
+    width: 100%;
+    max-width: 360px;
     height: fit-content;
 }
 

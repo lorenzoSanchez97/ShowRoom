@@ -1,29 +1,30 @@
 .modal-main-container {
-    background-color: white;
-    border-radius: 10px;
     max-width: 720px;
-    margin: auto;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    height: fit-content;
-    padding: 15px 0px;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .modal-cover {
     display: flex;
-    flex-direction: row;
+    border-radius: 20px;
+    background-color: white;
+
 }
 
 .register-container,
 .login-container {
-    width: 50%;
+    width: 100%;
+    max-width: 360px;
     padding: 20px;
 }
 
-.register-container {
-    border-right: solid 1px var(--verde);
-}
 
 .register-container h2,
 .login-container h2 {
@@ -48,4 +49,8 @@
 .login-container button:hover {
     cursor: pointer;
     background-color: var(--color3);
+}
+
+.ocultar {
+    display: none;
 }
