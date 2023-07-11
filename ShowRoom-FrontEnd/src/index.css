@@ -9,7 +9,7 @@
 
 #root {
     position: relative;
-    z-index: -20;
+    z-index: -3;
 }
 
 * {
@@ -23,7 +23,7 @@
 body {
     background-color: var(--clarito);
     position: relative;
-    z-index: -2;
+    z-index: -3;
 }
 
 main {

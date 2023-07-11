@@ -1,8 +1,13 @@
+.body-section {
+    position: relative;
+    z-index: -3;
+}
+
 #banner {
     margin: auto;
     width: 100%;
     position: relative;
-    z-index: -2;
+    z-index: -3;
 }
 
 #banner img {
@@ -14,7 +19,6 @@
     font-size: 37px;
     margin-bottom: 50px;
 }
-
 
 .title:after {
     margin-left: 25px;
