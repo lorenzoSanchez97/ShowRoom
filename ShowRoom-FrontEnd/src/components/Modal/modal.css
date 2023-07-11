@@ -1,10 +1,19 @@
 .modal-main-container {
-    background-color: greenyellow;
-    width: 50%;
+    background-color: white;
     max-width: 720px;
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: fit-content;
+}
+
+.modal-cover {
+    display: flex;
+    flex-direction: row;
+}
+
+.register-container,
+.login-container {
+    padding: 10px;
 }
