@@ -27,7 +27,7 @@ function Header() {
                     <button><i className="fa fa-search"></i></button>
                 </form>
                 <div>
-                    <a className="sesion" href="">Iniciar sesión <i className="fa-solid fa-arrow-right-to-bracket"></i></a>
+                    <a className="sesion" href="">Ingresar <i className="fa-solid fa-arrow-right-to-bracket"></i></a>
                 </div>
                 <div>
                     <a className="carrito" href="/cart">Carrito <i className="fa-solid fa-cart-shopping"></i></a>

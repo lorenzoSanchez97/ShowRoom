@@ -19,13 +19,11 @@ function Modal() {
         <section className="modal-main-container">
             <div className="modal-cover">
                 <div className={`register-container ${login || register ? "ocultar" : null}`}>
-                    <h2>¿No tienes una cuenta? Crea una!</h2>
-                    <button onClick={handleRegisterButton}>Registrate</button>
+                    
+                    <button onClick={handleRegisterButton}>¿No tienes una cuenta? Crea una!</button>
                 </div>
                 <div className={`login-container ${login || register ? "ocultar" : null}`}>
-                    <h2>¿Ya tienes una cuenta? <br></br>
-                        Iniciá sesión</h2>
-                    <button onClick={handleLoginButton}>Iniciá sesión</button>
+                    <button onClick={handleLoginButton}>¿Ya tienes una cuenta? Iniciá sesión</button>
                 </div>
             </div>
             {register &&
