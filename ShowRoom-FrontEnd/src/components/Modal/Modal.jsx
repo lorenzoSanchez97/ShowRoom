@@ -19,13 +19,13 @@ function Modal() {
         <section className="modal-main-container">
             { !(register) && !(login) ?
             <div className="modal-cover">
-                <div className="register-container">
-                    <h1>¿No tienes una cuenta? Crea una!</h1>
-                    <button onClick={handleRegisterButton}>REGISTRATE</button>
+                <div className={"register-container"}>
+                    <h2>¿No tienes una cuenta? Créate una!</h2>
+                    <button onClick={handleRegisterButton}>Registrate</button>
                 </div>
                 <div className="login-container">
-                    <h1>¿Ya tienes una cuenta? Iniciá sesión</h1>
-                    <button onClick={handleLoginButton}>Inicia sesión</button>
+                    <h2>¿Ya tienes una cuenta? Iniciá sesión</h2>
+                    <button onClick={handleLoginButton}>Iniciá sesión</button>
                 </div>
             </div>
             : null
