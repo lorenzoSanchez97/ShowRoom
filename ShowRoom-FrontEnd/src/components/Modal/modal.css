@@ -9,13 +9,7 @@
     min-height: 100vh;
     min-width: 100vw;
     background-color: rgba(0, 0, 0, 0.75);
-}
-
-.modal-cover {
-    display: flex;
-    border-radius: 10px;
-    background-color: white;
-
+    animation: show-modal 400ms;
 }
 
 .register-container,
@@ -46,4 +40,13 @@
 
 .ocultar {
     display: none;
+}
+
+@keyframes show-modal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
