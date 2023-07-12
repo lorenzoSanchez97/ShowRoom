@@ -1,7 +1,7 @@
-import React  from "react";
+import React from "react";
 import "./header.css";
 
-function Header() {
+function Header({ sendDataToApp }) {
 
     let [mouseEvent, setMouseEvent] = React.useState(5)
 
@@ -11,6 +11,10 @@ function Header() {
         } else if (action === "e2") {
             setMouseEvent(3)
         }
+    }
+
+    const handleClickButtons = (data) => {
+        sendDataToApp(data)
     }
 
     return (
@@ -27,7 +31,10 @@ function Header() {
                     <button><i className="fa fa-search"></i></button>
                 </form>
                 <div>
-                    <a className="sesion" href="">Ingresar <i className="fa-solid fa-arrow-right-to-bracket"></i></a>
+                    <button className="sesion" href="" onClick={() => handleClickButtons("register")}>Creá tu cuenta</button>
+                </div>
+                <div>
+                    <button className="sesion" href="" onClick={() => handleClickButtons("login")}>Iniciar sesión <i className="fa-solid fa-arrow-right-to-bracket"></i></button>
                 </div>
                 <div>
                     <a className="carrito" href="/cart">Carrito <i className="fa-solid fa-cart-shopping"></i></a>

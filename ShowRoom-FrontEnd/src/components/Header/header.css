@@ -43,10 +43,12 @@ li {
 .carrito {
     font-size: 20px;
     text-decoration: none;
+    border: none;
 }
 
 .sesion:hover,
 .carrito:hover {
+    cursor: pointer;
     font-weight: 600;
 }
 

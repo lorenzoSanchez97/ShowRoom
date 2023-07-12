@@ -2,31 +2,13 @@ import React from "react";
 import Form from "../Form/Form";
 import "./modal.css"
 
-function Modal() {
+function Modal({userOption}) {
 
-    let [register, setRegister] = React.useState(false);
-    let [login, setLogin] = React.useState(false);
-
-    const handleRegisterButton = () => {
-        setRegister(true)
-    }
-
-    const handleLoginButton = () => {
-        setLogin(true)
-    }
+    let [userOperation, setUserOperation] = React.useState(userOption)
 
     return (
         <section className="modal-main-container">
-            <div className="modal-cover">
-                <div className={`register-container ${login || register ? "ocultar" : null}`}>
-                    
-                    <button onClick={handleRegisterButton}>¿No tienes una cuenta? Crea una!</button>
-                </div>
-                <div className={`login-container ${login || register ? "ocultar" : null}`}>
-                    <button onClick={handleLoginButton}>¿Ya tienes una cuenta? Iniciá sesión</button>
-                </div>
-            </div>
-            {register &&
+            {userOperation === "register" &&
                 <>
                     <Form
                         title="Ingresá los siguientes datos para crear tu cuenta"
@@ -37,7 +19,7 @@ function Modal() {
                     />
                 </>
             }
-            {login &&
+            {userOperation === "login" &&
                 <>
                     <Form
                         title="Ingresá los siguientes datos para iniciar sesión"
