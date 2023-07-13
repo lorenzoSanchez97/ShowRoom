@@ -125,7 +125,7 @@ ul.nav-bar-list {
     transform: translateX(-50%);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid var(--clarito);
+    border-bottom: 10px solid var(--verde);
 }
 
 .lista-desplegable-mostrar {

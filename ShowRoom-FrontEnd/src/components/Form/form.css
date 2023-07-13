@@ -9,6 +9,7 @@
 
 .form-main-container h2 {
     margin-bottom: 50px;
+    font-size: 1.3rem;
 }
 
 .form-main-container form {
@@ -52,4 +53,27 @@
 .form-button:hover {
     cursor: pointer;
     background-color: var(--color3);
+}
+
+#form-close-button {
+    height: fit-content;
+    border: none;
+    font-size: 1.5rem;
+    background: none;
+    position: absolute;
+    right: -10%;
+    top: -34%;
+}
+
+#form-close-button:hover {
+    cursor: pointer;
+}
+
+#form-close-button i {
+    font-size: 1.3rem;
+}
+
+.form-title-section {
+    display: flex;
+    position: relative;
 }

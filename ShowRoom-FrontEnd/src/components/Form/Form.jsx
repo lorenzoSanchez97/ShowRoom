@@ -1,12 +1,22 @@
 import React from "react";
 import "./form.css"
 
-function Form({ title, labels, labelIcons, inputTypes, button }) {
+function Form({ setModalStatus, closeButton, title, labels, labelIcons, inputTypes, button }) {
+
+    const closeModal = () => {
+        setModalStatus("")
+    }
+
+    const stopPropagation = e => {
+        e.stopPropagation();
+    }
 
     return (
-        <div className="form-cover">
-            <div className="form-main-container">
+            <div className="form-main-container" onClick={stopPropagation}>
+                <div className="form-title-section">
                 <h2>{title}</h2>
+                {closeButton ? <button id="form-close-button" onClick={closeModal}><i className="fa-solid fa-circle-xmark"></i></button> : null}
+                </div>
                 <form action="">
                     {labels.map((label, index) => (
                         <React.Fragment key={index}>
@@ -17,7 +27,6 @@ function Form({ title, labels, labelIcons, inputTypes, button }) {
                     <button type="submit" className="form-button">{button}</button>
                 </form>
             </div>
-        </div>
     )
 }
 

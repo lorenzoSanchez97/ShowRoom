@@ -9,26 +9,21 @@ import Modal from "./components/Modal/Modal"
 
 function App() {
 
-  let [login, setLogin] = React.useState("")
-  let [register, setRegister] = React.useState("")
+  let [modal, setModal] = React.useState("")
 
-  const handleDataFromHeader = (data) => {
-    if (data === "register") {
-      setRegister(data)
-    } else if (data === "login") {
-      setLogin(data)
-    }
+  const setModalStatus = (data) => {
+    setModal(data)
   }
 
   return (
     <>
-      <Header sendDataToApp={handleDataFromHeader} />
+      <Header sendDataToApp={setModalStatus} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/productDetail" element={<ProductDetail />} />
       </Routes>
-      {login || register ? <Modal userOption={login ? login : register} /> : null}
+      {modal ? <Modal userOption={modal} setModalStatus={setModalStatus} /> : null}
       <Footer />
     </>
   );
