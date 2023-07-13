@@ -14,8 +14,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 25px;
     max-width: 1200px;
+    margin-bottom: 30px;
 }
 
 .nav-bar {
@@ -24,7 +24,7 @@ header {
     align-self: center;
     background-color: var(--clarito);
     height: fit-content;
-    transition: all 250ms;
+    margin-top: 30px;
 }
 
 ul.nav-bar-list {
@@ -51,13 +51,8 @@ ul.nav-bar-list {
     font-weight: 600;
 }
 
-.nav-bar-category:hover>a {
-    text-decoration: underline;
-    text-underline-offset: 2px
-}
-
-
 .nav-bar-category a {
+    padding-bottom: 20px;
     text-decoration: none;
     color: var(--verde);
 }
@@ -111,24 +106,30 @@ ul.nav-bar-list {
 }
 
 .lista-desplegable {
-    position: relative;
+    position: absolute;
     z-index: -1;
     list-style-type: none;
     background-color: var(--clarito);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 7px;
     border: solid 2px var(--verde);
-    margin-top: 10px;
-    top: -50vh;
     display: none;
+    width: 160px;
+    top: 130%;
 }
 
-.lista-desplegable li {
-    color: var(--clarito);
-    font-size: 20px;
+.lista-desplegable::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid var(--clarito);
 }
 
 .lista-desplegable-mostrar {
+    display: block;
     animation: list-animation 300ms forwards;
 }
 
@@ -137,26 +138,26 @@ ul.nav-bar-list {
     cursor: pointer;
 }
 
-.nav-bar-element-container:hover a {
+.nav-bar a {
     text-decoration: none;
 }
 
 .subcategoria {
-    margin: 6px 6px;
+    text-align: center;
     padding: 0;
+    color: var(--clarito);
+    font-size: 20px;
 }
 
 .subcategoria a {
     display: inline-block;
     width: 100%;
-    padding: 10px 3px 10px 6px;
+    padding: 10px 0;
 }
 
-.subcategoria a:hover{
-    text-decoration-color: var(--verde);
-    font-weight: 600;
+.subcategoria a:hover {
     background-color: rgb(214, 212, 212);
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 .cat {
@@ -167,13 +168,14 @@ ul.nav-bar-list {
 }
 
 .nav-bar-element-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 3px;
     border-bottom: 3px var(--clarito) solid;
-    width: 110px;
+    width: 100px;
     padding-bottom: 2px;
     padding-top: 7px;
 }
@@ -185,12 +187,12 @@ ul.nav-bar-list {
 
 @keyframes list-animation {
     from {
-        top: -50vh;
-        box-shadow: none;
+        opacity: 0;
+        box-shadow: 0;
     }
 
     to {
-        top: 0;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        opacity: 1;
+        box-shadow: 0 0 0 100vmax rgba(61, 60, 60, 0.5);
     }
 }

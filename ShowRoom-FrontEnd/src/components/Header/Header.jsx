@@ -43,12 +43,12 @@ function Header({ sendDataToApp }) {
             <nav className="nav-bar">
                 <ul className="nav-bar-list">
                     <div className="nav-bar-element-container">
-                    <i class="fa-solid fa-house"></i>
-                    <li className="nav-bar-category"><a href="/">Inicio</a></li>
+                        <i class="fa-solid fa-house"></i>
+                        <li className="nav-bar-category"><a href="/">Inicio</a></li>
                     </div>
-                    <div className="nav-bar-element-container">
-                    <i class="fa-solid fa-boxes-stacked"></i>
-                    <li className="nav-bar-category desplegable" onMouseEnter={() => handleMouseEnter("e1")} onMouseLeave={() => setMouseEvent(5)}><a href="">Productos</a>
+                    <div className="nav-bar-element-container" onMouseEnter={() => handleMouseEnter("e1")} onMouseLeave={() => setMouseEvent(5)}>
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                        <li className="nav-bar-category desplegable" ><a href="">Categorias</a></li>
                         <ul className={`lista-desplegable ${mouseEvent === 1 ? "lista-desplegable-mostrar" : ""}`}>
                             <li className="subcategoria"><a href="">Mascarillas</a></li>
                             <li className="subcategoria"><a href="">Depilación</a></li>
@@ -56,25 +56,23 @@ function Header({ sendDataToApp }) {
                             <li className="subcategoria"><a href="">Maquillaje</a></li>
                             <li className="subcategoria"><a href="">Accesorios</a></li>
                         </ul>
-                    </li>
                     </div>
                     <div className="nav-bar-element-container">
-                    <i class="fa-solid fa-hand-holding-dollar"></i>
-                    <li className="nav-bar-category"><a href="">Ofertas</a></li>
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <li className="nav-bar-category"><a href="">Ofertas</a></li>
                     </div>
                     <div className="nav-bar-element-container">
-                    <i class="fa-solid fa-bell"></i>
-                    <li className="nav-bar-category"><a href="">Novedades</a></li>
+                        <i class="fa-solid fa-bell"></i>
+                        <li className="nav-bar-category"><a href="">Novedades</a></li>
                     </div>
-                    <div className="nav-bar-element-container">
-                    <i class="fa-solid fa-info"></i>
-                    <li className="nav-bar-category desplegable" onMouseEnter={() => handleMouseEnter("e2")} onMouseLeave={() => setMouseEvent(5)}><a href="">Información</a>
+                    <div className="nav-bar-element-container" onMouseEnter={() => handleMouseEnter("e2")} onMouseLeave={() => setMouseEvent(5)}>
+                        <i class="fa-solid fa-info"></i>
+                        <li className="nav-bar-category desplegable"><a href="">Información</a></li>
                         <ul className={`lista-desplegable ${mouseEvent === 3 ? "lista-desplegable-mostrar" : ""}`}>
-                            <li className="subcategoria"><a href="">Cómo comprar</a></li>
-                            <li className="subcategoria"><a href="">Envíos</a></li>
-                            <li className="subcategoria"><a href="">Sobre nosotras</a></li>
-                        </ul>
-                    </li>
+                                <li className="subcategoria"><a href="">Cómo comprar</a></li>
+                                <li className="subcategoria"><a href="">Envíos</a></li>
+                                <li className="subcategoria"><a href="">Sobre nosotras</a></li>
+                            </ul>
                     </div>
                 </ul>
             </nav>
