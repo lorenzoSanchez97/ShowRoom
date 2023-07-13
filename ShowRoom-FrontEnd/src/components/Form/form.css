@@ -9,7 +9,7 @@
 
 .form-main-container h2 {
     margin-bottom: 50px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .form-main-container form {
@@ -34,7 +34,7 @@
 
 .form-main-container form label {
     color: var(--color3);
-    font-size: 1.15rem;
+    font-size: 0.9rem;
     margin-bottom: 3px;
 }
 
@@ -45,7 +45,7 @@
     border: var(--bordes) solid 1px;
     background-color: var(--verde);
     color: var(--clarito);
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: 300ms all;
     margin-top: 30px;
 }
@@ -56,13 +56,11 @@
 }
 
 #form-close-button {
-    height: fit-content;
     border: none;
-    font-size: 1.5rem;
     background: none;
     position: absolute;
     right: -10%;
-    top: -34%;
+    top: -27%;
 }
 
 #form-close-button:hover {

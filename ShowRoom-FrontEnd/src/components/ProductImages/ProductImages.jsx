@@ -40,11 +40,11 @@ function ProductImages() {
             </div>
             <figure className="imagen-producto">
                 <img className="mainSlide" src={`/images/${images[slide]}`} alt="" />
-            </figure>
             <div className="botones">
                     <button className="image-button prev" onClick={handlePrevButton}><i className="fa-solid fa-arrow-left"></i></button>
                     <button className="image-button next" onClick={handleNextButton}><i className="fa-solid fa-arrow-right"></i></button>
             </div>
+            </figure>
         </>
     )
 }

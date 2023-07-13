@@ -34,13 +34,13 @@ ul.nav-bar-list {
     gap: 35px;
 }
 
-.nav-bar li {
-    font-size: 1.1rem;
+.nav-bar .nav-bar-category li {
+    font-size: 1rem;
 }
 
 .sesion,
 .carrito {
-    font-size: 20px;
+    font-size: 1rem;
     text-decoration: none;
     border: none;
 }
@@ -75,12 +75,12 @@ ul.nav-bar-list {
     border-radius: 5px 0 0 5px;
     border: var(--bordes) solid 1px;
     padding: 0 0 0 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--color3);
 }
 
 .search-bar input::placeholder {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--bordes);
 }
 
@@ -146,7 +146,7 @@ ul.nav-bar-list {
     text-align: center;
     padding: 0;
     color: var(--clarito);
-    font-size: 20px;
+    font-size: 0.9rem;
 }
 
 .subcategoria a {

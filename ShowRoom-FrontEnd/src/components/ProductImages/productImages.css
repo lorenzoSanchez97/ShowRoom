@@ -37,25 +37,11 @@
 }
 
 .botones {
+    margin-top: 15px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     gap: 10px;
-}
-
-.cantidad-formulario button {
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    border: var(--bordes) solid 1px;
-    background-color: var(--verde);
-    color: var(--clarito);
-    font-size: 1.2rem;
-    transition: 300ms all;
-}
-
-.cantidad-formulario button:hover {
-    cursor: pointer;
-    background-color: var(--color3);
 }
 
 .image-button {
@@ -63,7 +49,7 @@
     border: none;
     background-color: transparent;
     margin: 0 7px;
-    padding: 15px;
+    padding: 10px 12px;
 }
 
 .image-button:hover {
