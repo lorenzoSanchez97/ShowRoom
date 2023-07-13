@@ -42,7 +42,12 @@ function Header({ sendDataToApp }) {
             </section>
             <nav className="nav-bar">
                 <ul className="nav-bar-list">
+                    <div className="nav-bar-element-container">
+                    <i class="fa-solid fa-house"></i>
                     <li className="nav-bar-category"><a href="/">Inicio</a></li>
+                    </div>
+                    <div className="nav-bar-element-container">
+                    <i class="fa-solid fa-boxes-stacked"></i>
                     <li className="nav-bar-category desplegable" onMouseEnter={() => handleMouseEnter("e1")} onMouseLeave={() => setMouseEvent(5)}><a href="">Productos</a>
                         <ul className={`lista-desplegable ${mouseEvent === 1 ? "lista-desplegable-mostrar" : ""}`}>
                             <li className="subcategoria"><a href="">Mascarillas</a></li>
@@ -52,8 +57,17 @@ function Header({ sendDataToApp }) {
                             <li className="subcategoria"><a href="">Accesorios</a></li>
                         </ul>
                     </li>
+                    </div>
+                    <div className="nav-bar-element-container">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
                     <li className="nav-bar-category"><a href="">Ofertas</a></li>
+                    </div>
+                    <div className="nav-bar-element-container">
+                    <i class="fa-solid fa-bell"></i>
                     <li className="nav-bar-category"><a href="">Novedades</a></li>
+                    </div>
+                    <div className="nav-bar-element-container">
+                    <i class="fa-solid fa-info"></i>
                     <li className="nav-bar-category desplegable" onMouseEnter={() => handleMouseEnter("e2")} onMouseLeave={() => setMouseEvent(5)}><a href="">Información</a>
                         <ul className={`lista-desplegable ${mouseEvent === 3 ? "lista-desplegable-mostrar" : ""}`}>
                             <li className="subcategoria"><a href="">Cómo comprar</a></li>
@@ -61,6 +75,7 @@ function Header({ sendDataToApp }) {
                             <li className="subcategoria"><a href="">Sobre nosotras</a></li>
                         </ul>
                     </li>
+                    </div>
                 </ul>
             </nav>
         </header>

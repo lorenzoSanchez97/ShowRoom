@@ -19,25 +19,24 @@ header {
 }
 
 .nav-bar {
-    margin: auto;
     display: flex;
     justify-content: center;
-    background-color: var(--verde);
-    padding: 10px 0px;
-    height: 70px;
+    align-self: center;
+    background-color: var(--clarito);
+    height: fit-content;
     transition: all 250ms;
 }
 
 ul.nav-bar-list {
     list-style-type: none;
     display: flex;
+    align-items: center;
     gap: 35px;
 }
 
-li {
-    font-size: 37px;
+.nav-bar li {
+    font-size: 1.1rem;
 }
-
 
 .sesion,
 .carrito {
@@ -59,9 +58,8 @@ li {
 
 
 .nav-bar-category a {
-    padding: 0 5px 14px 5px;
     text-decoration: none;
-    color: var(--clarito);
+    color: var(--verde);
 }
 
 .subcategoria a {
@@ -122,26 +120,24 @@ li {
     border: solid 2px var(--verde);
     margin-top: 10px;
     top: -50vh;
+    display: none;
 }
 
 .lista-desplegable li {
     color: var(--clarito);
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .lista-desplegable-mostrar {
     animation: list-animation 300ms forwards;
 }
 
-.desplegable:hover,
-.nav-bar-category:hover {
-    background-color: var(--clarito);
-    border-radius: 5px;
+.nav-bar-element-container:hover {
+    border-bottom: 3px solid var(--verde);
+    cursor: pointer;
 }
 
-.desplegable:hover a,
-.nav-bar-category:hover a {
-    color: var(--verde);
+.nav-bar-element-container:hover a {
     text-decoration: none;
 }
 
@@ -157,7 +153,6 @@ li {
 }
 
 .subcategoria a:hover{
-    cursor: pointer;
     text-decoration-color: var(--verde);
     font-weight: 600;
     background-color: rgb(214, 212, 212);
@@ -169,6 +164,23 @@ li {
     top: 13vh;
     left: -2%;
     max-height: 300px;
+}
+
+.nav-bar-element-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    border-bottom: 3px var(--clarito) solid;
+    width: 110px;
+    padding-bottom: 2px;
+    padding-top: 7px;
+}
+
+.nav-bar i {
+    font-size: 1.3rem;
+    color: var(--verde);
 }
 
 @keyframes list-animation {
