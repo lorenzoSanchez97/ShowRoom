@@ -12,7 +12,7 @@ header {
 .header-top-bar {
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     max-width: 1200px;
     margin-bottom: 30px;
@@ -22,7 +22,8 @@ header {
     display: flex;
     justify-content: center;
     align-self: center;
-    background-color: var(--menta);
+    border-bottom: 1px solid var(--bordes);
+    border-top: 1px solid var(--bordes);
     height: fit-content;
     margin-top: 20px;
 }
@@ -45,6 +46,15 @@ ul.nav-bar-list {
     border: none;
 }
 
+.registro {
+    border-right: 1px solid var(--bordes);
+    padding-right: 10px;
+}
+
+.login {
+    margin-left: 10px;
+}
+
 .sesion:hover,
 .carrito:hover {
     cursor: pointer;
@@ -52,7 +62,7 @@ ul.nav-bar-list {
 }
 
 .nav-bar-category a {
-    padding-bottom: 20px;
+    padding-bottom: 24px;
     text-decoration: none;
     color: var(--verde);
 }
@@ -65,8 +75,8 @@ ul.nav-bar-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 49%;
-    max-width: 500px;
+    width: 35%;
+    max-width: 400px;
 }
 
 .search-bar input {
@@ -157,7 +167,7 @@ ul.nav-bar-list {
 
 .subcategoria a:hover {
     border-radius: 7px;
-    background-color: var(--menta);
+    background-color: var(--bordes);
 }
 
 .cat {
@@ -174,10 +184,14 @@ ul.nav-bar-list {
     align-items: center;
     justify-content: center;
     gap: 3px;
-    border-bottom: 3px var(--menta) solid;
+    border-bottom: 3px var(--clarito) solid;
     width: 100px;
     padding-bottom: 2px;
     padding-top: 13px;
+}
+
+.nav-bar-element-container:hover {
+    cursor: pointer;
 }
 
 .nav-bar i {
@@ -188,11 +202,9 @@ ul.nav-bar-list {
 @keyframes list-animation {
     from {
         opacity: 0;
-        box-shadow: 0;
     }
 
     to {
         opacity: 1;
-        box-shadow: 0 0 0 100vmax rgba(61, 60, 60, 0.5);
     }
 }

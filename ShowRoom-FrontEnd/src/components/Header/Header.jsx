@@ -31,10 +31,8 @@ function Header({ sendDataToApp }) {
                     <button><i className="fa fa-search"></i></button>
                 </form>
                 <div>
-                    <button className="sesion" href="" onClick={() => handleClickButtons("register")}>Creá tu cuenta</button>
-                </div>
-                <div>
-                    <button className="sesion" href="" onClick={() => handleClickButtons("login")}>Iniciar sesión <i className="fa-solid fa-arrow-right-to-bracket"></i></button>
+                    <button className="sesion registro" href="" onClick={() => handleClickButtons("register")}>Regsitrarse <i class="fa-solid fa-pencil"></i></button>
+                    <button className="sesion login" href="" onClick={() => handleClickButtons("login")}>Iniciar sesión <i className="fa-solid fa-arrow-right-to-bracket"></i></button>
                 </div>
                 <div>
                     <a className="carrito" href="/cart">Carrito <i className="fa-solid fa-cart-shopping"></i></a>
