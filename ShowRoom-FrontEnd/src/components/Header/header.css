@@ -15,7 +15,7 @@ header {
     justify-content: space-around;
     align-items: center;
     max-width: 1200px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .nav-bar {
@@ -24,8 +24,7 @@ header {
     align-self: center;
     background-color: var(--menta);
     height: fit-content;
-    padding-top: 40px;
-    background-image: linear-gradient(to top, var(--menta), var(--clarito));
+    margin-top: 20px;
 }
 
 ul.nav-bar-list {
