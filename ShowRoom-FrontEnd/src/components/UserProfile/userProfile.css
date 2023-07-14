@@ -9,7 +9,7 @@
 .datos-envio-container,
 .user-personal-info-container {
     width: 40%;
-    padding: 20px;
+    padding: 15px;
     border-radius: 20px;
 }
 
@@ -30,5 +30,43 @@
     border-radius: 50%;
 }
 .user-data-title {
-    margin-top: 10px;
+    margin: 10px;
+}
+
+.user-info-subtitle {
+    color: var(--color3);
+}
+
+.user-info-item-container {
+    padding: 10px;
+}
+
+.user-info-item-container:hover {
+    background-color: rgb(241, 240, 240);
+    border-radius: 10px;
+}
+
+.user-info-item-container p:not(.user-info-subtitle) {
+    color: black;
+}
+
+.user-info-title-and-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info-title-and-button button {
+    background: none;
+    border: none;
+    height: fit-content;
+    padding: 5px;
+}
+
+.user-info-title-and-button button i {
+    font-size: 1.2rem;
+}
+
+.user-info-title-and-button button:hover {
+    cursor: pointer;
 }
