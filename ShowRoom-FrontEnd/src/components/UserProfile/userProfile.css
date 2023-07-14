@@ -1,0 +1,34 @@
+.user-profile-main-container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.datos-envio-container,
+.user-personal-info-container {
+    width: 40%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.user-personal-info-container,
+.datos-envio-container {
+    background-color: white;
+    
+}
+
+.user-image-container {
+    text-align: center;
+    border-bottom: 1px solid var(--bordes);
+    padding-bottom: 10px;
+}
+
+.user-image-container img {
+    width: 40%;
+    border-radius: 50%;
+}
+.user-data-title {
+    margin-top: 10px;
+}

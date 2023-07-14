@@ -6,6 +6,7 @@ import Home from './components/Home/Home'
 import Cart from './components/Cart/Cart'
 import ProductDetail from './components/ProductDetail/ProductDetail'
 import Modal from "./components/Modal/Modal"
+import UserProfile from "./components/UserProfile/UserProfile"
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/productDetail" element={<ProductDetail />} />
+        <Route path="/profile" element={<UserProfile />} />
       </Routes>
       {modal ? <Modal userOption={modal} setModalStatus={setModalStatus} /> : null}
       <Footer />

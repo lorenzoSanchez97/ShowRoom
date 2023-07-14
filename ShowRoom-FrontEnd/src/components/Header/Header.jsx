@@ -31,7 +31,7 @@ function Header({ sendDataToApp }) {
                     <button><i className="fa fa-search"></i></button>
                 </form>
                 <div>
-                    <button className="sesion registro" href="" onClick={() => handleClickButtons("register")}>Regsitrarse <i class="fa-solid fa-pencil"></i></button>
+                    <button className="sesion registro" href="" onClick={() => handleClickButtons("register")}>Registrarse <i class="fa-solid fa-pencil"></i></button>
                     <button className="sesion login" href="" onClick={() => handleClickButtons("login")}>Iniciar sesión <i className="fa-solid fa-arrow-right-to-bracket"></i></button>
                 </div>
                 <div>
@@ -48,6 +48,7 @@ function Header({ sendDataToApp }) {
                         <i class="fa-solid fa-boxes-stacked"></i>
                         <li className="nav-bar-category desplegable" ><a href="">Categorias</a></li>
                         <ul className={`lista-desplegable ${mouseEvent === 1 ? "lista-desplegable-mostrar" : ""}`}>
+                            <li className="transparent-stripe"></li>
                             <li className="subcategoria"><a href="">Mascarillas</a></li>
                             <li className="subcategoria"><a href="">Depilación</a></li>
                             <li className="subcategoria"><a href="">Limpieza</a></li>
@@ -67,10 +68,11 @@ function Header({ sendDataToApp }) {
                         <i class="fa-solid fa-info"></i>
                         <li className="nav-bar-category desplegable"><a href="">Información</a></li>
                         <ul className={`lista-desplegable ${mouseEvent === 3 ? "lista-desplegable-mostrar" : ""}`}>
-                                <li className="subcategoria"><a href="">Cómo comprar</a></li>
-                                <li className="subcategoria"><a href="">Envíos</a></li>
-                                <li className="subcategoria"><a href="">Sobre nosotras</a></li>
-                            </ul>
+                            <li className="transparent-stripe"></li>
+                            <li className="subcategoria"><a href="">Cómo comprar</a></li>
+                            <li className="subcategoria"><a href="">Envíos</a></li>
+                            <li className="subcategoria"><a href="">Sobre nosotras</a></li>
+                        </ul>
                     </div>
                 </ul>
             </nav>
