@@ -14,7 +14,6 @@
     margin-bottom: 40px;
 }
 
-.table-container,
 .resumen {
     background-color: white;
     padding: 15px;
@@ -22,50 +21,9 @@
     border: 1px solid var(--bordes);
 }
 
-.table-container {
-    width: 70%;
-}
-
 .resumen {
     width: 30%;
     height: fit-content;
-}
-
-table {
-    width: 100%;
-    table-layout: fixed;
-    border-collapse: collapse;
-}
-
-thead tr {
-    border-bottom: 1px solid var(--bordes);
-}
-
-thead tr th {
-    color: var(--color3);
-    padding-bottom: 10px;
-}
-
-tr {
-    text-align: center;
-}
-
-td {
-    color: var(--color3);
-    padding-bottom: 15px;
-}
-
-td img {
-    max-width: 50%;
-}
-
-tbody tr:first-child td {
-    padding-top: 15px;
-}
-
-.total-producto {
-    color: var(--verde);
-    font-weight: 600;
 }
 
 .resumen-info-container,

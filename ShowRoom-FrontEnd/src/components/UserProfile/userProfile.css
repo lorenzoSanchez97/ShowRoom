@@ -1,27 +1,25 @@
 .user-profile-main-container {
     max-width: 1200px;
+    max-height: 841px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
 }
 
-.datos-envio-container,
 .user-personal-info-container {
-    width: 40%;
+    width: 30%;
     padding: 15px;
     border-radius: 20px;
 }
 
-.user-personal-info-container,
-.datos-envio-container {
+.user-personal-info-container {
     background-color: white;
     
 }
 
 .user-image-container {
     text-align: center;
-    border-bottom: 1px solid var(--bordes);
     padding-bottom: 10px;
 }
 
@@ -29,44 +27,29 @@
     width: 40%;
     border-radius: 50%;
 }
-.user-data-title {
+
+.historial-compras {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: fit-content;
+    gap: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.historial-header h1 {
     margin: 10px;
 }
 
-.user-info-subtitle {
+.historial-header p:not(.cantidad-total-productos) {
+    margin: 10px;
     color: var(--color3);
 }
 
-.user-info-item-container {
-    padding: 10px;
-}
-
-.user-info-item-container:hover {
-    background-color: rgb(241, 240, 240);
-    border-radius: 10px;
-}
-
-.user-info-item-container p:not(.user-info-subtitle) {
-    color: black;
-}
-
-.user-info-title-and-button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.user-info-title-and-button button {
-    background: none;
-    border: none;
-    height: fit-content;
-    padding: 5px;
-}
-
-.user-info-title-and-button button i {
-    font-size: 1.2rem;
-}
-
-.user-info-title-and-button button:hover {
-    cursor: pointer;
+.cantidad-total-productos {
+    color:black;
+    font-size: 1.5rem;
+    margin: 10px;
 }

@@ -1,0 +1,47 @@
+.info-box-main-container {
+    padding: 5px 0 5px 0;
+    border-top: 1px solid var(--bordes);
+    background-color: white;
+}
+
+.data-title {
+    margin: 10px;
+}
+
+.info-subtitle {
+    color: var(--color3);
+}
+
+.info-item-container {
+    padding: 10px;
+}
+
+.info-item-container:hover {
+    background-color: rgb(241, 240, 240);
+    border-radius: 10px;
+}
+
+.info-item-container p:not(.info-subtitle) {
+    color: black;
+}
+
+.info-title-and-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-title-and-button button {
+    background: none;
+    border: none;
+    height: fit-content;
+    padding: 5px;
+}
+
+.info-title-and-button button i {
+    font-size: 1.2rem;
+}
+
+.info-title-and-button button:hover {
+    cursor: pointer;
+}

@@ -152,6 +152,7 @@ ul.nav-bar-list {
 }
 
 .nav-bar-element-container:hover {
+    transition: all 300ms;
     border-bottom: 3px solid var(--verde);
     cursor: pointer;
 }
