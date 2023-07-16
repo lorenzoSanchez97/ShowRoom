@@ -1,8 +1,10 @@
 .card-main-container {
     padding: 5px;
     border-radius: 20px;
-    background-color: var(--clarito);
+    background-color: var(--hover);
     width: 30%;
+    height: fit-content;
+    overflow:visible;
 }
 
 .card-title {

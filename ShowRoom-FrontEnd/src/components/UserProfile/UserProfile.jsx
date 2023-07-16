@@ -30,7 +30,7 @@ export default function UserProfile() {
             data={"3"}
             />
             <Card 
-            title={"Última compra:"}
+            title={"Fecha de última compra:"}
             data={"15/7/2023"}
             />
             <Card 
