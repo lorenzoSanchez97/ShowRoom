@@ -1,0 +1,19 @@
+.card-main-container {
+    padding: 5px;
+    border-radius: 20px;
+    background-color: var(--clarito);
+    width: 30%;
+}
+
+.card-title {
+    margin: 10px;
+    color: var(--color3);
+    font-size: 0.8rem;
+}
+
+.card-data {
+    color:black;
+    font-size: 1.2rem;
+    margin: 10px;
+    text-align: center;
+}

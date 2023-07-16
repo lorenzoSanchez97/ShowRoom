@@ -43,13 +43,10 @@
     margin: 10px;
 }
 
-.historial-header p:not(.cantidad-total-productos) {
-    margin: 10px;
-    color: var(--color3);
-}
-
-.cantidad-total-productos {
-    color:black;
-    font-size: 1.5rem;
-    margin: 10px;
+.historial-header-cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import "./userProfile.css";
 import InfoBox from "../InfoBox/InfoBox";
 import Tabla from "../Tabla/Tabla";
+import Card from "../Card/Card";
 
 export default function UserProfile() {
   return (
@@ -21,14 +22,26 @@ export default function UserProfile() {
             data={["Córdoba", "Rio Cuarto", "6587", "Tosco 123"]} />
         </section>
         <section className="historial-compras">
-        <div className="historial-header">
-        <h1>Historial de compras</h1>
-        <p>Total de productos comprados:</p>
-        <p className="cantidad-total-productos">5</p>
-        </div>
-        <Tabla 
-        historial={true}
-        />
+          <div className="historial-header">
+            <h1>Historial de compras</h1>
+            <div className="historial-header-cards-container">
+            <Card 
+            title={"Total de productos comprados:"}
+            data={"3"}
+            />
+            <Card 
+            title={"Última compra:"}
+            data={"15/7/2023"}
+            />
+            <Card 
+            title={"Último producto comprado:"}
+            data={"Mascarilla de coco"}
+            />
+            </div>
+          </div>
+          <Tabla
+            historial={true}
+          />
         </section>
       </main>
     </>
