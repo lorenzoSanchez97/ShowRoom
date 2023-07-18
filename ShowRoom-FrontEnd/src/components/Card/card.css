@@ -4,7 +4,7 @@
     background-color: var(--hover);
     width: 30%;
     height: fit-content;
-    overflow:visible;
+    overflow: visible;
 }
 
 .card-title {
@@ -14,7 +14,7 @@
 }
 
 .card-data {
-    color:black;
+    color: black;
     font-size: 1.2rem;
     margin: 10px;
     text-align: center;
