@@ -7,25 +7,24 @@ import Cart from './components/Cart/Cart'
 import ProductDetail from './components/ProductDetail/ProductDetail'
 import Modal from "./components/Modal/Modal"
 import UserProfile from "./components/UserProfile/UserProfile"
+import { modalContext } from "./contexts/modalContext"
 
 function App() {
-
+  
   let [modal, setModal] = React.useState("")
-
-  const setModalStatus = (data) => {
-    setModal(data)
-  }
 
   return (
     <>
-      <Header sendDataToApp={setModalStatus} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/productDetail" element={<ProductDetail />} />
-        <Route path="/profile" element={<UserProfile />} />
-      </Routes>
-      {modal ? <Modal userOption={modal} setModalStatus={setModalStatus} /> : null}
+      <modalContext.Provider value={{ modal: modal, setModal: setModal }}>
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/productDetail" element={<ProductDetail />} />
+          <Route path="/profile" element={<UserProfile />} />
+        </Routes>
+        {modal ? <Modal userOption={modal} /> : null}
+      </modalContext.Provider>
       <Footer />
     </>
   );

@@ -1,10 +1,13 @@
 import React from "react";
 import "./form.css"
+import { modalContext } from "../../contexts/modalContext";
 
-function Form({ setModalStatus, closeButton, title, labels, labelIcons, inputTypes, button }) {
+function Form({ closeButton, title, labels, labelIcons, inputTypes, button }) {
+
+    let modal = React.useContext(modalContext)
 
     const closeModal = () => {
-        setModalStatus("")
+        modal.setModal("")
     }
 
     const stopPropagation = e => {

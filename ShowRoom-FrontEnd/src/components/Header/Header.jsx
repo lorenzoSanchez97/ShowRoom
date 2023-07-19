@@ -1,7 +1,10 @@
 import React from "react";
 import "./header.css";
+import { modalContext } from "../../contexts/modalContext";
 
-function Header({ sendDataToApp }) {
+function Header() {
+
+    let modal = React.useContext(modalContext)
 
     let [mouseEvent, setMouseEvent] = React.useState(5)
 
@@ -14,7 +17,7 @@ function Header({ sendDataToApp }) {
     }
 
     const handleClickButtons = (data) => {
-        sendDataToApp(data)
+        modal.setModal(data)
     }
 
     return (

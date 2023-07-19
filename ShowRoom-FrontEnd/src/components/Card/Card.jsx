@@ -1,14 +1,14 @@
 import React from 'react'
 import "./card.css"
 
-export default function Card({ title, data, width }) {
 
-    const containerStyle = width ? { width: width } : {};
+export default function Card({ title, data }) {
+
 
     return (
-        <div className='card-main-container' style={containerStyle}>
+        <div className='card-main-container'>
             <p className='card-title'>{title}</p>
-            {typeof data !== "string" && typeof data !== "number" ? data : <p className="card-data">{data}</p>}
+            <p className="card-data">{data}</p>
         </div >
 
     )

@@ -3,6 +3,7 @@ import "./userProfile.css";
 import InfoBox from "../InfoBox/InfoBox";
 import Tabla from "../Tabla/Tabla";
 import Card from "../Card/Card";
+import { modalContext } from '../../contexts/modalContext';
 
 export default function UserProfile() {
 
@@ -12,6 +13,8 @@ export default function UserProfile() {
   //   ciudad: "Rio Cuarto",
   //   códigoPostal: "6587",
   //   dirección: "Tosco 123"
+
+  let modal = React.useContext(modalContext)
 
   return (
     <>
@@ -31,11 +34,8 @@ export default function UserProfile() {
               data={["Córdoba", "Rio Cuarto", "6587", "Tosco 123"]} />
             :
             <div className="no-data-envio">
-              <Card
-                title={"Aún no ha cargado su información de envío"}
-                data={<button><i class="fa-solid fa-plus"></i></button>}
-                width={"100%"}
-              />
+              <p>Aún no ha cargado su información de envío</p>
+              <i class="fa-solid fa-square-plus" onClick={() => modal.setModal("data-envio")}></i>
             </div>
           }
         </section>
