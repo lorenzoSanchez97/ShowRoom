@@ -21,8 +21,9 @@ function Modal({ userOption }) {
                     <Form
                         closeButton={true}
                         title="Ingresá los siguientes datos para crear tu cuenta"
-                        labels={["Elegí tu nombre de usuario", "Ingresá tu e-mail", "Creá tu contraseña", "Confirmá tu contraseña"]}
+                        labels={["Decinos tu nombre completo", "Ingresá tu e-mail", "Creá tu contraseña", "Confirmá tu contraseña"]}
                         labelIcons={["fa-solid fa-id-card-clip", "fa-solid fa-envelope", "fa-solid fa-lock", "fa-solid fa-lock"]}
+                        inputNames={["name", "email", "password", "confirmPassword"]}
                         inputTypes={["text", "email", "password", "password"]}
                         button="Crear tu cuenta"
                     />
@@ -35,6 +36,7 @@ function Modal({ userOption }) {
                         title="Ingresá los siguientes datos para iniciar sesión"
                         labels={["Ingresá tu email", "Ingresá tu contraseña"]}
                         labelIcons={["fa-solid fa-envelope", "fa-solid fa-lock"]}
+                        inputNames={["email", "password"]}
                         inputTypes={["email", "password"]}
                         button="Iniciar sesión"
                     />
@@ -47,6 +49,7 @@ function Modal({ userOption }) {
                         title="Ingresá tu información de envío"
                         labels={["Provincia", "Ciudad", "Código postal", "Dirección"]}
                         labelIcons={["fa-solid fa-map-location-dot", "fa-solid fa-city", "fa-solid fa-envelopes-bulk", "fa-solid fa-location-dot"]}
+                        inputNames={["region", "city", "zip", "address"]}
                         inputTypes={["text", "text", "text", "text"]}
                         button="Cargar datos"
                     />
