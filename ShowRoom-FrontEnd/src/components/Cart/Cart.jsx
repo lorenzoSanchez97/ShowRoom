@@ -1,11 +1,12 @@
 import React from "react";
 import "./cart.css"
 import Tabla from "../Tabla/Tabla";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 function Cart() {
     return (
         <main>
-            <h1 className="titulo-carrito">Tu carrito de compras</h1>
+            <SectionTitle title={"Tu carrito de compras"} />
             <div className="carrito-main-container">
                 <Tabla/>
                 <section className="resumen">

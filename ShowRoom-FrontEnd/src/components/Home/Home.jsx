@@ -1,6 +1,7 @@
 import React from "react";
 import "./home.css"
 import Product from "../Product/Product";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 function Home() {
 
@@ -10,7 +11,7 @@ function Home() {
                 <img src="/images/Banner.png" alt="" />
             </div>
             <main>
-                <h1 className="title">Productos en oferta</h1>
+                <SectionTitle title={"Productos en oferta"} />
                 <section className="seccion-principal">
                     <Product/>
                     <Product/>

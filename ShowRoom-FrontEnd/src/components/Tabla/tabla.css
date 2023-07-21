@@ -1,7 +1,7 @@
 .table-container {
     background-color: white;
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1px solid var(--bordes);
     height: fit-content;
     width: 100%;

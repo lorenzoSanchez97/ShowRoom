@@ -9,7 +9,6 @@
 }
 
 .form-main-container h2 {
-    margin-bottom: 50px;
     font-size: 1.1rem;
 }
 
@@ -31,6 +30,10 @@
 
 }
 
+.form-input:not(.input-error):hover {
+    border-color: var(--verde);
+}
+
 .form-input:focus {
     outline: none;
 }
@@ -40,7 +43,7 @@
 }
 
 .form-error-msg {
-    font-size: 0.9rem;
+    font-size: 0.82rem;
     color: var(--error);
 }
 
@@ -67,12 +70,17 @@
     background-color: var(--color3);
 }
 
+.form-button:disabled {
+    background-color: var(--color3);
+}
+
 #form-close-button {
+    background-color: white;
     border: none;
     background: none;
     position: absolute;
-    right: 3%;
-    top: 2%;
+    right: -6%;
+    top: -3%;
 }
 
 #form-close-button:hover {
@@ -80,9 +88,11 @@
 }
 
 #form-close-button i {
+    color: var(--error);
     font-size: 1.3rem;
 }
 
 .form-title-section {
     margin-top: 10px;
+    margin-bottom: 30px;
 }

@@ -9,15 +9,12 @@
     font-size: 18px;
 }
 
-.titulo-carrito {
-    text-align: center;
-    margin-bottom: 40px;
-}
+
 
 .resumen {
     background-color: white;
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1px solid var(--bordes);
 }
 

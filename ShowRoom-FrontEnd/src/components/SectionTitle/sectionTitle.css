@@ -1,0 +1,10 @@
+.section-title {
+    text-align: center;
+    background-color: var(--verde);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+    font-size: 1.7rem;
+    width: 100%;
+}

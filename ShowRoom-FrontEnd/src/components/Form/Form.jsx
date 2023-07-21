@@ -13,17 +13,17 @@ function Form({ closeButton, title, labels, labelIcons, inputNames, inputTypes, 
 
     let validationSchema = button === "Crear tu cuenta" ? registerFormSchema : button === "Iniciar sesión" ? loginFormSchema : dataEnvioFormSchema
 
-    console.log(initialValues);
-
     const formik = useFormik({
         initialValues: {
             ...initialValues
         },
         validationSchema: validationSchema,
+        onSubmit: async () => {
+           await new Promise((resolve) => setTimeout(resolve, 1000))
+           formik.resetForm();
+        }
     });
-
-    console.log(formik);
-
+ 
     let modal = React.useContext(modalContext)
 
     const closeModal = () => {
@@ -48,7 +48,7 @@ function Form({ closeButton, title, labels, labelIcons, inputNames, inputTypes, 
                         {formik.touched[inputNames[index]] && formik.errors[inputNames[index]] ? <p className="form-error-msg">{formik.errors[inputNames[index]]}</p> : null}
                     </React.Fragment>
                 ))}
-                <button type="submit" className="form-button">{button}</button>
+                <button disabled={formik.isSubmitting} type="submit" className="form-button">{button}</button>
             </form>
         </div>
     )
