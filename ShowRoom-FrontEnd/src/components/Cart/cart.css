@@ -9,8 +9,6 @@
     font-size: 18px;
 }
 
-
-
 .resumen {
     background-color: white;
     padding: 15px;
@@ -21,6 +19,8 @@
 .resumen {
     width: 30%;
     height: fit-content;
+    position: sticky;
+    top: 10vh;
 }
 
 .resumen-info-container,

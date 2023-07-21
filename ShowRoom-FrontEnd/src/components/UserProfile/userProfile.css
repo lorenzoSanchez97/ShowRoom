@@ -1,6 +1,5 @@
 .user-profile-main-container {
     max-width: 1200px;
-    max-height: 841px;
     display: flex;
     flex-direction: row;
     justify-content: center;

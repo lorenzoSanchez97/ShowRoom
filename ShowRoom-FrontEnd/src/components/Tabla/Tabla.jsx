@@ -43,6 +43,69 @@ export default function Tabla({ historial }) {
                         {historial ? <td>15/7/2023</td> : null}
                         <td className="total-producto">$777</td>
                     </tr>
+                    <tr className='table-row-product'>
+                        <td><img src="/images/mascarilla.png" alt="" /> </td>
+                        <td>Mascarilla de Coco <br />
+                            Color: blanco</td>
+                        <td>$1111</td>
+                        <td>5u</td>
+                        {historial ? <td>15/7/2023</td> : null}
+                        <td className="total-producto">$5555</td>
+                    </tr>
+                    <tr className='table-row-product'>
+                        <td><img src="/images/mascarilla.png" alt="" /> </td>
+                        <td>Mascarilla de Coco <br />
+                            Color: blanco</td>
+                        <td>$1111</td>
+                        <td>5u</td>
+                        {historial ? <td>15/7/2023</td> : null}
+                        <td className="total-producto">$5555</td>
+                    </tr>
+                    <tr className='table-row-product'>
+                        <td><img src="/images/mascarilla.png" alt="" /> </td>
+                        <td>Mascarilla de Coco <br />
+                            Color: blanco</td>
+                        <td>$1111</td>
+                        <td>5u</td>
+                        {historial ? <td>15/7/2023</td> : null}
+                        <td className="total-producto">$5555</td>
+                    </tr>
+                    <tr className='table-row-product'>
+                        <td><img src="/images/mascarilla.png" alt="" /> </td>
+                        <td>Mascarilla de Coco <br />
+                            Color: blanco</td>
+                        <td>$1111</td>
+                        <td>5u</td>
+                        {historial ? <td>15/7/2023</td> : null}
+                        <td className="total-producto">$5555</td>
+                    </tr>
+                    <tr className='table-row-product'>
+                        <td><img src="/images/mascarilla.png" alt="" /> </td>
+                        <td>Mascarilla de Coco <br />
+                            Color: blanco</td>
+                        <td>$1111</td>
+                        <td>5u</td>
+                        {historial ? <td>15/7/2023</td> : null}
+                        <td className="total-producto">$5555</td>
+                    </tr>
+                    <tr className='table-row-product'>
+                        <td><img src="/images/mascarilla.png" alt="" /> </td>
+                        <td>Mascarilla de Coco <br />
+                            Color: blanco</td>
+                        <td>$1111</td>
+                        <td>5u</td>
+                        {historial ? <td>15/7/2023</td> : null}
+                        <td className="total-producto">$5555</td>
+                    </tr>
+                    <tr className='table-row-product'>
+                        <td><img src="/images/mascarilla.png" alt="" /> </td>
+                        <td>Mascarilla de Coco <br />
+                            Color: blanco</td>
+                        <td>$1111</td>
+                        <td>5u</td>
+                        {historial ? <td>15/7/2023</td> : null}
+                        <td className="total-producto">$5555</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
