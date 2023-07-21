@@ -17,7 +17,7 @@ function Form({ closeButton, title, labels, labelIcons, inputNames, inputTypes, 
         initialValues: {
             ...initialValues
         },
-        validationSchema: validationSchema,
+        validationSchema,
         onSubmit: async () => {
            await new Promise((resolve) => setTimeout(resolve, 1000))
            formik.resetForm();

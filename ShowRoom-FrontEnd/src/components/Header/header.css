@@ -1,5 +1,5 @@
 header {
-    padding: 25px 0px 0px 0px;
+    padding: 15px 0px 0px 0px;
     margin: auto;
     background-color: white;
 }
@@ -15,7 +15,6 @@ header {
     justify-content: space-evenly;
     align-items: center;
     max-width: 1200px;
-    margin-bottom: 30px;
 }
 
 .nav-bar {
@@ -23,9 +22,8 @@ header {
     justify-content: center;
     align-self: center;
     border-bottom: 1px solid var(--bordes);
-    border-top: 1px solid var(--bordes);
     height: fit-content;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 ul.nav-bar-list {
@@ -84,10 +82,12 @@ ul.nav-bar-list {
     width: 85%;
     height: 40px;
     border-radius: 5px 0 0 5px;
-    border: var(--verde) solid 1px;
+    border: var(--bordes) solid 2px;
+    border-right: none;
     padding: 0 0 0 10px;
     font-size: 1rem;
     color: var(--color3);
+    background-color: var(--clarito);
 }
 
 .search-bar input::placeholder {
@@ -96,18 +96,19 @@ ul.nav-bar-list {
 }
 
 .search-bar input:focus {
-    outline-color: var(--verde);
+    outline: none
 }
 
 .search-bar button {
     width: 15%;
     max-width: 30px;
     height: 40px;
-    background: white;
+    background: var(--clarito);
     text-align: center;
     color: rgb(88, 88, 88);
     font-size: 14px;
-    border: var(--verde) solid 1px;
+    border: var(--bordes) solid 2px;
+    border-left: none;
     border-radius: 0 5px 5px 0;
     padding: 0;
 }
