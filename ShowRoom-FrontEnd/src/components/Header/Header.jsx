@@ -27,7 +27,7 @@ function Header() {
             </div>
             <section className="header-top-bar">
                 <div>
-                    <h1>LOGO</h1>
+                    <h1 id="logo">LOGO</h1>
                 </div>
                 <form className="search-bar" action="" method="GET">
                     <input type="text" placeholder="Buscar productos" />
