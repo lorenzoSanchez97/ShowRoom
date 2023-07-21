@@ -44,8 +44,8 @@ function Form({ closeButton, title, labels, labelIcons, inputNames, inputTypes, 
                 {labels.map((label, index) => (
                     <React.Fragment key={index}>
                         <label htmlFor={inputNames[index]}> <i className={labelIcons[index]}></i> {label}</label>
-                        <input type={inputTypes[index]} id={inputNames[index]} {...formik.getFieldProps(inputNames[index])} className={formik.errors[inputNames[index]] ? "input-error" : ""} />
-                        {formik.errors[inputNames[index]] ? <p>{formik.errors[inputNames[index]]}</p> : null}
+                        <input type={inputTypes[index]} id={inputNames[index]} {...formik.getFieldProps(inputNames[index])} className={formik.touched[inputNames[index]] && formik.errors[inputNames[index]] ? "form-input input-error" : "form-input"} />
+                        {formik.touched[inputNames[index]] && formik.errors[inputNames[index]] ? <p className="form-error-msg">{formik.errors[inputNames[index]]}</p> : null}
                     </React.Fragment>
                 ))}
                 <button type="submit" className="form-button">{button}</button>
