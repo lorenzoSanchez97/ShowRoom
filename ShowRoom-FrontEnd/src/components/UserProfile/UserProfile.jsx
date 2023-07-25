@@ -35,7 +35,7 @@ export default function UserProfile() {
             :
             <div className="no-data-envio">
               <p>Aún no ha cargado su información de envío</p>
-              <i class="fa-solid fa-square-plus" onClick={() => modal.setModal("data-envio")}></i>
+              <i className="fa-solid fa-square-plus" onClick={() => modal.setModal("data-envio")}></i>
             </div>
           }
         </section>

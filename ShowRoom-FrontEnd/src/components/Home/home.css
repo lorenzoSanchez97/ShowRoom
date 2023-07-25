@@ -13,39 +13,3 @@
 #banner img {
     width: 100%;
 }
-
-.title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 50px;
-}
-
-.title:after {
-    margin-left: 25px;
-    background-color: var(--verde);
-    content: "";
-    display: inline-block;
-    height: 2px;
-    position: relative;
-    vertical-align: middle;
-    width: 34%;
-}
-
-.title:before {
-    margin-right: 25px;
-    background-color: var(--verde);
-    content: "";
-    display: inline-block;
-    height: 2px;
-    position: relative;
-    vertical-align: middle;
-    width: 34%;
-}
-
-.seccion-principal {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 30px;
-}

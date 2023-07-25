@@ -34,7 +34,7 @@ function Header() {
                     <button><i className="fa fa-search"></i></button>
                 </form>
                 <div>
-                    <button className="sesion registro" href="" onClick={() => handleClickButtons("register")}>Registrarse <i class="fa-solid fa-pencil"></i></button>
+                    <button className="sesion registro" href="" onClick={() => handleClickButtons("register")}>Registrarse <i className="fa-solid fa-pencil"></i></button>
                     <button className="sesion login" href="" onClick={() => handleClickButtons("login")}>Iniciar sesión <i className="fa-solid fa-arrow-right-to-bracket"></i></button>
                 </div>
                 <div>
@@ -44,11 +44,11 @@ function Header() {
             <nav className="nav-bar">
                 <ul className="nav-bar-list">
                     <div className="nav-bar-element-container">
-                        <i class="fa-solid fa-house"></i>
+                        <i className="fa-solid fa-house"></i>
                         <li className="nav-bar-category"><a href="/">Inicio</a></li>
                     </div>
                     <div className="nav-bar-element-container" onMouseEnter={() => handleMouseEnter("e1")} onMouseLeave={() => setMouseEvent(5)}>
-                        <i class="fa-solid fa-boxes-stacked"></i>
+                        <i className="fa-solid fa-boxes-stacked"></i>
                         <li className="nav-bar-category desplegable" ><a href="">Categorias</a></li>
                         <ul className={`lista-desplegable ${mouseEvent === 1 ? "lista-desplegable-mostrar" : ""}`}>
                             <li className="transparent-stripe"></li>
@@ -60,15 +60,15 @@ function Header() {
                         </ul>
                     </div>
                     <div className="nav-bar-element-container">
-                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <i className="fa-solid fa-hand-holding-dollar"></i>
                         <li className="nav-bar-category"><a href="">Ofertas</a></li>
                     </div>
                     <div className="nav-bar-element-container">
-                        <i class="fa-solid fa-bell"></i>
+                        <i className="fa-solid fa-bell"></i>
                         <li className="nav-bar-category"><a href="">Novedades</a></li>
                     </div>
                     <div className="nav-bar-element-container" onMouseEnter={() => handleMouseEnter("e2")} onMouseLeave={() => setMouseEvent(5)}>
-                        <i class="fa-solid fa-info"></i>
+                        <i className="fa-solid fa-info"></i>
                         <li className="nav-bar-category desplegable"><a href="">Información</a></li>
                         <ul className={`lista-desplegable ${mouseEvent === 3 ? "lista-desplegable-mostrar" : ""}`}>
                             <li className="transparent-stripe"></li>
