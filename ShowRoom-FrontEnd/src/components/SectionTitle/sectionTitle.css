@@ -8,3 +8,9 @@
     font-size: 1.7rem;
     width: 100%;
 }
+
+@media (width < 769px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+}

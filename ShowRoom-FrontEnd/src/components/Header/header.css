@@ -228,3 +228,30 @@ ul.nav-bar-list {
         opacity: 1;
     }
 }
+
+@media (width < 1440px) {
+    .cat {
+        display: none;
+    }
+}
+
+@media (width < 901px) {
+    .search-bar {
+        width: 30%;
+    }
+
+@media (width < 769px) {
+    #logo {
+        width: 90px;
+    }
+
+    .sesion,
+    .carrito {
+        font-size: 0.9rem;
+    }
+
+    .nav-bar-category a {
+        font-size: 0.9rem;
+    }
+}
+}
