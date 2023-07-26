@@ -26,19 +26,23 @@ function Header() {
                 <img src="/images/Cat.png" alt="" />
             </div>
             <section className="header-top-bar">
-                <div>
+                <div className="logo-container">
                     <h1 id="logo">LOGO</h1>
+                </div>
+                <div className="menu-hamburguesa">
+                    <i className="fa-solid fa-bars"></i>
                 </div>
                 <form className="search-bar" action="" method="GET">
                     <input type="text" placeholder="Buscar productos" />
                     <button><i className="fa fa-search"></i></button>
                 </form>
-                <div>
-                    <button className="sesion registro" href="" onClick={() => handleClickButtons("register")}>Registrarse <i className="fa-solid fa-pencil"></i></button>
+                <div className="user-session-buttons">
+                    <button className="sesion registro" href="" onClick={() => handleClickButtons("register")}>Registrarse <i className="fa-solid fa-user-plus"></i></button>
                     <button className="sesion login" href="" onClick={() => handleClickButtons("login")}>Iniciar sesión <i className="fa-solid fa-arrow-right-to-bracket"></i></button>
                 </div>
                 <div>
                     <a className="carrito" href="/cart">Carrito <i className="fa-solid fa-cart-shopping"></i></a>
+                    <i className="fa-solid fa-cart-shopping responsive-carrito"></i>
                 </div>
             </section>
             <nav className="nav-bar">
@@ -48,7 +52,7 @@ function Header() {
                         <li className="nav-bar-category"><a href="/">Inicio</a></li>
                     </div>
                     <div className="nav-bar-element-container" onMouseEnter={() => handleMouseEnter("e1")} onMouseLeave={() => setMouseEvent(5)}>
-                        <i className="fa-solid fa-boxes-stacked"></i>
+                        <i className="fa-solid fa-list-ul"></i>
                         <li className="nav-bar-category desplegable" ><a href="">Categorias</a></li>
                         <ul className={`lista-desplegable ${mouseEvent === 1 ? "lista-desplegable-mostrar" : ""}`}>
                             <li className="transparent-stripe"></li>
@@ -79,7 +83,7 @@ function Header() {
                     </div>
                 </ul>
             </nav>
-        </header>
+        </header >
     )
 }
 
