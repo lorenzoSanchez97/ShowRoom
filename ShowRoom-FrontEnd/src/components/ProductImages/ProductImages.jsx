@@ -32,7 +32,7 @@ function ProductImages() {
     }, [slide])
 
     return (
-        <>
+        <div className="product-images-main-container">
             <div className="mini-imagenes-container">
                 {images.map ((img, index) => {
                    return <img key={index} className={`slide-mini ${index == slide ? "mini-imagenes-hover" : ""}`} onMouseEnter={() => handleMouseEnter(index)} src={`/images/${img}`} alt="" />
@@ -45,7 +45,7 @@ function ProductImages() {
                     <button className="image-button next" onClick={handleNextButton}><i className="fa-solid fa-arrow-right"></i></button>
             </div>
             </figure>
-        </>
+        </div>
     )
 }
 
