@@ -1,14 +1,14 @@
 import React from "react";
 import "./cart.css"
-import Tabla from "../Tabla/Tabla";
 import SectionTitle from "../SectionTitle/SectionTitle";
+import CartProduct from "../CartProduct/CartProduct";
 
 function Cart() {
     return (
         <main>
             <SectionTitle title={"Tu carrito de compras"} />
             <div className="carrito-main-container">
-                <Tabla/>
+                <CartProduct />
                 <section className="resumen">
                     <h1>Resumen</h1>
                     <div className="resumen-info-container">

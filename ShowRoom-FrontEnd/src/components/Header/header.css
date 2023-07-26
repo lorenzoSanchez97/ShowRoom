@@ -301,14 +301,14 @@ ul.nav-bar-list {
         display: none;
     }
 
-    @media (width < 505px) {
-        .logo-container {
-            display: none;
-        }
+}
 
-        .search-bar {
-            width: 65%;
-        }
+@media (width < 505px) {
+    .logo-container {
+        display: none;
     }
 
+    .search-bar {
+        width: 65%;
+    }
 }

@@ -13,7 +13,7 @@ footer {
 
 .titulo-footer {
     color: var(--clarito);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
@@ -30,4 +30,10 @@ footer i {
     text-decoration: none;
     color: var(--clarito);
     font-size: 1rem;
+}
+
+@media (width < 875px) {
+    .titulo-footer {
+        font-size: 1rem;
+    }
 }

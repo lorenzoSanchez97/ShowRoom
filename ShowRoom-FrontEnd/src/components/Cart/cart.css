@@ -9,9 +9,6 @@
     padding: 15px;
     border-radius: 10px;
     border: 1px solid var(--bordes);
-}
-
-.resumen {
     width: 30%;
     height: fit-content;
     position: sticky;
