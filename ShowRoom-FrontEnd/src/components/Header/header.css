@@ -277,15 +277,6 @@ ul.nav-bar-list {
         width: 90px;
     }
 
-    .sesion,
-    .carrito {
-        font-size: 0.9rem;
-    }
-
-    .nav-bar-category a {
-        font-size: 0.9rem;
-    }
-
     .user-session-buttons {
         display: none;
     }

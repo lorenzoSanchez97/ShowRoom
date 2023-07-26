@@ -4,11 +4,6 @@
     gap: 10px;
 }
 
-.carrito-main-container * {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-}
-
 .resumen {
     background-color: white;
     padding: 15px;
@@ -33,6 +28,7 @@
 
 .resumen-info-container p {
     color: var(--color3);
+    font-size: 1rem;
 }
 
 .resumen h1 {
@@ -40,6 +36,7 @@
     padding-bottom: 10px;
     border-bottom: 1px solid var(--bordes);
     margin-bottom: 25px;
+    font-size: 1rem;
 }
 
 .total-final {
@@ -51,7 +48,7 @@
 
 .total-final p {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .boton-compra {
@@ -61,11 +58,35 @@
     border: var(--bordes) solid 1px;
     background-color: var(--verde);
     color: var(--clarito);
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: 300ms all;
 }
 
 .boton-compra:hover {
     cursor: pointer;
     background-color: var(--color3);
+}
+
+@media (width < 1024px) {
+    .resumen p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (width <= 768px) {
+    .carrito-main-container {
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .resumen {
+        width: 100%;
+    }
+    
+}
+
+@media (width < 500px) {
+    .resumen p {
+        font-size: 0.8rem;
+    }
 }

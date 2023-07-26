@@ -27,8 +27,7 @@ footer i {
 }
 
 .made-by a {
-    font-family: 'Lora', serif;
     text-decoration: none;
     color: var(--clarito);
-    font-size: 22px;
+    font-size: 1rem;
 }
