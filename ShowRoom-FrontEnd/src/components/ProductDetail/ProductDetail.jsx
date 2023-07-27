@@ -25,10 +25,22 @@ function ProductDetail() {
                         <i className="fa-solid fa-truck" id="envio-producto-icon"></i>
                         <h1 className="envio-producto">Envio gratis!</h1>
                     </div>
-                    <form className="cantidad-formulario" action="" method="">
-                        <label htmlFor="cantidad">Cantidad</label>
-                    <h1 className="stock-producto">(Stock: 25 unidades)</h1>
-                        <input id="cantidad" type="number" />
+                    <form className="formulario-compra" action="" method="">
+                        <div className="colors">
+                            <label htmlFor="colors">Color</label>
+                            <select name="colors" id="colors">
+                                <option value="">Negro</option>
+                                <option value="">Verde</option>
+                                <option value="">Gris</option>
+                                <option value="">Blanco</option>
+                                <option value="">Marrón</option>
+                            </select>
+                        </div>
+                        <div className="product-quantity">
+                            <label htmlFor="cantidad">Cantidad</label>
+                            {/* <h1 className="stock-producto">(Stock: 25 unidades)</h1> */}
+                            <input id="cantidad" type="number" defaultValue={1} />
+                        </div>
                         <button className="agregar-carrito">Agregar al carrito</button>
                     </form>
                     <h1 className="descripcion-producto-titulo">Descripción</h1>

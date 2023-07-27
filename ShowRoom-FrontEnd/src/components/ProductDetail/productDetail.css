@@ -37,20 +37,10 @@
 .stock-producto {
     font-size: 0.7rem;
     color: black;
-    margin-bottom: 10px;
-    margin-top: 20px;
     display: inline-block;
 }
 
-.cantidad-formulario label {
-    display: block;
-    color: black;
-    margin-bottom: 2px;
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.cantidad-formulario input {
+.formulario-compra input {
     width: 100%;
     height: 35px;
     border-radius: 5px;
@@ -62,15 +52,15 @@
     margin-right: 10px;
 }
 
-.cantidad-formulario input:focus {
+.formulario-compra input:focus {
     outline: none;
 }
 
 .descripcion-producto-titulo {
     font-size: 1rem;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 15px;
-    padding-top: 10px;
+    padding-top: 15px;
     color: black;
     border-top: 1px solid var(--bordes);
 }
@@ -97,9 +87,15 @@
 
 .incons-container {
     margin-bottom: 8px;
+    background-color: rgb(205, 233, 205);
+    padding: 5px 8px;
+    border-radius: 10px;
+    margin-right: 8px;
+    width: fit-content;
+    display: inline-block;
 }
 
-.cantidad-formulario button {
+.formulario-compra button {
     width: 100%;
     height: 40px;
     border-radius: 5px;
@@ -110,7 +106,7 @@
     transition: 300ms all;
 }
 
-.cantidad-formulario button:hover {
+.formulario-compra button:hover {
     cursor: pointer;
     background-color: var(--color3);
 }
@@ -121,13 +117,33 @@
 
 .fav-icon {
     position: absolute;
-    top: 19.5px;
+    top: 22.5px;
     right: 19.5px;
 }
 
-.cantidad-formulario label,
-.descripcion-producto-titulo {
+.formulario-compra label,
+.descripcion-producto-titulo,
+.colors label {
     font-size: 1.15rem;
+}
+
+.colors label,
+.product-quantity label {
+    color: black;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.colors select {
+    height: 35px;
+    border-radius: 5px;
+    border: var(--bordes) solid 1px;
+    color: black;
+}
+
+.colors option{
+    color: black;
 }
 
 @media (width <=768px) {
@@ -165,31 +181,39 @@
         padding: 8px 15px;
     }
 
-    @media (width < 426px) {
-        .detalle-producto {
-            width: 100vw;
-        }
-
-        .titulo-producto-responsive {
-            font-size: 1.6rem;
-        }
-
-        .detalle-producto {
-            border: none;
-        }
-
-        .envio-producto,
-        .descuento,
-        .cuotas,
-        .descripcion-producto {
-            font-size: 0.85rem;
-        }
-
-        .cantidad-formulario button,
-        .cantidad-formulario label,
-        .descripcion-producto-titulo {
-            font-size: 1rem;
-        }
+    .fav-icon {
+        top: 19.5px;
     }
 
+}
+
+@media (width < 426px) {
+    .detalle-producto {
+        width: 100vw;
+    }
+
+    .titulo-producto-responsive {
+        font-size: 1.6rem;
+    }
+
+    .detalle-producto {
+        border: none;
+    }
+
+    .envio-producto,
+    .descuento,
+    .cuotas,
+    .descripcion-producto {
+        font-size: 0.85rem;
+    }
+
+    .formulario-compra button,
+    .formulario-compra label,
+    .descripcion-producto-titulo {
+        font-size: 1rem;
+    }
+
+    .product-detail-main {
+        row-gap: 20px;
+    }
 }
