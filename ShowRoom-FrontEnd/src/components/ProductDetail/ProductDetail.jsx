@@ -7,10 +7,12 @@ function ProductDetail() {
     return (
         <>
             <main className="product-detail-main">
+                <h1 className="titulo-producto-responsive">Titulo producto</h1>
                 <ProductImages />
                 <section className="detalle-producto">
+                    <i class="fa-regular fa-star fav-icon"></i>
                     <h1 className="titulo-producto">Titulo producto</h1>
-                    <h1 className="precio-producto-detail">$9999</h1>
+                    <h1 className="precio-producto-detail">$9999 </h1>
                     <div className="incons-container">
                         <i className="fa-solid fa-credit-card" id="cuotas-producto-icon"></i>
                         <h1 className="cuotas"> 12 cuotas sin interés</h1>
@@ -23,9 +25,9 @@ function ProductDetail() {
                         <i className="fa-solid fa-truck" id="envio-producto-icon"></i>
                         <h1 className="envio-producto">Envio gratis!</h1>
                     </div>
-                    <h1 className="stock-producto">Stock: 25 unidades</h1>
                     <form className="cantidad-formulario" action="" method="">
                         <label htmlFor="cantidad">Cantidad</label>
+                    <h1 className="stock-producto">(Stock: 25 unidades)</h1>
                         <input id="cantidad" type="number" />
                         <button className="agregar-carrito">Agregar al carrito</button>
                     </form>

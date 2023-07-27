@@ -12,10 +12,8 @@
     border-radius: 20px;
     padding: 15px;
     height: fit-content;
-}
-
-.detalle-producto {
     border: 1px solid var(--bordes);
+    position: relative;
 }
 
 .detalle-producto h1 {
@@ -23,30 +21,33 @@
 }
 
 .titulo-producto {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--bordes);
     color: black;
 }
 
 .precio-producto-detail {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     margin-top: 10px;
     margin-bottom: 15px;
     color: var(--color3);
 }
 
 .stock-producto {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: black;
     margin-bottom: 10px;
     margin-top: 20px;
+    display: inline-block;
 }
 
 .cantidad-formulario label {
     display: block;
     color: black;
     margin-bottom: 2px;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .cantidad-formulario input {
@@ -68,7 +69,7 @@
 .descripcion-producto-titulo {
     font-size: 1rem;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding-top: 10px;
     color: black;
     border-top: 1px solid var(--bordes);
@@ -114,6 +115,81 @@
     background-color: var(--color3);
 }
 
-@media (width < 769px) {
-    
+.titulo-producto-responsive {
+    display: none;
+}
+
+.fav-icon {
+    position: absolute;
+    top: 19.5px;
+    right: 19.5px;
+}
+
+.cantidad-formulario label,
+.descripcion-producto-titulo {
+    font-size: 1.15rem;
+}
+
+@media (width <=768px) {
+    .product-detail-main {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+    }
+
+    .titulo-producto {
+        display: none;
+    }
+
+    .titulo-producto-responsive {
+        display: block;
+        font-size: 1.8rem;
+        width: 75%;
+        text-align: center;
+    }
+
+    main,
+    #root {
+        background-color: white;
+    }
+
+    .detalle-producto {
+        width: 70vw;
+    }
+
+    .precio-producto-detail {
+        margin-top: 0;
+    }
+
+    .detalle-producto {
+        padding: 8px 15px;
+    }
+
+    @media (width < 426px) {
+        .detalle-producto {
+            width: 100vw;
+        }
+
+        .titulo-producto-responsive {
+            font-size: 1.6rem;
+        }
+
+        .detalle-producto {
+            border: none;
+        }
+
+        .envio-producto,
+        .descuento,
+        .cuotas,
+        .descripcion-producto {
+            font-size: 0.85rem;
+        }
+
+        .cantidad-formulario button,
+        .cantidad-formulario label,
+        .descripcion-producto-titulo {
+            font-size: 1rem;
+        }
+    }
+
 }
