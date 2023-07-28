@@ -4,6 +4,12 @@
     gap: 10px;
 }
 
+.cart-products-container {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
 .resumen {
     background-color: white;
     padding: 15px;

@@ -8,7 +8,18 @@ function Cart() {
         <main>
             <SectionTitle title={"Tu carrito de compras"} />
             <div className="carrito-main-container">
+                <section className="cart-products-container">
                 <CartProduct />
+                <CartProduct />
+                <CartProduct />
+                <CartProduct />
+                <CartProduct />
+                <CartProduct />
+                <CartProduct />
+                <CartProduct />
+                <CartProduct />
+                <CartProduct />
+                </section>
                 <section className="resumen">
                     <h1>Resumen</h1>
                     <div className="resumen-info-container">
