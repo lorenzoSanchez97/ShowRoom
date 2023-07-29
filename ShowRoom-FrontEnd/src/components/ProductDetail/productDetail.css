@@ -193,6 +193,7 @@
 
     .detalle-producto {
         border: none;
+        border-radius: 0px;
     }
 
     .envio-producto,

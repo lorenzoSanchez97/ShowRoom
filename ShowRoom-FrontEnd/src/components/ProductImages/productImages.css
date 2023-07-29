@@ -79,7 +79,7 @@
         width: 100%;
         border: none;
         position: relative;
-        padding: 0;
+        padding: 15px;
     }
 
     .image-button {
