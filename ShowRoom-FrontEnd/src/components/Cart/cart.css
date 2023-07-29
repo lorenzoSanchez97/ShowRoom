@@ -1,13 +1,13 @@
 .carrito-main-container {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 25px;
 }
 
 .cart-products-container {
     display: flex;
     flex-direction: column;
-    gap: 17px;
+    gap: 20px;
     width: 70%;
 }
 
@@ -15,11 +15,11 @@
     background-color: white;
     padding: 15px;
     border-radius: 7px;
-    border: 1px solid var(--bordes);
     width: 30%;
     height: fit-content;
     position: sticky;
     top: 10vh;
+    box-shadow: 0px 0px 7px 3px var(--bordes);
 }
 
 .resumen-info-container,

@@ -14,6 +14,7 @@
     height: fit-content;
     border: 1px solid var(--bordes);
     position: relative;
+    box-shadow: 0px 0px 7px 3px var(--bordes);
 }
 
 .detalle-producto h1 {
@@ -146,6 +147,16 @@
     color: black;
 }
 
+@media (width <= 1024px) {
+    .detalle-producto {
+        width: 35%;
+    }
+
+    .product-images-main-container {
+        width: 65%;
+    }
+}
+
 @media (width <=768px) {
     .product-detail-main {
         flex-direction: column;
@@ -166,6 +177,7 @@
 
     .detalle-producto {
         width: 70vw;
+        border: none;
     }
 
     .precio-producto-detail {
