@@ -8,12 +8,13 @@
     display: flex;
     flex-direction: column;
     gap: 17px;
+    width: 70%;
 }
 
 .resumen {
     background-color: white;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 7px;
     border: 1px solid var(--bordes);
     width: 30%;
     height: fit-content;
@@ -84,8 +85,20 @@
 
     .resumen {
         width: 100%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 0px;
+        border: none;
+        box-shadow: 0px -2px 7px 3px var(--bordes);
+        width: 100vw;
+        height: fit-content;
+        position: sticky;
+        bottom: 0vh;
     }
-    
+
+    .cart-products-container {
+        width: 100%;
+    }
 }
 
 @media (width < 500px) {
