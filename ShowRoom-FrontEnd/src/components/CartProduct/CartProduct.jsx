@@ -13,6 +13,7 @@ export default function CartProduct() {
                         <h1 className='cart-product-title'>Mascarilla de Coco</h1>
                         <p className='cart-product-color'>Color: Marrón</p>
                         <button className='cart-product-delete-button'>Eliminar</button>
+                        <button className='cart-product-delete-icon'><i class="fa-solid fa-trash"></i></button>
                     </div>
                     <div className='product-cart-quantity-selector'>
                         <form action="">
