@@ -1,9 +1,11 @@
 import React from "react";
 import "./userProfile.css";
+import SectionTitle from "../SectionTitle/SectionTitle";
 import InfoBox from "../InfoBox/InfoBox";
-import Tabla from "../Tabla/Tabla";
+import CartProduct from "../CartProduct/CartProduct";
 import Card from "../Card/Card";
 import { modalContext } from '../../contexts/modalContext';
+
 
 export default function UserProfile() {
 
@@ -57,9 +59,22 @@ export default function UserProfile() {
               />
             </div>
           </div>
-          <Tabla
-            historial={true}
-          />
+          <CartProduct
+            history={true} />
+          <CartProduct
+            history={true} />
+          <CartProduct
+            history={true} />
+          <CartProduct
+            history={true} />
+          <CartProduct
+            history={true} />
+          <CartProduct
+            history={true} />
+          <CartProduct
+            history={true} />
+          <CartProduct
+            history={true} />
         </section>
       </main>
     </>

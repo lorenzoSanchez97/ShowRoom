@@ -10,19 +10,22 @@
     width: 30%;
     height: fit-content;
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: white;
     transition: all 300ms;
+    box-shadow: 0px 0px 7px 3px var(--bordes);
 }
 
 .user-image-container {
     text-align: center;
+    margin: auto;
     padding-bottom: 10px;
+    width: 40%;
 }
 
 .user-image-container img {
-    width: 40%;
-    border-radius: 20px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .historial-compras {
@@ -33,11 +36,12 @@
     gap: 20px;
     padding: 15px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px 3px var(--bordes);
 }
 
 .historial-header h1 {
-    margin: 10px;
+    margin: 10px 0px 25px 0px;
 }
 
 .historial-header-cards-container {
@@ -45,7 +49,8 @@
     justify-content: space-between;
     gap: 10px;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .no-data-envio {
@@ -82,4 +87,49 @@
 .no-data-envio i:hover {
     cursor: pointer;
     color: var(--color3);
+}
+
+@media (width < 769px) {
+    .user-profile-main-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .user-personal-info-container {
+        width: 80vw;
+    }
+
+    .historial-compras {
+        width: 80vw;
+    }
+
+    .user-image-container {
+        width: 30%;
+    }
+}
+
+@media (width < 680px) {
+    .historial-header-cards-container {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        gap: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (width < 426px) {
+    .user-personal-info-container {
+        width: 90vw;
+    }
+
+    .historial-compras {
+        width: 90vw;
+    }
+
+    .user-image-container {
+        width: 40%;
+    }
 }

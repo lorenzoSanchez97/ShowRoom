@@ -1,7 +1,7 @@
 .carrito-main-container {
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 18px;
 }
 
 .cart-products-container {
@@ -75,6 +75,7 @@
     .resumen p {
         font-size: 0.9rem;
     }
+
 }
 
 @media (width <= 768px) {

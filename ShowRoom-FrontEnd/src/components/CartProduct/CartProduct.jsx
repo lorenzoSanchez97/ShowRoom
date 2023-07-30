@@ -1,7 +1,7 @@
 import React from 'react'
 import "./cartProduct.css"
 
-export default function CartProduct() {
+export default function CartProduct({ history }) {
     return (
         <section className='cart-product-main-container'>
             <figure className='cart-product-image-container'>
@@ -12,17 +12,20 @@ export default function CartProduct() {
                     <div className='cart-product-data-container'>
                         <h1 className='cart-product-title'>Mascarilla de Coco</h1>
                         <p className='cart-product-color'>Color: Marrón</p>
-                        <button className='cart-product-delete-button'>Eliminar</button>
-                        <button className='cart-product-delete-icon'><i class="fa-solid fa-trash"></i></button>
+                        {history ? <p className='fecha-de-compra'>Fecha de compra: <br></br>
+                        30/7/2023</p> : <> <button className='cart-product-delete-button'>Eliminar</button>
+                        <button className='cart-product-delete-icon'><i className="fa-solid fa-trash"></i></button></>}
                     </div>
+                    {history ? <p className='cantidad-comprada'>5 u.</p> :
                     <div className='product-cart-quantity-selector'>
                         <form action="">
-                            <i class="fa-solid fa-plus cart-product-add"></i>
+                            <i className="fa-solid fa-plus cart-product-add"></i>
                             <input type="number" />
                             <p className='cart-product-stock'>Stock: 25 u.</p>
-                            <i class="fa-solid fa-minus cart-product-substract"></i>
+                            <i className="fa-solid fa-minus cart-product-substract"></i>
                         </form>
                     </div>
+                    }
                     <p className='cart-product-total'>$2215</p>
                 </div>
                 <div className='cart-product-envio-data'>

@@ -70,8 +70,8 @@ function ProductImages() {
                 </div>
                 <img className="mainSlide" src={`/images/${images[slide]}`} alt="" />
                 <div className="botones">
-                    <button className="image-button prev" onClick={handlePrevButton}><i class="fa-solid fa-angle-left"></i></button>
-                    <button className="image-button next" onClick={handleNextButton}><i class="fa-solid fa-angle-right"></i></button>
+                    <button className="image-button prev" onClick={handlePrevButton}><i className="fa-solid fa-angle-left"></i></button>
+                    <button className="image-button next" onClick={handleNextButton}><i className="fa-solid fa-angle-right"></i></button>
                 </div>
             </figure>
         </div>

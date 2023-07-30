@@ -14,6 +14,7 @@
 
 .info-item-container {
     padding: 10px;
+    overflow-wrap: break-word;
 }
 
 .info-item-container:hover {

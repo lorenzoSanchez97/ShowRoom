@@ -1,10 +1,11 @@
 .card-main-container {
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: var(--hover);
-    width: 30%;
+    width: 31%;
     height: fit-content;
     overflow: visible;
+    box-shadow: 0px 0px 7px 3px var(--bordes);
 }
 
 .card-title {
@@ -18,4 +19,17 @@
     font-size: 1.2rem;
     margin: 10px;
     text-align: center;
+    overflow-wrap: break-word;
+}
+
+@media (width < 769px) {
+    .card-data {
+        font-size: 1rem;
+    }
+}
+
+@media (width < 680px) {
+    .card-main-container {
+        width: 100%;
+    }
 }

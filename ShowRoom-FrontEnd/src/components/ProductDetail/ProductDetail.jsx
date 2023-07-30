@@ -10,7 +10,7 @@ function ProductDetail() {
                 <h1 className="titulo-producto-responsive">Titulo producto</h1>
                 <ProductImages />
                 <section className="detalle-producto">
-                    <i class="fa-regular fa-star fav-icon"></i>
+                    <i className="fa-regular fa-star fav-icon"></i>
                     <h1 className="titulo-producto">Titulo producto</h1>
                     <h1 className="precio-producto-detail">$9999 </h1>
                     <div className="incons-container">
