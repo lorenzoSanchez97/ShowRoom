@@ -40,7 +40,7 @@
     box-shadow: 0px 0px 7px 3px var(--bordes);
 }
 
-.historial-header h1 {
+.historial-header h2 {
     margin: 10px 0px 25px 0px;
 }
 
@@ -120,6 +120,16 @@
     }
 }
 
+@media (width < 600px) {
+    .user-personal-info-container {
+        width: 95vw;
+    }
+
+    .historial-compras {
+        width: 95vw;
+    }
+}
+
 @media (width < 426px) {
     .user-personal-info-container {
         width: 90vw;
@@ -131,5 +141,15 @@
 
     .user-image-container {
         width: 40%;
+    }
+
+    .user-personal-info-container {
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    .historial-compras {
+        width: 100vw;
+        border-radius: 0;
     }
 }

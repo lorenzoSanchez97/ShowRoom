@@ -19,8 +19,9 @@ export default function UserProfile() {
   let modal = React.useContext(modalContext)
 
   return (
-    <>
-      <main className="user-profile-main-container">
+    <main>
+    <SectionTitle title={"Perfil de usuario"} />
+      <section className="user-profile-main-container">
         <section className="user-personal-info-container">
           <div className="user-image-container">
             <img src="/images/profile-image.jpeg" alt="" />
@@ -43,7 +44,7 @@ export default function UserProfile() {
         </section>
         <section className="historial-compras">
           <div className="historial-header">
-            <h1>Historial de compras</h1>
+            <h2>Historial de compras</h2>
             <div className="historial-header-cards-container">
               <Card
                 title={"Total de productos comprados:"}
@@ -76,7 +77,7 @@ export default function UserProfile() {
           <CartProduct
             history={true} />
         </section>
-      </main>
-    </>
+      </section>
+    </main>
   );
 }
