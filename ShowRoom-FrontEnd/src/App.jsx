@@ -7,6 +7,7 @@ import Cart from './components/Cart/Cart'
 import ProductDetail from './components/ProductDetail/ProductDetail'
 import Modal from "./components/Modal/Modal"
 import UserProfile from "./components/UserProfile/UserProfile"
+import SideMenu from "./components/SideMenu/SideMenu"
 import { modalContext } from "./contexts/modalContext"
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <>
       <modalContext.Provider value={{ modal: modal, setModal: setModal }}>
         <Header/>
+        <SideMenu />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />

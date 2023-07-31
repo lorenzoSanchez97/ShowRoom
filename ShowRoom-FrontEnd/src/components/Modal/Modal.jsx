@@ -21,7 +21,7 @@ function Modal({ userOption }) {
                     <Form
                         closeButton={true}
                         title="Ingresá los siguientes datos para crear tu cuenta"
-                        labels={["Decinos tu nombre completo", "Ingresá tu e-mail", "Creá tu contraseña", "Confirmá tu contraseña"]}
+                        labels={["Nombre completo", "E-mail", "Creá tu contraseña", "Confirmá tu contraseña"]}
                         labelIcons={["fa-solid fa-id-card-clip", "fa-solid fa-envelope", "fa-solid fa-lock", "fa-solid fa-lock"]}
                         inputNames={["name", "email", "password", "confirmPassword"]}
                         inputTypes={["text", "email", "password", "password"]}
@@ -34,7 +34,7 @@ function Modal({ userOption }) {
                     <Form
                         closeButton={true}
                         title="Ingresá los siguientes datos para iniciar sesión"
-                        labels={["Ingresá tu email", "Ingresá tu contraseña"]}
+                        labels={["E-mail", "Contraseña"]}
                         labelIcons={["fa-solid fa-envelope", "fa-solid fa-lock"]}
                         inputNames={["email", "password"]}
                         inputTypes={["email", "password"]}

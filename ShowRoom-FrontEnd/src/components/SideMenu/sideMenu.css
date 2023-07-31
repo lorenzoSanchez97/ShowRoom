@@ -1,0 +1,6 @@
+.side-menu-main-container {
+    background-color: var(--clarito);
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+}
