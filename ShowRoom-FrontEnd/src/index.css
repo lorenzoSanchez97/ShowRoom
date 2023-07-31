@@ -3,10 +3,11 @@
 :root {
     --verde: #aa89ec;
     --clarito: #f0efef;
+    --clarito2: #F4F4F4;
     --color3: grey;
     --bordes: rgb(206, 205, 205);
     --hover: rgb(241, 240, 240);
-    --error: #CD5C5C
+    --error: #FF4500
 }
 
 #root {

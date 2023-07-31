@@ -19,11 +19,11 @@ function Form({ closeButton, title, labels, labelIcons, inputNames, inputTypes, 
         },
         validationSchema,
         onSubmit: async () => {
-           await new Promise((resolve) => setTimeout(resolve, 1000))
-           formik.resetForm();
+            await new Promise((resolve) => setTimeout(resolve, 1000))
+            formik.resetForm();
         }
     });
- 
+
     let modal = React.useContext(modalContext)
 
     const closeModal = () => {
@@ -42,11 +42,11 @@ function Form({ closeButton, title, labels, labelIcons, inputNames, inputTypes, 
             </div>
             <form action="" onSubmit={formik.handleSubmit}>
                 {labels.map((label, index) => (
-                    <React.Fragment key={index}>
+                    <div key={index} className={formik.touched[inputNames[index]] && formik.errors[inputNames[index]] ? "form-input-container input-error" : "form-input-container"}>
                         <label htmlFor={inputNames[index]}> <i className={labelIcons[index]}></i> {label}</label>
-                        <input type={inputTypes[index]} id={inputNames[index]} {...formik.getFieldProps(inputNames[index])} className={formik.touched[inputNames[index]] && formik.errors[inputNames[index]] ? "form-input input-error" : "form-input"} />
-                        {formik.touched[inputNames[index]] && formik.errors[inputNames[index]] ? <p className="form-error-msg">{formik.errors[inputNames[index]]}</p> : null}
-                    </React.Fragment>
+                        <input type={inputTypes[index]} id={inputNames[index]} {...formik.getFieldProps(inputNames[index])} className="form-input" />
+                        {formik.touched[inputNames[index]] && formik.errors[inputNames[index]] ? <p className="form-error-msg"> <i class="fa-solid fa-triangle-exclamation"></i> {formik.errors[inputNames[index]]}</p> : null}
+                    </div>
                 ))}
                 <button disabled={formik.isSubmitting} type="submit" className="form-button">{button}</button>
             </form>
