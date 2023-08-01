@@ -23,9 +23,9 @@ export default function UserProfile() {
     <SectionTitle title={"Perfil de usuario"} />
       <section className="user-profile-main-container">
         <section className="user-personal-info-container">
-          <div className="user-image-container">
+          <figure className="user-image-container">
             <img src="/images/profile-image.jpeg" alt="" />
-          </div>
+          </figure>
           <InfoBox
             title="Información personal"
             subtitles={["Nombre y apellido", "Número de teléfono", "Email"]}

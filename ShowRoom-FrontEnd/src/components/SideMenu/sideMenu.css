@@ -1,6 +1,50 @@
 .side-menu-main-container {
     background-color: var(--clarito);
-    width: 200px;
+    width: 75vw;
     height: 100vh;
-    position: absolute;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    position: fixed;
+    z-index: 99;
+}
+
+.side-menu-header {
+    background-color: var(--verde);
+    padding: 15px;
+    display: flex;
+    align-items: flex-start ;
+    gap: 10px;
+}
+
+.side-menu-user-image {
+    width: 40%;
+    padding: 3px;
+    border: 2px solid var(--bordes);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.side-menu-user-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.side-menu-user-name {
+    font-size: 1rem;
+    color: white;
+}
+
+.side-menu-name-and-profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu-profile {
+    color: white;
+    font-size: .7rem;
+    font-weight: 400;
+}
+
+.side-menu-profile i {
+    color: white;
+    font-size: .5rem;
 }

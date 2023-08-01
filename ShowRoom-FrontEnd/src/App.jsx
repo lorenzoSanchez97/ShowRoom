@@ -17,8 +17,8 @@ function App() {
   return (
     <>
       <modalContext.Provider value={{ modal: modal, setModal: setModal }}>
-        <Header/>
         <SideMenu />
+        <Header/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
