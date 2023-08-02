@@ -36,6 +36,7 @@
 .side-menu-name-and-profile {
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 .side-menu-profile {
@@ -47,4 +48,23 @@
 .side-menu-profile i {
     color: white;
     font-size: .5rem;
+}
+
+.side-menu-buttons-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.side-menu-buttons-container p {
+    color: var(--verde);
+    font-size: 1rem;
+}
+
+.side-menu-buttons-container i {
+    color: var(--verde);
+    font-size: 1rem;
 }
