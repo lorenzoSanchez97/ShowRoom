@@ -6,6 +6,19 @@
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     position: fixed;
     z-index: 99;
+    left: -360px;
+    animation: glide 300ms forwards;
+}
+
+#side-menu-header-close-button {
+    position: absolute;
+    color: white;
+    top: 7px;
+    right: 7px;
+}
+
+#side-menu-header-close-button:hover {
+    cursor: pointer;
 }
 
 .side-menu-header {
@@ -68,6 +81,34 @@
     font-size: 1rem;
     width: 25px;
     margin-bottom: 3px;
+}
+
+.closing-animation {
+    animation: glide-undo 300ms forwards;
+}
+
+@keyframes glide-undo {
+    from {
+        left: 0px;
+        opacity: 1;
+    }
+    
+    to {
+        left: -360px;
+        opacity: 0;
+    }
+}
+
+@keyframes glide {
+    from {
+        left: -360px;
+        opacity: 0;
+    }
+
+    to {
+        left: 0px;
+        opacity: 1;
+    }
 }
 
 @media (width > 426px) {

@@ -2,7 +2,7 @@ import React from "react";
 import "./header.css";
 import { modalContext } from "../../contexts/modalContext";
 
-function Header() {
+function Header({ setSideMenu }) {
 
     let modal = React.useContext(modalContext)
 
@@ -29,7 +29,7 @@ function Header() {
                 <div className="logo-container">
                     <h1 id="logo">LOGO</h1>
                 </div>
-                <div className="menu-hamburguesa">
+                <div className="menu-hamburguesa" onClick={() => setSideMenu(true)}>
                     <i className="fa-solid fa-bars"></i>
                 </div>
                 <form className="search-bar" action="" method="GET">

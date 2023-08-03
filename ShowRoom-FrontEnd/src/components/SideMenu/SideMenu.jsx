@@ -1,10 +1,21 @@
 import React from 'react'
 import "./sideMenu.css"
 
-export default function SideMenu() {
+export default function SideMenu({ setSideMenu }) {
+
+  let [closingAnimation, setClosingAnimation] = React.useState(false)
+
+    const handleCloseButtonClick = () => {
+    setClosingAnimation(true)
+    setTimeout(() => {
+      setSideMenu(false)
+    }, 300);
+    }
+
   return (
-    <section className='side-menu-main-container'>
+    <section className={closingAnimation ? 'side-menu-main-container closing-animation' : 'side-menu-main-container'}>
       <header className='side-menu-header'>
+        <i className="fa-solid fa-circle-xmark" id='side-menu-header-close-button' onClick={handleCloseButtonClick}></i>
         <figure className='side-menu-user-image'>
           <img src="/images/profile-image.jpeg" alt="" />
         </figure>
@@ -22,7 +33,7 @@ export default function SideMenu() {
         <p><i className="fa-solid fa-bell"></i> Novedades</p>
         <p><i className="fa-solid fa-info"></i> Información</p>
         <p><i className="fa-solid fa-right-from-bracket"></i> Cerrar sesión </p>
-        </div>
+      </div>
     </section>
   )
 }

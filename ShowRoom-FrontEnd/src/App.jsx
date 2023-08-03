@@ -13,12 +13,13 @@ import { modalContext } from "./contexts/modalContext"
 function App() {
   
   let [modal, setModal] = React.useState("")
+  let [sideMenu, setSideMenu] = React.useState(false)
 
   return (
     <>
       <modalContext.Provider value={{ modal: modal, setModal: setModal }}>
-        <SideMenu />
-        <Header/>
+        {sideMenu && <SideMenu setSideMenu={setSideMenu}/>}
+        <Header setSideMenu={setSideMenu}/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
