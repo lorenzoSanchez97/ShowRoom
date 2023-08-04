@@ -18,7 +18,8 @@
     gap: 7px;
 }
 
-.form-input-container {
+.form-input-container,
+.province-selector-container {
     background-color: var(--clarito2);
     border-radius: 10px;
     padding: 15px;
@@ -33,8 +34,8 @@
     padding-bottom: 0;
     border-bottom: var(--bordes) solid 1px;
     font-size: 1rem;
-    color: var(--color3);
-    background-color: var(--clarito);
+    color: black;
+    background-color: inherit;
     margin-top: 5px;
 
 }
@@ -66,7 +67,8 @@
     font-size: 0.7rem;
 }
 
-.form-main-container form label {
+.form-main-container form label,
+.province-selector-container label {
     color: var(--color3);
     font-size: 0.82rem;
 }
@@ -118,4 +120,30 @@
 .form-title-section {
     margin-top: 10px;
     margin-bottom: 30px;
+}
+
+.province-selector-container {
+    background-color: var(--clarito2);
+    width: 100%;
+}
+
+#province-selector {
+    padding: 2px;
+    border: none;
+    width: 100%;
+    color: black;
+    font-size: 1rem;
+    border: 1px solid var(--bordes);
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#province-selector:focus {
+    border: 1px solid var(--bordes);
+    outline: none;
+}
+
+#province-selector option {
+    color: black;
+    font-size: .9rem;
 }

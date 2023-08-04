@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <modalContext.Provider value={{ modal: modal, setModal: setModal }}>
+      <modalContext.Provider value={{ userOperation: modal, setModal: setModal }}>
         {sideMenu && <SideMenu setSideMenu={setSideMenu}/>}
         <Header setSideMenu={setSideMenu}/>
         <Routes>
@@ -26,7 +26,7 @@ function App() {
           <Route path="/productDetail" element={<ProductDetail />} />
           <Route path="/profile" element={<UserProfile />} />
         </Routes>
-        {modal ? <Modal userOption={modal} /> : null}
+        {modal ? <Modal /> : null}
       </modalContext.Provider>
       <Footer />
     </>
