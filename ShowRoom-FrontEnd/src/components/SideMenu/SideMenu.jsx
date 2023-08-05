@@ -13,6 +13,8 @@ export default function SideMenu({ setSideMenu }) {
     }
 
   return (
+  <>
+  <section className={closingAnimation ?'sideMenu-background-cover sideMenu-background-cover-hidde' : 'sideMenu-background-cover'} onClick={closeSideMenu}></section>
     <section className={closingAnimation ? 'side-menu-main-container closing-animation' : 'side-menu-main-container'}>
       <header className='side-menu-header'>
         <i className="fa-regular fa-circle-xmark" id='side-menu-header-close-button' onClick={closeSideMenu}></i>
@@ -35,5 +37,6 @@ export default function SideMenu({ setSideMenu }) {
         <p><i className="fa-solid fa-right-from-bracket"></i> Cerrar sesión </p>
       </div>
     </section>
+    </>
   )
 }
