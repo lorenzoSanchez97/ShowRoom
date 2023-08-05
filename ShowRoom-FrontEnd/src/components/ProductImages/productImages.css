@@ -17,7 +17,7 @@
 }
 
 .slide-mini {
-    border-radius: 10px;
+    border-radius: 5px;
     border: var(--bordes) solid 2px;
     padding: 2px;
 }
@@ -28,7 +28,7 @@
     height: fit-content;
     max-width: 600px;
     max-height: 650px;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 10px;
     box-shadow: 0px 0px 7px 3px var(--bordes);
     position: relative;
@@ -37,7 +37,7 @@
 .imagen-producto img {
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .mini-imagenes-hover {
@@ -64,11 +64,7 @@
 
 .image-button:hover {
     cursor: pointer;
-    background-color: var(--verde);
-}
-
-.image-button:hover i {
-    color: white;
+    background-color: rgba(170, 137, 236, 0.151);
 }
 
 .images-counter {

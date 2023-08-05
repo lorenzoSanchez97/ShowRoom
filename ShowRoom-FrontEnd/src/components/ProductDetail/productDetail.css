@@ -9,7 +9,7 @@
 .detalle-producto {
     background-color: white;
     width: 40%;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 15px;
     height: fit-content;
     border: 1px solid var(--bordes);
@@ -120,6 +120,10 @@
     position: absolute;
     top: 22.5px;
     right: 19.5px;
+}
+
+.fav-icon:hover {
+    cursor: pointer;
 }
 
 .formulario-compra label,

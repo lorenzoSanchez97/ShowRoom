@@ -202,16 +202,6 @@
 
 }
 
-@media (width < 570px) {
-    .fecha-de-compra {
-        width: 100%;
-    }
-
-    .history-product-date-ammount {
-        gap: 0;
-    }
-}
-
 @media (width < 680px) {
 
     .fecha-de-compra {
@@ -220,6 +210,20 @@
 
     .cart-product-image-container {
         margin: 0;
+    }
+
+    .cart-product-main-container {
+        padding: 15px 15px;
+    }
+}
+
+@media (width < 570px) {
+    .fecha-de-compra {
+        width: 100%;
+    }
+
+    .history-product-date-ammount {
+        gap: 0;
     }
 }
 
@@ -253,5 +257,9 @@
 
     .cart-product-image-container {
         width: 28%;
+    }
+
+    .cart-product-title {
+        font-size: .9rem;
     }
 }

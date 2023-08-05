@@ -104,8 +104,9 @@
     border: none;
     background: none;
     position: absolute;
-    right: 7px;
-    top: 7px;
+    right: 0px;
+    top: 1px;
+    padding: 7px;
 }
 
 #form-close-button:hover {
@@ -146,4 +147,20 @@
 #province-selector option {
     color: black;
     font-size: .9rem;
+}
+
+@media (width < 426px) {
+    .form-main-container {
+        padding: 20px;
+    }
+}
+
+@media (width < 360px) {
+    .form-main-container {
+        border-radius: 0;
+    }
+
+    #form-close-button {
+        right: 5px;
+    }
 }
