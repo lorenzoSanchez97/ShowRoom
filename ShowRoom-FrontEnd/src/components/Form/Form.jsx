@@ -5,7 +5,7 @@ import { useFormik } from 'formik';
 import { loginFormSchema, registerFormSchema, dataEnvioFormSchema } from "../../schemas/form";
 import registerServices from "../../services/register"
 
-function Form({ closeButton, userOperation, title, labels, labelIcons, inputNames, inputTypes, button }) {
+function Form({ closeModal, userOperation, title, labels, labelIcons, inputNames, inputTypes, button }) {
 
     let [provinces, setProvinces] = React.useState([])
 
@@ -29,10 +29,6 @@ function Form({ closeButton, userOperation, title, labels, labelIcons, inputName
 
     let modal = React.useContext(modalContext)
 
-    const closeModal = () => {
-        modal.setModal("")
-    }
-
     const stopPropagation = e => {
         e.stopPropagation();
     }
@@ -54,7 +50,7 @@ function Form({ closeButton, userOperation, title, labels, labelIcons, inputName
 
     return (
         <div className="form-main-container" onClick={stopPropagation}>
-            {closeButton ? <button id="form-close-button" onClick={closeModal}><i className="fa-regular fa-circle-xmark"></i></button> : null}
+            <button id="form-close-button" onClick={closeModal}><i className="fa-regular fa-circle-xmark"></i></button>
             <div className="form-title-section">
                 <h2>{title}</h2>
             </div>

@@ -122,24 +122,6 @@
     }
 }
 
-@keyframes opacity-show {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes opacity-hidde {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
 @media (width > 426px) {
     .side-menu-main-container {
         width: 51vw;

@@ -17,7 +17,7 @@ function Header({ setSideMenu }) {
         }
     }
 
-    const handleClickSessionButtons = (data) => {
+    const handleSessionButtonsClick = (data) => {
         modal.setModal(data)
     }
 
@@ -38,8 +38,8 @@ function Header({ setSideMenu }) {
                     <button><i className="fa fa-search"></i></button>
                 </form>
                 <div className="user-session-buttons">
-                    <button className="sesion registro" href="" onClick={() => handleClickSessionButtons("register")}>Registrarse <i className="fa-solid fa-user-plus"></i></button>
-                    <button className="sesion login" href="" onClick={() => handleClickSessionButtons("login")}>Iniciar sesión <i className="fa-solid fa-arrow-right-to-bracket"></i></button>
+                    <button className="sesion registro" href="" onClick={() => handleSessionButtonsClick("register")}>Registrarse <i className="fa-solid fa-user-plus"></i></button>
+                    <button className="sesion login" href="" onClick={() => handleSessionButtonsClick("login")}>Iniciar sesión <i className="fa-solid fa-arrow-right-to-bracket"></i></button>
                 </div>
                 <div>
                    <Link to="/cart"><button className="carrito" href="/cart">Carrito <i className="fa-solid fa-cart-shopping"></i></button></Link>

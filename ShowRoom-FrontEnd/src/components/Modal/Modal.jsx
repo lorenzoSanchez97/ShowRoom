@@ -8,18 +8,22 @@ function Modal() {
     let modal = React.useContext(modalContext);
 
     let [userOperation, setUserOperation] = React.useState(modal.userOperation)
+    let [closingAnimation, setClosingAnimation] = React.useState(false)
 
     const closeModal = () => {
-        modal.setModal("");
+        setClosingAnimation(true)
+        setTimeout(() => {
+            modal.setModal("");
+        }, 300);
     }
 
     return (
-        <section className="modal-main-container" onClick={closeModal}>
+        <section className={closingAnimation ? "modal-main-container hidde-modal" : "modal-main-container"} onClick={closeModal}>
 
             {userOperation === "register" &&
                 <>
                     <Form
-                        closeButton={true}
+                        closeModal={closeModal}
                         userOperation={userOperation}
                         title="Ingresá los siguientes datos para crear tu cuenta"
                         labels={["Nombre completo", "E-mail", "Creá tu contraseña", "Confirmá tu contraseña"]}
@@ -33,7 +37,7 @@ function Modal() {
             {userOperation === "login" &&
                 <>
                     <Form
-                        closeButton={true}
+                        closeModal={closeModal}
                         userOperation={userOperation}
                         title="Ingresá los siguientes datos para iniciar sesión"
                         labels={["E-mail", "Contraseña"]}
@@ -47,10 +51,10 @@ function Modal() {
             {userOperation === "data-envio" &&
                 <>
                     <Form
-                        closeButton={true}
+                        closeModal={closeModal}
                         userOperation={userOperation}
                         title="Ingresá tu información de envío"
-                        labels={[ "Ciudad", "Código postal", "Dirección"]}
+                        labels={["Ciudad", "Código postal", "Dirección"]}
                         labelIcons={["fa-solid fa-city", "fa-solid fa-envelopes-bulk", "fa-solid fa-location-dot"]}
                         inputNames={["city", "zip", "address"]}
                         inputTypes={["text", "text", "text"]}

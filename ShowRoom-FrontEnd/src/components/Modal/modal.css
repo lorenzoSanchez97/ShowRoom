@@ -9,7 +9,11 @@
     min-height: 100vh;
     min-width: 100vw;
     background-color: rgba(0, 0, 0, 0.75);
-    animation: show-modal 400ms;
+    animation: opacity-show 300ms forwards;
+}
+
+.hidde-modal {
+    animation: opacity-hidde 300ms forwards;
 }
 
 .register-container,
@@ -40,13 +44,4 @@
 
 .ocultar {
     display: none;
-}
-
-@keyframes show-modal {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
