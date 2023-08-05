@@ -54,7 +54,7 @@ function Form({ closeButton, userOperation, title, labels, labelIcons, inputName
 
     return (
         <div className="form-main-container" onClick={stopPropagation}>
-            {closeButton ? <button id="form-close-button" onClick={closeModal}><i className="fa-solid fa-circle-xmark"></i></button> : null}
+            {closeButton ? <button id="form-close-button" onClick={closeModal}><i className="fa-regular fa-circle-xmark"></i></button> : null}
             <div className="form-title-section">
                 <h2>{title}</h2>
             </div>

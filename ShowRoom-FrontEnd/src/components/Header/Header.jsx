@@ -1,6 +1,7 @@
 import React from "react";
 import "./header.css";
 import { modalContext } from "../../contexts/modalContext";
+import { Link } from "react-router-dom";
 
 function Header({ setSideMenu }) {
 
@@ -16,7 +17,7 @@ function Header({ setSideMenu }) {
         }
     }
 
-    const handleClickButtons = (data) => {
+    const handleClickSessionButtons = (data) => {
         modal.setModal(data)
     }
 
@@ -37,11 +38,11 @@ function Header({ setSideMenu }) {
                     <button><i className="fa fa-search"></i></button>
                 </form>
                 <div className="user-session-buttons">
-                    <button className="sesion registro" href="" onClick={() => handleClickButtons("register")}>Registrarse <i className="fa-solid fa-user-plus"></i></button>
-                    <button className="sesion login" href="" onClick={() => handleClickButtons("login")}>Iniciar sesión <i className="fa-solid fa-arrow-right-to-bracket"></i></button>
+                    <button className="sesion registro" href="" onClick={() => handleClickSessionButtons("register")}>Registrarse <i className="fa-solid fa-user-plus"></i></button>
+                    <button className="sesion login" href="" onClick={() => handleClickSessionButtons("login")}>Iniciar sesión <i className="fa-solid fa-arrow-right-to-bracket"></i></button>
                 </div>
                 <div>
-                    <a className="carrito" href="/cart">Carrito <i className="fa-solid fa-cart-shopping"></i></a>
+                   <Link to="/cart"><button className="carrito" href="/cart">Carrito <i className="fa-solid fa-cart-shopping"></i></button></Link>
                     <i className="fa-solid fa-cart-shopping responsive-carrito"></i>
                 </div>
             </section>
@@ -56,7 +57,7 @@ function Header({ setSideMenu }) {
                     <li className="nav-bar-element-container" onMouseEnter={() => handleMouseEnter("e1")} onMouseLeave={() => setMouseEvent(5)}>
                         <a href="">
                             <i className="fa-solid fa-list-ul"></i>
-                            <li className="nav-bar-category desplegable">Categorias  <i class="fa-solid fa-caret-right"></i></li></a>
+                            <p className="nav-bar-category desplegable">Categorias  <i className="fa-solid fa-caret-right"></i></p></a>
                         <ul className={`lista-desplegable ${mouseEvent === 1 ? "lista-desplegable-mostrar" : ""}`}>
                             <li className="transparent-stripe"></li>
                             <li className="subcategoria"><a href="">Mascarillas</a></li>
@@ -69,19 +70,19 @@ function Header({ setSideMenu }) {
                     <li className="nav-bar-element-container">
                         <a href="">
                             <i className="fa-solid fa-hand-holding-dollar"></i>
-                            <li className="nav-bar-category">Ofertas</li>
+                            <p className="nav-bar-category">Ofertas</p>
                         </a>
                     </li>
                     <li className="nav-bar-element-container">
                         <a href="">
                             <i className="fa-solid fa-bell"></i>
-                            <li className="nav-bar-category">Novedades</li>
+                            <p className="nav-bar-category">Novedades</p>
                         </a>
                     </li>
                     <li href="" className="nav-bar-element-container" onMouseEnter={() => handleMouseEnter("e2")} onMouseLeave={() => setMouseEvent(5)}>
                         <a href="">
                             <i className="fa-solid fa-info"></i>
-                            <li className="nav-bar-category desplegable">Información <i class="fa-solid fa-caret-right"></i></li> </a>
+                            <p className="nav-bar-category desplegable">Información <i className="fa-solid fa-caret-right"></i></p> </a>
                         <ul className={`lista-desplegable ${mouseEvent === 3 ? "lista-desplegable-mostrar" : ""}`}>
                             <li className="transparent-stripe"></li>
                             <li className="subcategoria"><a href="">Cómo comprar</a></li>

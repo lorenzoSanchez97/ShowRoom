@@ -3,7 +3,6 @@
     width: 75vw;
     max-width: 330px;
     height: 100vh;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     position: fixed;
     z-index: 99;
     left: -360px;
@@ -72,7 +71,7 @@
     text-align: center;
     background-color: rgba(170, 137, 236, 0.151);
     color: var(--verde);
-    padding: 10px 7px;
+    padding: 13px 7px;
     border-radius: 5px;
 }
 

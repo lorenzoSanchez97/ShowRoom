@@ -54,15 +54,11 @@ ul.nav-bar-list {
     border: none;
     background: none;
     color: var(--clarito);
-}
-
-.registro {
-    border-right: 1px solid var(--bordes);
-    padding-right: 10px;
+    transition: all 100ms;
 }
 
 .login {
-    margin-left: 10px;
+    margin-left: 20px;
     color: var(--clarito);
 }
 
@@ -70,6 +66,7 @@ ul.nav-bar-list {
 .carrito:hover {
     cursor: pointer;
     font-weight: 600;
+    transform: scale(1.05)
 }
 
 .nav-bar-category a {

@@ -5,7 +5,7 @@ export default function SideMenu({ setSideMenu }) {
 
   let [closingAnimation, setClosingAnimation] = React.useState(false)
 
-    const handleCloseButtonClick = () => {
+    const closeSideMenu = () => {
     setClosingAnimation(true)
     setTimeout(() => {
       setSideMenu(false)
@@ -15,7 +15,7 @@ export default function SideMenu({ setSideMenu }) {
   return (
     <section className={closingAnimation ? 'side-menu-main-container closing-animation' : 'side-menu-main-container'}>
       <header className='side-menu-header'>
-        <i className="fa-solid fa-circle-xmark" id='side-menu-header-close-button' onClick={handleCloseButtonClick}></i>
+        <i className="fa-regular fa-circle-xmark" id='side-menu-header-close-button' onClick={closeSideMenu}></i>
         <figure className='side-menu-user-image'>
           <img src="/images/profile-image.jpeg" alt="" />
         </figure>

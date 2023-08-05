@@ -104,8 +104,8 @@
     border: none;
     background: none;
     position: absolute;
-    right: -6%;
-    top: -3%;
+    right: 7px;
+    top: 7px;
 }
 
 #form-close-button:hover {
@@ -113,8 +113,8 @@
 }
 
 #form-close-button i {
-    color: var(--error);
-    font-size: 1.3rem;
+    color: var(--verde);
+    font-size: 1.1rem;
 }
 
 .form-title-section {
