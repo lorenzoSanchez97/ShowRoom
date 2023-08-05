@@ -33,6 +33,7 @@ header {
     align-self: center;
     border-bottom: 1px solid var(--bordes);
     height: fit-content;
+    max-height: 70px;
 }
 
 ul.nav-bar-list {
@@ -130,7 +131,7 @@ ul.nav-bar-list {
 
 .lista-desplegable {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     list-style-type: none;
     background-color: white;
     border-radius: 7px;
@@ -153,9 +154,9 @@ ul.nav-bar-list {
 
 .transparent-stripe {
     position: absolute;
-    top: -20px;
+    top: -19px;
     width: 100%;
-    height: 21px;
+    height: 20px;
 }
 
 .lista-desplegable-mostrar {
@@ -163,11 +164,6 @@ ul.nav-bar-list {
     animation: list-animation 300ms forwards;
 }
 
-.nav-bar-element-container:hover {
-    transition: all 300ms;
-    border-bottom: 4px solid var(--verde);
-    cursor: pointer;
-}
 
 .nav-bar a {
     text-decoration: none;
@@ -202,16 +198,19 @@ ul.nav-bar-list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
     gap: 3px;
     border-bottom: 4px white solid;
-    width: 100px;
+    min-width: 100px;
+    width: fit-content;
     padding-bottom: 2px;
     padding-top: 13px;
+    transition: all 300ms;
 }
 
 .nav-bar-element-container:hover {
     cursor: pointer;
+    border-bottom: 4px solid var(--verde);
 }
 
 .nav-bar i {
@@ -233,6 +232,15 @@ ul.nav-bar-list {
 .responsive-carrito {
     display: none;
     font-size: 1.2rem;
+}
+
+.nav-bar-category i {
+    font-size: .9rem;
+    transition: all 300ms;
+}
+
+.nav-bar-element-container:hover .nav-bar-category i {
+    transform: rotate(90deg);
 }
 
 @keyframes list-animation {

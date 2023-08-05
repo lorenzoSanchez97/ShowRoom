@@ -47,13 +47,16 @@ function Header({ setSideMenu }) {
             </section>
             <nav className="nav-bar">
                 <ul className="nav-bar-list">
-                    <div className="nav-bar-element-container">
-                        <i className="fa-solid fa-house"></i>
-                        <li className="nav-bar-category"><a href="/">Inicio</a></li>
-                    </div>
-                    <div className="nav-bar-element-container" onMouseEnter={() => handleMouseEnter("e1")} onMouseLeave={() => setMouseEvent(5)}>
-                        <i className="fa-solid fa-list-ul"></i>
-                        <li className="nav-bar-category desplegable" ><a href="">Categorias</a></li>
+                    <li className="nav-bar-element-container">
+                        <a href="">
+                            <i className="fa-solid fa-house"></i>
+                            <p className="nav-bar-category">Inicio</p>
+                        </a>
+                    </li>
+                    <li className="nav-bar-element-container" onMouseEnter={() => handleMouseEnter("e1")} onMouseLeave={() => setMouseEvent(5)}>
+                        <a href="">
+                            <i className="fa-solid fa-list-ul"></i>
+                            <li className="nav-bar-category desplegable">Categorias  <i class="fa-solid fa-caret-right"></i></li></a>
                         <ul className={`lista-desplegable ${mouseEvent === 1 ? "lista-desplegable-mostrar" : ""}`}>
                             <li className="transparent-stripe"></li>
                             <li className="subcategoria"><a href="">Mascarillas</a></li>
@@ -62,25 +65,30 @@ function Header({ setSideMenu }) {
                             <li className="subcategoria"><a href="">Maquillaje</a></li>
                             <li className="subcategoria"><a href="">Accesorios</a></li>
                         </ul>
-                    </div>
-                    <div className="nav-bar-element-container">
-                        <i className="fa-solid fa-hand-holding-dollar"></i>
-                        <li className="nav-bar-category"><a href="">Ofertas</a></li>
-                    </div>
-                    <div className="nav-bar-element-container">
-                        <i className="fa-solid fa-bell"></i>
-                        <li className="nav-bar-category"><a href="">Novedades</a></li>
-                    </div>
-                    <div className="nav-bar-element-container" onMouseEnter={() => handleMouseEnter("e2")} onMouseLeave={() => setMouseEvent(5)}>
-                        <i className="fa-solid fa-info"></i>
-                        <li className="nav-bar-category desplegable"><a href="">Información</a></li>
+                    </li>
+                    <li className="nav-bar-element-container">
+                        <a href="">
+                            <i className="fa-solid fa-hand-holding-dollar"></i>
+                            <li className="nav-bar-category">Ofertas</li>
+                        </a>
+                    </li>
+                    <li className="nav-bar-element-container">
+                        <a href="">
+                            <i className="fa-solid fa-bell"></i>
+                            <li className="nav-bar-category">Novedades</li>
+                        </a>
+                    </li>
+                    <li href="" className="nav-bar-element-container" onMouseEnter={() => handleMouseEnter("e2")} onMouseLeave={() => setMouseEvent(5)}>
+                        <a href="">
+                            <i className="fa-solid fa-info"></i>
+                            <li className="nav-bar-category desplegable">Información <i class="fa-solid fa-caret-right"></i></li> </a>
                         <ul className={`lista-desplegable ${mouseEvent === 3 ? "lista-desplegable-mostrar" : ""}`}>
                             <li className="transparent-stripe"></li>
                             <li className="subcategoria"><a href="">Cómo comprar</a></li>
                             <li className="subcategoria"><a href="">Envíos</a></li>
                             <li className="subcategoria"><a href="">Sobre nosotras</a></li>
                         </ul>
-                    </div>
+                    </li>
                 </ul>
             </nav>
         </header >
