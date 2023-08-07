@@ -65,7 +65,6 @@ ul.nav-bar-list {
 .sesion:hover,
 .carrito:hover {
     cursor: pointer;
-    font-weight: 600;
     transform: scale(1.05)
 }
 

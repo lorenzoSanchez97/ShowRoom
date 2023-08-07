@@ -10,6 +10,10 @@
     position: relative;
 }
 
+.product-card-data-container {
+    position: relative;
+}
+
 .producto:hover {
     cursor: pointer;
     box-shadow: 0px 0px 5px 2px var(--verde);
@@ -18,11 +22,14 @@
 .producto img {
     border-radius: 20px;
     width: 100%;
+    padding-bottom: 8px;
 }
 
 .nombre-producto {
     color: black;
     font-size: 1.2rem;
+    border-top: 1px solid var(--bordes);
+    padding-top: 10px;
 }
 
 .precio-producto {
@@ -40,7 +47,6 @@
 
 .product-card-envio-button {
     border: none;
-    border: 1px solid white;
     border-radius: 5px;
     background-color: var(--fondo-transparente);
     padding: 5px;
@@ -55,7 +61,7 @@
 
 .product-card-envio-button:hover {
     cursor: pointer;
-    border: 1px solid var(--verde);
+    background-color: var(--clarito);
 }
 
 .product-card-fav-icon {
@@ -70,6 +76,22 @@
 .product-card-fav-icon:hover {
     cursor: pointer;
     background-color: var(--clarito);
+}
+
+.product-card-envio-icon {
+    position: absolute;
+    font-size: 1.1rem;
+    right: -1px;
+    top: -11px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50px;
+    color: rgb(22, 165, 41);
+    transition: all 500ms;
+}
+
+.producto:hover .product-card-envio-icon {
+    transform: rotate(360deg);
 }
 
 @media (width < 875px) {

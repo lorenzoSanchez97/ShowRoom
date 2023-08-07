@@ -5,67 +5,91 @@ function Product() {
         <>
             <article className="producto">
                 <img src="/images/mascarilla.png" alt="" />
-                <p className="nombre-producto">Mascarilla de Coco</p>
-                <p className="precio-producto">$999</p>
-                <p className="descuento-producto">$10 OFF</p>
                 <i className="fa-regular fa-star product-card-fav-icon"></i>
-                <br></br><button className="product-card-envio-button">Agregar al carrito <i className="fa-solid fa-cart-shopping product-card-envio-icon"></i></button>
+                <div className="product-card-data-container">
+                    <p className="nombre-producto">Mascarilla de Coco</p>
+                    <i className="fa-solid fa-truck product-card-envio-icon"></i>
+                    <p className="precio-producto">$999</p>
+                    <p className="descuento-producto">$10 OFF</p>
+                    <br></br><button className="product-card-envio-button">Agregar al carrito <i className="fa-solid fa-cart-shopping product-card-cart-icon"></i></button>
+                </div>
             </article>
             <article className="producto">
                 <img src="/images/mascarilla.png" alt="" />
-                <p className="nombre-producto">Mascarilla de Coco</p>
-                <p className="precio-producto">$999</p>
-                <p className="descuento-producto">$10</p>
                 <i className="fa-regular fa-star product-card-fav-icon"></i>
-                <br></br><button className="product-card-envio-button">Agregar al carrito <i className="fa-solid fa-cart-shopping product-card-envio-icon"></i></button>
+                <div className="product-card-data-container">
+                    <p className="nombre-producto">Mascarilla de Coco</p>
+                    <i className="fa-solid fa-truck product-card-envio-icon"></i>
+                    <p className="precio-producto">$999</p>
+                    <p className="descuento-producto">$10 OFF</p>
+                    <br></br><button className="product-card-envio-button">Agregar al carrito <i className="fa-solid fa-cart-shopping product-card-cart-icon"></i></button>
+                </div>
             </article>
             <article className="producto">
                 <img src="/images/mascarilla.png" alt="" />
-                <p className="nombre-producto">Mascarilla de Coco</p>
-                <p className="precio-producto">$999</p>
-                <p className="descuento-producto">$10 OFF</p>
                 <i className="fa-regular fa-star product-card-fav-icon"></i>
-                <br></br><button className="product-card-envio-button">Agregar al carrito <i className="fa-solid fa-cart-shopping product-card-envio-icon"></i></button>
+                <div className="product-card-data-container">
+                    <p className="nombre-producto">Mascarilla de Coco</p>
+                    <i className="fa-solid fa-truck product-card-envio-icon"></i>
+                    <p className="precio-producto">$999</p>
+                    <p className="descuento-producto">$10 OFF</p>
+                    <br></br><button className="product-card-envio-button">Agregar al carrito <i className="fa-solid fa-cart-shopping product-card-cart-icon"></i></button>
+                </div>
             </article>
             <article className="producto">
                 <img src="/images/mascarilla.png" alt="" />
-                <p className="nombre-producto">Mascarilla de Coco</p>
-                <p className="precio-producto">$999</p>
-                <p className="descuento-producto">$10 OFF</p>
                 <i className="fa-regular fa-star product-card-fav-icon"></i>
-                <br></br><button className="product-card-envio-button">Agregar al carrito <i className="fa-solid fa-cart-shopping product-card-envio-icon"></i></button>
+                <div className="product-card-data-container">
+                    <p className="nombre-producto">Mascarilla de Coco</p>
+                    <i className="fa-solid fa-truck product-card-envio-icon"></i>
+                    <p className="precio-producto">$999</p>
+                    <p className="descuento-producto">$10 OFF</p>
+                    <br></br><button className="product-card-envio-button">Agregar al carrito <i className="fa-solid fa-cart-shopping product-card-cart-icon"></i></button>
+                </div>
             </article>
             <article className="producto">
                 <img src="/images/mascarilla.png" alt="" />
-                <p className="nombre-producto">Mascarilla de Coco</p>
-                <p className="precio-producto">$999</p>
-                <p className="descuento-producto">$10</p>
                 <i className="fa-regular fa-star product-card-fav-icon"></i>
-                <br></br><button className="product-card-envio-button">Agregar al carrito <i className="fa-solid fa-cart-shopping product-card-envio-icon"></i></button>
+                <div className="product-card-data-container">
+                    <p className="nombre-producto">Mascarilla de Coco</p>
+                    <i className="fa-solid fa-truck product-card-envio-icon"></i>
+                    <p className="precio-producto">$999</p>
+                    <p className="descuento-producto">$10 OFF</p>
+                    <br></br><button className="product-card-envio-button">Agregar al carrito <i className="fa-solid fa-cart-shopping product-card-cart-icon"></i></button>
+                </div>
             </article>
             <article className="producto">
                 <img src="/images/mascarilla.png" alt="" />
-                <p className="nombre-producto">Mascarilla de Coco</p>
-                <p className="precio-producto">$999</p>
-                <p className="descuento-producto">$10 OFF</p>
                 <i className="fa-regular fa-star product-card-fav-icon"></i>
-                <br></br><button className="product-card-envio-button">Agregar al carrito <i className="fa-solid fa-cart-shopping product-card-envio-icon"></i></button>
+                <div className="product-card-data-container">
+                    <p className="nombre-producto">Mascarilla de Coco</p>
+                    <i className="fa-solid fa-truck product-card-envio-icon"></i>
+                    <p className="precio-producto">$999</p>
+                    <p className="descuento-producto">$10 OFF</p>
+                    <br></br><button className="product-card-envio-button">Agregar al carrito <i className="fa-solid fa-cart-shopping product-card-cart-icon"></i></button>
+                </div>
             </article>
             <article className="producto">
                 <img src="/images/mascarilla.png" alt="" />
-                <p className="nombre-producto">Mascarilla de Coco</p>
-                <p className="precio-producto">$999</p>
-                <p className="descuento-producto">$10</p>
                 <i className="fa-regular fa-star product-card-fav-icon"></i>
-                <br></br><button className="product-card-envio-button">Agregar al carrito <i className="fa-solid fa-cart-shopping product-card-envio-icon"></i></button>
+                <div className="product-card-data-container">
+                    <p className="nombre-producto">Mascarilla de Coco</p>
+                    <i className="fa-solid fa-truck product-card-envio-icon"></i>
+                    <p className="precio-producto">$999</p>
+                    <p className="descuento-producto">$10 OFF</p>
+                    <br></br><button className="product-card-envio-button">Agregar al carrito <i className="fa-solid fa-cart-shopping product-card-cart-icon"></i></button>
+                </div>
             </article>
             <article className="producto">
                 <img src="/images/mascarilla.png" alt="" />
-                <p className="nombre-producto">Mascarilla de Coco</p>
-                <p className="precio-producto">$999</p>
-                <p className="descuento-producto">$10 OFF</p>
                 <i className="fa-regular fa-star product-card-fav-icon"></i>
-                <br></br> <button className="product-card-envio-button">Agregar al carrito <i className="fa-solid fa-cart-shopping product-card-envio-icon"></i></button>
+                <div className="product-card-data-container">
+                    <p className="nombre-producto">Mascarilla de Coco</p>
+                    <i className="fa-solid fa-truck product-card-envio-icon"></i>
+                    <p className="precio-producto">$999</p>
+                    <p className="descuento-producto">$10 OFF</p>
+                    <br></br><button className="product-card-envio-button">Agregar al carrito <i className="fa-solid fa-cart-shopping product-card-cart-icon"></i></button>
+                </div>
             </article>
         </>
     )
