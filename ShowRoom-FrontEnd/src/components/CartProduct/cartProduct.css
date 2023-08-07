@@ -3,7 +3,7 @@
     padding: 15px 20px;
     height: fit-content;
     border-radius: 7px;
-    box-shadow: 0px 0px 7px 3px var(--bordes);
+    box-shadow: 0px 0px 5px 2px var(--bordes);
     display: flex;
     gap: 3%;
     position: relative;
@@ -15,7 +15,8 @@
 }
 
 .cart-product-main-container:hover {
-    box-shadow: 0px 0px 7px 3px var(--verde);
+    box-shadow: 0px 0px 5px 3px var(--bordes);
+    transform: scale(1.01);
 }
 
 .product-cart-info-main-container {

@@ -5,7 +5,11 @@
     width: 31%;
     height: fit-content;
     overflow: visible;
-    box-shadow: 0px 0px 7px 3px var(--bordes);
+    box-shadow: 0px 0px 5px 2px var(--bordes);
+}
+
+.card-main-container:hover {
+    transform: scale(1.03);
 }
 
 .card-title {
