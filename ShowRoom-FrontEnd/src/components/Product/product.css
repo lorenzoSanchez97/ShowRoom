@@ -66,11 +66,11 @@
 
 .product-card-fav-icon {
     background-color: white;
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 10px;
     position: absolute;
-    top: 7px;
-    right: 7px;
+    top: 4px;
+    right: 4px;
 }
 
 .product-card-fav-icon:hover {

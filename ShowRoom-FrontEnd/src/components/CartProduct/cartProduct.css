@@ -15,8 +15,7 @@
 }
 
 .cart-product-main-container:hover {
-    box-shadow: 0px 0px 5px 3px var(--bordes);
-    transform: scale(1.01);
+    box-shadow: 0px 0px 5px 2px var(--verde);
 }
 
 .product-cart-info-main-container {
@@ -159,8 +158,8 @@
     padding: 10px;
     position: absolute;
     display: block;
-    top: 5px;
-    right: 5px;
+    top: 8px;
+    right: 10px;
 }
 
 .cart-product-delete-icon i {

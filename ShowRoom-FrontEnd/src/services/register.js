@@ -1,6 +1,5 @@
-const provincesUrl = 'https://apis.datos.gob.ar/georef/api/provincias'
-
 const getProvinces = async () => {
+    const provincesUrl = 'https://apis.datos.gob.ar/georef/api/provincias'
     try {
         let response = await fetch(provincesUrl)
         response = await response.json()
