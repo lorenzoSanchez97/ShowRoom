@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useContext } from "react"
 import "./userProfile.css";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import InfoBox from "../InfoBox/InfoBox";
@@ -9,14 +9,14 @@ import { modalContext } from '../../contexts/modalContext';
 
 export default function UserProfile() {
 
-  let [infoEnvio, setInfoEnvio] = React.useState(null)
+  let [infoEnvio, setInfoEnvio] = useState(null)
 
   // provincia: "Córdoba",
   //   ciudad: "Rio Cuarto",
   //   códigoPostal: "6587",
   //   dirección: "Tosco 123"
 
-  let modal = React.useContext(modalContext)
+  let modal = useContext(modalContext)
 
   return (
     <main>

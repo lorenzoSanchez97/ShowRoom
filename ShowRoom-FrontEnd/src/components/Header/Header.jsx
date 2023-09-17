@@ -1,13 +1,13 @@
-import React from "react";
+import { useState, useContext } from "react"
 import "./header.css";
 import { modalContext } from "../../contexts/modalContext";
 import { Link } from "react-router-dom";
 
 function Header({ setSideMenu }) {
 
-    let modal = React.useContext(modalContext)
+    let modal = useContext(modalContext)
 
-    let [mouseEvent, setMouseEvent] = React.useState(5)
+    let [mouseEvent, setMouseEvent] = useState(5)
 
     const handleMouseEnter = (action) => {
         if (action === "e1") {

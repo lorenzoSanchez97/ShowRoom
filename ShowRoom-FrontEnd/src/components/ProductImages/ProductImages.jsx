@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react"
 import "./productImages.css"
 
 
@@ -6,9 +6,9 @@ function ProductImages() {
 
     let images = ["mascarilla.png", "mascarilla2.jpg", "mascarilla3.jpg", "mascarilla4.jpg"]
 
-    let [slide, setSlide] = React.useState(0)
-    let [posicionInicial, setPosicionInicial] = React.useState(0);
-    let [desplazamiento, setDesplazamiento] = React.useState(0);
+    let [slide, setSlide] = useState(0)
+    let [posicionInicial, setPosicionInicial] = useState(0);
+    let [desplazamiento, setDesplazamiento] = useState(0);
 
     const handlePrevButton = () => {
         setSlide(slide - 1)
@@ -42,7 +42,7 @@ function ProductImages() {
     };
 
 
-    React.useEffect(() => {
+    useEffect(() => {
         if (images.length > 0) {
             if (slide > images.length - 1) {
                 setSlide(0)

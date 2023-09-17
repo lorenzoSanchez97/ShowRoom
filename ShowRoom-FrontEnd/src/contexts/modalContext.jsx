@@ -1,3 +1,3 @@
-import React from "react";
+import { createContext } from "react"
 
-export let modalContext = React.createContext("");
+export let modalContext = createContext("");

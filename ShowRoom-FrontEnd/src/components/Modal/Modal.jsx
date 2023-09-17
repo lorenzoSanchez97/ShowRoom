@@ -1,14 +1,14 @@
-import React from "react";
+import { useState, useContext } from "react"
 import Form from "../Form/Form";
 import "./modal.css"
 import { modalContext } from "../../contexts/modalContext";
 
 function Modal() {
 
-    let modal = React.useContext(modalContext);
+    let modal = useContext(modalContext);
 
-    let [userOperation, setUserOperation] = React.useState(modal.userOperation)
-    let [closingAnimation, setClosingAnimation] = React.useState(false)
+    let [userOperation, setUserOperation] = useState(modal.userOperation)
+    let [closingAnimation, setClosingAnimation] = useState(false)
 
     const closeModal = () => {
         setClosingAnimation(true)

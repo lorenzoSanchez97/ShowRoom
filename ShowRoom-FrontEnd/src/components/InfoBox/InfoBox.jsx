@@ -1,4 +1,4 @@
-import React from 'react'
+import { Fragment } from "react"
 import "./infoBox.css"
 
 export default function InfoBox({ title, subtitles, data }) {
@@ -10,12 +10,12 @@ export default function InfoBox({ title, subtitles, data }) {
                 <button><i className="fa-solid fa-pen-to-square"></i></button>
             </div>
             {subtitles.map((element, index) => {
-                return (<React.Fragment key={index}>
+                return (<Fragment key={index}>
                     <div className="info-item-container">
                         <p className="info-subtitle">{element}</p>
                         <p>{data[index]}</p>
                     </div>
-                </React.Fragment>)
+                </Fragment>)
             })}
         </div >
     )

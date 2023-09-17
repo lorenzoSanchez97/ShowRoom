@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useContext, useEffect } from "react"
 import "./form.css"
 import { modalContext } from "../../contexts/modalContext";
 import { useFormik } from 'formik';
@@ -7,7 +7,7 @@ import registerServices from "../../services/register"
 
 function Form({ closeModal, userOperation, title, labels, labelIcons, inputNames, inputTypes, button }) {
 
-    let [provinces, setProvinces] = React.useState([])
+    let [provinces, setProvinces] = useState([])
 
     const initialValues = inputNames.reduce((accumulator, inputName) => {
         accumulator[inputName] = "";
@@ -27,7 +27,7 @@ function Form({ closeModal, userOperation, title, labels, labelIcons, inputNames
         }
     });
 
-    let modal = React.useContext(modalContext)
+    let modal = useContext(modalContext)
 
     const stopPropagation = e => {
         e.stopPropagation();
@@ -42,7 +42,7 @@ function Form({ closeModal, userOperation, title, labels, labelIcons, inputNames
         }
     }
 
-    React.useEffect(() => {
+    useEffect(() => {
         if (userOperation === "data-envio") {
             getProvincesFromApi();
         }

@@ -1,4 +1,4 @@
-import React from "react"
+import { useState } from "react"
 import { Routes, Route } from "react-router-dom"
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
@@ -9,17 +9,18 @@ import Modal from "./components/Modal/Modal"
 import UserProfile from "./components/UserProfile/UserProfile"
 import SideMenu from "./components/SideMenu/SideMenu"
 import { modalContext } from "./contexts/modalContext"
+import { reach } from "yup"
 
 function App() {
-  
-  let [modal, setModal] = React.useState("")
-  let [sideMenu, setSideMenu] = React.useState(false)
+
+  let [modal, setModal] = useState("")
+  let [sideMenu, setSideMenu] = useState(false)
 
   return (
     <>
       <modalContext.Provider value={{ userOperation: modal, setModal: setModal }}>
-        {sideMenu && <SideMenu setSideMenu={setSideMenu}/>}
-        <Header setSideMenu={setSideMenu}/>
+        {sideMenu && <SideMenu setSideMenu={setSideMenu} />}
+        <Header setSideMenu={setSideMenu} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />

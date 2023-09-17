@@ -1,9 +1,9 @@
-import React from 'react'
+import { useState } from "react"
 import "./sideMenu.css"
 
 export default function SideMenu({ setSideMenu }) {
 
-  let [closingAnimation, setClosingAnimation] = React.useState(false)
+  let [closingAnimation, setClosingAnimation] = useState(false)
 
     const closeSideMenu = () => {
     setClosingAnimation(true)
