@@ -16,7 +16,7 @@ header {
     justify-content: center;
     gap: 5%;
     align-items: center;
-    background-color: var(--verde);
+    background-color: var(--violeta);
 }
 
 .header-top-bar i {
@@ -24,7 +24,7 @@ header {
 }
 
 .search-bar button i {
-    color: var(--verde);
+    color: var(--violeta);
 }
 
 .nav-bar {
@@ -71,11 +71,11 @@ ul.nav-bar-list {
 .nav-bar-category a {
     padding-bottom: 8px;
     text-decoration: none;
-    color: var(--verde);
+    color: var(--violeta);
 }
 
 .subcategoria a {
-    color: var(--verde);
+    color: var(--violeta);
 }
 
 .search-bar {
@@ -131,7 +131,7 @@ ul.nav-bar-list {
     list-style-type: none;
     background-color: white;
     border-radius: 7px;
-    border: solid 2px var(--verde);
+    border: solid 2px var(--violeta);
     display: none;
     width: 160px;
     top: 130%;
@@ -145,7 +145,7 @@ ul.nav-bar-list {
     transform: translateX(-50%);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid var(--verde);
+    border-bottom: 10px solid var(--violeta);
 }
 
 .transparent-stripe {
@@ -178,7 +178,7 @@ ul.nav-bar-list {
 }
 
 .subcategoria a:hover {
-    background-color: var(--verde);
+    background-color: var(--violeta);
     color: white;
 }
 
@@ -206,12 +206,12 @@ ul.nav-bar-list {
 
 .nav-bar-element-container:hover {
     cursor: pointer;
-    border-bottom: 4px solid var(--verde);
+    border-bottom: 4px solid var(--violeta);
 }
 
 .nav-bar i {
     font-size: 1.3rem;
-    color: var(--verde);
+    color: var(--violeta);
 }
 
 .menu-hamburguesa {
@@ -221,7 +221,7 @@ ul.nav-bar-list {
 .menu-hamburguesa i {
     padding: 10px;
     background-color: white;
-    color: var(--verde);
+    color: var(--violeta);
     border-radius: 7px;
 }
 

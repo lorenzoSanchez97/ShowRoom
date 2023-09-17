@@ -83,7 +83,7 @@
     height: 40px;
     border-radius: 5px;
     border: var(--bordes) solid 1px;
-    background-color: var(--verde);
+    background-color: var(--violeta);
     color: var(--clarito);
     font-size: 1rem;
     transition: 300ms all;
@@ -114,7 +114,7 @@
 }
 
 #form-close-button i {
-    color: var(--verde);
+    color: var(--violeta);
     font-size: 1.1rem;
 }
 

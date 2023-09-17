@@ -16,7 +16,7 @@
 
 .producto:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 5px 2px var(--verde);
+    box-shadow: 0px 0px 5px 2px var(--violeta);
 }
 
 .producto img {
@@ -50,13 +50,13 @@
     border-radius: 5px;
     background-color: var(--fondo-transparente);
     padding: 5px;
-    color: var(--verde);
+    color: var(--violeta);
     margin-top: 10px;
 }
 
 .product-card-envio-button i {
     font-size: .9rem;
-    color: var(--verde);
+    color: var(--violeta);
 }
 
 .product-card-envio-button:hover {

@@ -1,9 +1,9 @@
 footer {
-    background-color: var(--verde);
+    background-color: var(--violeta);
 }
 
 .footer-main-container {
-    background-color: var(--verde);
+    background-color: var(--violeta);
     display: flex;
     flex-direction: row;
     justify-content: space-around;

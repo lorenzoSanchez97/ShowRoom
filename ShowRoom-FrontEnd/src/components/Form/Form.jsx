@@ -3,7 +3,7 @@ import "./form.css"
 import { modalContext } from "../../contexts/modalContext";
 import { useFormik } from 'formik';
 import { loginFormSchema, registerFormSchema, dataEnvioFormSchema } from "../../schemas/form";
-import registerServices from "../../services/register"
+import { getProvinces } from "../../services/register"
 
 function Form({ closeModal, userOperation, title, labels, labelIcons, inputNames, inputTypes, button }) {
 
@@ -35,7 +35,7 @@ function Form({ closeModal, userOperation, title, labels, labelIcons, inputNames
 
     const getProvincesFromApi = async () => {
         try {
-            let provincesFromApi = await registerServices.getProvinces();
+            let provincesFromApi = await getProvinces();
             setProvinces(provincesFromApi)
         } catch (error) {
             console.log(error);

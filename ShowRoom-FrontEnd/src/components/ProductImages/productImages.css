@@ -41,7 +41,7 @@
 }
 
 .mini-imagenes-hover {
-    border: var(--verde) solid 2px;
+    border: var(--violeta) solid 2px;
     cursor: pointer;
 }
 

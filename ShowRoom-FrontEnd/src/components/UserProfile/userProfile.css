@@ -74,13 +74,13 @@
     height: 33px;
     border-radius: 10px;
     border: var(--bordes) solid 1px;
-    background-color: var(--verde);
+    background-color: var(--violeta);
     transition: 300ms all;
     padding: 7px 7px 7px 8px;
 }
 
 .no-data-envio i {
-    color: var(--verde);
+    color: var(--violeta);
     font-size: 2rem;
 }
 

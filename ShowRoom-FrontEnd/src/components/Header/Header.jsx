@@ -9,14 +9,6 @@ function Header({ setSideMenu }) {
 
     let [mouseEvent, setMouseEvent] = useState(5)
 
-    const handleMouseEnter = (action) => {
-        if (action === "e1") {
-            setMouseEvent(1)
-        } else if (action === "e2") {
-            setMouseEvent(3)
-        }
-    }
-
     const handleSessionButtonsClick = (data) => {
         modal.setModal(data)
     }
@@ -54,7 +46,7 @@ function Header({ setSideMenu }) {
                             <p className="nav-bar-category">Inicio</p>
                         </a>
                     </li>
-                    <li className="nav-bar-element-container" onMouseEnter={() => handleMouseEnter("e1")} onMouseLeave={() => setMouseEvent(5)}>
+                    <li className="nav-bar-element-container" onMouseEnter={() => setMouseEvent(1)} onMouseLeave={() => setMouseEvent(5)}>
                         <a href="">
                             <i className="fa-solid fa-list-ul"></i>
                             <p className="nav-bar-category desplegable">Categorias  <i className="fa-solid fa-caret-right"></i></p></a>
@@ -79,7 +71,7 @@ function Header({ setSideMenu }) {
                             <p className="nav-bar-category">Novedades</p>
                         </a>
                     </li>
-                    <li href="" className="nav-bar-element-container" onMouseEnter={() => handleMouseEnter("e2")} onMouseLeave={() => setMouseEvent(5)}>
+                    <li href="" className="nav-bar-element-container" onMouseEnter={() => setMouseEvent(3)} onMouseLeave={() => setMouseEvent(5)}>
                         <a href="">
                             <i className="fa-solid fa-info"></i>
                             <p className="nav-bar-category desplegable">Información <i className="fa-solid fa-caret-right"></i></p> </a>

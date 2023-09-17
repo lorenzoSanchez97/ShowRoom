@@ -1,7 +1,7 @@
 /* Estilos generales */
 
 :root {
-    --verde: #aa89ec;
+    --violeta: #aa89ec;
     --clarito: #f0efef;
     --clarito2: #F4F4F4;
     --color3: grey;
@@ -19,7 +19,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: var(--verde);
+    color: var(--violeta);
     margin: 0px;
     padding: 0px;
 }

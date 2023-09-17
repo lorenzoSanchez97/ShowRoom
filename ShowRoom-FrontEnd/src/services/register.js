@@ -9,4 +9,4 @@ const getProvinces = async () => {
     }
 }
 
-export default { getProvinces }
+export { getProvinces }
