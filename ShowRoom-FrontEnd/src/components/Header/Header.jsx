@@ -34,18 +34,18 @@ function Header({ setSideMenu }) {
                     <button className="sesion login" href="" onClick={() => handleSessionButtonsClick("login")}>Iniciar sesión <i className="fa-solid fa-arrow-right-to-bracket"></i></button>
                 </div>
                 <div>
-                   <Link to="/cart"><button className="carrito" href="/cart">Carrito <i className="fa-solid fa-cart-shopping"></i></button></Link>
+                    <Link to="/cart"><button className="carrito" href="/cart">Carrito <i className="fa-solid fa-cart-shopping"></i></button></Link>
                     <i className="fa-solid fa-cart-shopping responsive-carrito"></i>
                 </div>
             </section>
             <nav className="nav-bar">
                 <ul className="nav-bar-list">
-                    <li className="nav-bar-element-container">
-                        <a href="">
+                    <Link to="/">
+                        <li className="nav-bar-element-container">
                             <i className="fa-solid fa-house"></i>
                             <p className="nav-bar-category">Inicio</p>
-                        </a>
-                    </li>
+                        </li>
+                    </Link>
                     <li className="nav-bar-element-container" onMouseEnter={() => setMouseEvent(1)} onMouseLeave={() => setMouseEvent(5)}>
                         <a href="">
                             <i className="fa-solid fa-list-ul"></i>
