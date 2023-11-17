@@ -9,7 +9,6 @@ import Modal from "./components/Modal/Modal"
 import UserProfile from "./components/UserProfile/UserProfile"
 import SideMenu from "./components/SideMenu/SideMenu"
 import { modalContext } from "./contexts/modalContext"
-import { reach } from "yup"
 
 function App() {
 

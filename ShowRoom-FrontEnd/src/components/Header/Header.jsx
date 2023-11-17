@@ -30,11 +30,11 @@ function Header({ setSideMenu }) {
                     <button><i className="fa fa-search"></i></button>
                 </form>
                 <div className="user-session-buttons">
-                    <button className="sesion registro" href="" onClick={() => handleSessionButtonsClick("register")}>Registrarse <i className="fa-solid fa-user-plus"></i></button>
-                    <button className="sesion login" href="" onClick={() => handleSessionButtonsClick("login")}>Iniciar sesión <i className="fa-solid fa-arrow-right-to-bracket"></i></button>
+                    <button className="sesion registro" href="" onClick={() => handleSessionButtonsClick("register")}>Registrarse</button>
+                    <button className="sesion login" href="" onClick={() => handleSessionButtonsClick("login")}>Iniciar sesión</button>
                 </div>
                 <div>
-                    <Link to="/cart"><button className="carrito" href="/cart">Carrito <i className="fa-solid fa-cart-shopping"></i></button></Link>
+                    <Link to="/cart"><button className="carrito" href="/cart"><i className="fa-solid fa-cart-shopping"></i></button></Link>
                     <i className="fa-solid fa-cart-shopping responsive-carrito"></i>
                 </div>
             </section>

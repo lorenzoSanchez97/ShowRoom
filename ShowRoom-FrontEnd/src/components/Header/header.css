@@ -6,7 +6,7 @@ header {
 #logo {
     height: auto;
     width: 100px;
-    color: var(--clarito)
+    color: var(--violeta)
 }
 
 .header-top-bar {
@@ -16,11 +16,12 @@ header {
     justify-content: center;
     gap: 5%;
     align-items: center;
-    background-color: var(--violeta);
+
 }
 
 .header-top-bar i {
-    color: var(--clarito);
+    font-size: .8rem;
+    color: var(--color3);
 }
 
 .search-bar button i {
@@ -44,27 +45,31 @@ ul.nav-bar-list {
 }
 
 .nav-bar .nav-bar-category li {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .sesion,
 .carrito {
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-decoration: none;
     border: none;
     background: none;
-    color: var(--clarito);
     transition: all 100ms;
+    background-color: white;
+    color: var(--color3);
+    padding: 8px 15px;
+    border-radius: 10px;
 }
 
 .login {
     margin-left: 20px;
-    color: var(--clarito);
 }
 
 .sesion:hover,
-.carrito:hover {
+.carrito:hover,
+.carrito:hover i  {
     cursor: pointer;
+    background-color:  var(--violeta);
     color: white;
 }
 
@@ -90,16 +95,16 @@ ul.nav-bar-list {
     width: 85%;
     height: 40px;
     border-radius: 5px 0 0 5px;
-    border: var(--bordes) solid 2px;
+    border: var(--violeta) solid 2px;
     border-right: none;
     padding: 0 0 0 10px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--color3);
     background-color: white;
 }
 
 .search-bar input::placeholder {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--bordes);
 }
 
@@ -115,7 +120,7 @@ ul.nav-bar-list {
     text-align: center;
     color: rgb(88, 88, 88);
     font-size: 14px;
-    border: var(--bordes) solid 2px;
+    border: var(--violeta) solid 2px;
     border-left: none;
     border-radius: 0 5px 5px 0;
     padding: 0;
