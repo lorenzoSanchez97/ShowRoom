@@ -42,46 +42,43 @@ function Header({ setSideMenu }) {
                 <ul className="nav-bar-list">
                     <Link to="/">
                         <li className="nav-bar-element-container">
-                            <i className="fa-solid fa-house"></i>
                             <p className="nav-bar-category">Inicio</p>
                         </li>
                     </Link>
-                    <li className="nav-bar-element-container" onMouseEnter={() => setMouseEvent(1)} onMouseLeave={() => setMouseEvent(5)}>
-                        <a href="">
-                            <i className="fa-solid fa-list-ul"></i>
-                            <p className="nav-bar-category desplegable">Categorias  <i className="fa-solid fa-caret-right"></i></p></a>
-                        <ul className={`lista-desplegable ${mouseEvent === 1 ? "lista-desplegable-mostrar" : ""}`}>
-                            <li className="transparent-stripe"></li>
-                            <li className="subcategoria"><a href="">Mascarillas</a></li>
-                            <li className="subcategoria"><a href="">Depilación</a></li>
-                            <li className="subcategoria"><a href="">Limpieza</a></li>
-                            <li className="subcategoria"><a href="">Maquillaje</a></li>
-                            <li className="subcategoria"><a href="">Accesorios</a></li>
-                        </ul>
-                    </li>
-                    <li className="nav-bar-element-container">
-                        <a href="">
-                            <i className="fa-solid fa-hand-holding-dollar"></i>
+                    <Link to="/">
+                        <li className="nav-bar-element-container" onMouseEnter={() => setMouseEvent(1)} onMouseLeave={() => setMouseEvent(5)}>
+                            <p className="nav-bar-category desplegable">Categorias <i class="fa-solid fa-angle-down"></i></p>
+                            <ul className={`lista-desplegable ${mouseEvent === 1 ? "lista-desplegable-mostrar" : ""}`}>
+                                <li className="transparent-stripe"></li>
+                                <li className="subcategoria"><a href="">Mascarillas</a></li>
+                                <li className="subcategoria"><a href="">Depilación</a></li>
+                                <li className="subcategoria"><a href="">Limpieza</a></li>
+                                <li className="subcategoria"><a href="">Maquillaje</a></li>
+                                <li className="subcategoria"><a href="">Accesorios</a></li>
+                            </ul>
+                        </li>
+                    </Link>
+                    <Link to="/">
+                        <li className="nav-bar-element-container">
                             <p className="nav-bar-category">Ofertas</p>
-                        </a>
-                    </li>
-                    <li className="nav-bar-element-container">
-                        <a href="">
-                            <i className="fa-solid fa-bell"></i>
+                        </li>
+                    </Link>
+                    <Link to="/">
+                        <li className="nav-bar-element-container">
                             <p className="nav-bar-category">Novedades</p>
-                        </a>
-                    </li>
-                    <li href="" className="nav-bar-element-container" onMouseEnter={() => setMouseEvent(3)} onMouseLeave={() => setMouseEvent(5)}>
-                        <a href="">
-                            <i className="fa-solid fa-info"></i>
-                            <p className="nav-bar-category desplegable">Información <i className="fa-solid fa-caret-right"></i></p> </a>
-                        <ul className={`lista-desplegable ${mouseEvent === 3 ? "lista-desplegable-mostrar" : ""}`}>
-                            <li className="transparent-stripe"></li>
-                            <li className="subcategoria"><a href="">Cómo comprar</a></li>
-                            <li className="subcategoria"><a href="">Envíos</a></li>
-                            <li className="subcategoria"><a href="">Sobre nosotras</a></li>
-                        </ul>
-                    </li>
+                        </li>
+                    </Link>
+                    <Link to="/">
+                        <li className="nav-bar-element-container" onMouseEnter={() => setMouseEvent(3)} onMouseLeave={() => setMouseEvent(5)}>
+                            <p className="nav-bar-category desplegable">Información <i class="fa-solid fa-angle-down"></i></p>
+                            <ul className={`lista-desplegable ${mouseEvent === 3 ? "lista-desplegable-mostrar" : ""}`}>
+                                <li className="transparent-stripe"></li>
+                                <li className="subcategoria"><a href="">Cómo comprar</a></li>
+                                <li className="subcategoria"><a href="">Envíos</a></li>
+                                <li className="subcategoria"><a href="">Sobre nosotras</a></li>
+                            </ul>
+                        </li>
+                    </Link>
                 </ul>
             </nav>
         </header >

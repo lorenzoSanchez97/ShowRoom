@@ -7,7 +7,6 @@
     margin-bottom: 40px;
     font-size: 2rem;
     width: 50%;
-    border: var(--violeta) 3px solid;
 }
 
 @media (width < 1025px) {

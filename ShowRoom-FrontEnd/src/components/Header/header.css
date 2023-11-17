@@ -1,6 +1,9 @@
 header {
     margin: auto;
     background-color: white;
+    box-shadow: 0px 0px 5px 2px var(--bordes);
+    position: sticky;
+    top: 0vh;
 }
 
 #logo {
@@ -41,11 +44,12 @@ ul.nav-bar-list {
     list-style-type: none;
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 40px;
 }
 
-.nav-bar .nav-bar-category li {
-    font-size: 0.9rem;
+.nav-bar-category {
+    color: var(--color3);
+    letter-spacing: 1px;
 }
 
 .sesion,
@@ -55,10 +59,17 @@ ul.nav-bar-list {
     border: none;
     background: none;
     transition: all 100ms;
-    background-color: white;
     color: var(--color3);
     padding: 8px 15px;
     border-radius: 10px;
+    letter-spacing: .5px;
+    border: 2px solid var(--violeta);
+    color: var(--violeta);
+}
+
+.carrito i {
+    color: var(--violeta);
+    font-size: 1rem;
 }
 
 .login {
@@ -67,16 +78,9 @@ ul.nav-bar-list {
 
 .sesion:hover,
 .carrito:hover,
-.carrito:hover i  {
+.carrito:hover i {
     cursor: pointer;
-    background-color:  var(--violeta);
-    color: white;
-}
-
-.nav-bar-category a {
-    padding-bottom: 8px;
-    text-decoration: none;
-    color: var(--violeta);
+    background-color: var(--fondo-transparente);
 }
 
 .subcategoria a {
@@ -106,6 +110,7 @@ ul.nav-bar-list {
 .search-bar input::placeholder {
     font-size: 0.9rem;
     color: var(--bordes);
+    letter-spacing: .7px;
 }
 
 .search-bar input:focus {
@@ -136,21 +141,10 @@ ul.nav-bar-list {
     list-style-type: none;
     background-color: white;
     border-radius: 7px;
-    border: solid 2px var(--violeta);
     display: none;
-    width: 160px;
+    width: 140px;
     top: 130%;
-}
-
-.lista-desplegable::after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid var(--violeta);
+    
 }
 
 .transparent-stripe {
@@ -165,26 +159,24 @@ ul.nav-bar-list {
     animation: list-animation 300ms forwards;
 }
 
-
-.nav-bar a {
-    text-decoration: none;
-}
-
 .subcategoria {
     text-align: center;
     padding: 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    padding: 8px;
 }
 
 .subcategoria a {
     display: inline-block;
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 5px;
+    color: var(--color3);
 }
 
 .subcategoria a:hover {
-    background-color: var(--violeta);
-    color: white;
+    background-color: var(--fondo-transparente);
+    color: var(--violeta);
+    border-radius: 7px;
 }
 
 .cat {
@@ -197,26 +189,36 @@ ul.nav-bar-list {
 .nav-bar-element-container {
     position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 3px;
-    border-bottom: 4px white solid;
-    min-width: 100px;
-    width: fit-content;
-    padding-bottom: 2px;
+    gap: 8px;
+    padding-bottom: 8px;
     padding-top: 13px;
     transition: all 300ms;
+    border-bottom: 4px solid white;
 }
 
 .nav-bar-element-container:hover {
-    cursor: pointer;
     border-bottom: 4px solid var(--violeta);
 }
 
-.nav-bar i {
-    font-size: 1.3rem;
+.nav-bar-element-container:hover .nav-bar-category {
+    cursor: pointer;
     color: var(--violeta);
+}
+
+.desplegable i {
+    display: inline-block;
+    width: 20px;
+    transition: transform 300ms;
+}
+
+.nav-bar-element-container:hover .desplegable i {
+    transform: rotate(180deg);
+}
+
+.nav-bar-category i {
+    color: var(--bordes);
 }
 
 .menu-hamburguesa {
@@ -233,15 +235,6 @@ ul.nav-bar-list {
 .responsive-carrito {
     display: none;
     font-size: 1.2rem;
-}
-
-.nav-bar-category i {
-    font-size: .9rem;
-    transition: all 300ms;
-}
-
-.nav-bar-element-container:hover .nav-bar-category i {
-    transform: rotate(90deg);
 }
 
 @keyframes list-animation {
@@ -267,12 +260,9 @@ ul.nav-bar-list {
 }
 
 @media (width < 875px) {
+
     .sesion,
     .carrito {
-        font-size: 0.9rem;
-    }
-
-    .nav-bar-category a {
         font-size: 0.9rem;
     }
 
