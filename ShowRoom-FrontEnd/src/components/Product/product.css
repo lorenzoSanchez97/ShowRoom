@@ -45,42 +45,54 @@
     font-size: 1.2rem;
 }
 
-.product-card-envio-button {
+.product-card-cart-button {
     border: none;
     border-radius: 5px;
-    background-color: var(--fondo-transparente);
+    background: none;
     padding: 5px;
     color: var(--violeta);
-    margin-top: 10px;
+    position: absolute;
+    right: 1px;
+    top: 40px;
 }
 
-.product-card-envio-button i {
+.product-card-cart-button i {
     font-size: .9rem;
     color: var(--violeta);
 }
 
-.product-card-envio-button:hover {
+.product-card-cart-button:hover {
     cursor: pointer;
-    background-color: var(--clarito);
+    background-color: var(--violeta);
 }
 
-.product-card-fav-icon {
-    background-color: white;
-    border-radius: 10px;
-    padding: 10px;
+.product-card-cart-button:hover .product-card-cart-icon {
+    color: white;
+}
+
+.product-card-fav-button {
+    border: none;
+    border-radius: 5px;
+    background: none;
+    padding: 5px;
+    color: var(--violeta);
     position: absolute;
-    top: 4px;
-    right: 4px;
+    right: 1px;
+    top: 13px;
 }
 
-.product-card-fav-icon:hover {
+.product-card-fav-button:hover {
     cursor: pointer;
-    background-color: var(--clarito);
+    background-color: var(--violeta);
+}
+
+.product-card-fav-button:hover .product-card-fav-icon {
+    color: white;
 }
 
 .product-card-envio-icon {
     position: absolute;
-    font-size: 1.1rem;
+    font-size: 1rem;
     right: -1px;
     top: -11px;
     background-color: white;

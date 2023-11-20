@@ -80,7 +80,8 @@ ul.nav-bar-list {
 .carrito:hover,
 .carrito:hover i {
     cursor: pointer;
-    background-color: var(--fondo-transparente);
+    background-color: var(--violeta);
+    color: white;
 }
 
 .subcategoria a {
@@ -144,7 +145,7 @@ ul.nav-bar-list {
     display: none;
     width: 140px;
     top: 130%;
-    
+    left: 2%;
 }
 
 .transparent-stripe {
@@ -195,10 +196,12 @@ ul.nav-bar-list {
     padding-top: 13px;
     transition: all 300ms;
     border-bottom: 4px solid white;
+    padding: 8px 10px;
 }
 
 .nav-bar-element-container:hover {
     border-bottom: 4px solid var(--violeta);
+    background-color: var(--fondo-transparente);
 }
 
 .nav-bar-element-container:hover .nav-bar-category {
