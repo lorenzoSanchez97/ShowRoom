@@ -7,9 +7,10 @@ header {
 }
 
 #logo {
-    height: auto;
+    position: absolute;
+    top: 2px;
+    left: 350px;
     width: 100px;
-    color: var(--violeta)
 }
 
 .header-top-bar {
@@ -177,13 +178,6 @@ ul.nav-bar-list {
     background-color: var(--fondo-transparente);
     color: var(--violeta);
     border-radius: 7px;
-}
-
-.cat {
-    position: fixed;
-    top: 11vh;
-    left: -2%;
-    max-height: 300px;
 }
 
 .nav-bar-element-container {

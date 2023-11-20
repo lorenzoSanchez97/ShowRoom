@@ -15,13 +15,10 @@ function Header({ setSideMenu }) {
 
     return (
         <header>
-            <div className="cat">
-                <img src="/images/Cat.png" alt="" />
-            </div>
             <section className="header-top-bar">
-                <div className="logo-container">
-                    <h1 id="logo">LOGO</h1>
-                </div>
+                <figure className="logo-container">
+                    <img id="logo" src="/images/cat.png" alt="" />
+                </figure>
                 <div className="menu-hamburguesa" onClick={() => setSideMenu(true)}>
                     <i className="fa-solid fa-bars"></i>
                 </div>
