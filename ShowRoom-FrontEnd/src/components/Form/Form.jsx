@@ -27,8 +27,6 @@ function Form({ closeModal, userOperation, title, labels, labelIcons, inputNames
         }
     });
 
-    let modal = useContext(modalContext)
-
     const stopPropagation = e => {
         e.stopPropagation();
     }
