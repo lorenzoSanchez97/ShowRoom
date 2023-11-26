@@ -1,0 +1,96 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Products {
+  id           Int                 @id @default(autoincrement()) @db.SmallInt
+  name         String              @db.VarChar(200)
+  price        Decimal             @db.Decimal(8, 2)
+  description  String?             @default("Sin descripción") @db.Text
+  discount     Int?                @default(0) @db.SmallInt
+  freeShipping Int?                @default(0) @db.SmallInt
+  stock        Int?                @default(0) @db.SmallInt
+  images       Images[]
+  Categories   Categories          @relation(fields: [categoriesId], references: [id])
+  categoriesId Int                 @db.SmallInt
+  colors       ProductsHasColors[]
+  sales        ProductsHasSales[]
+}
+
+model Images {
+  id         Int      @id @default(autoincrement()) @db.SmallInt
+  image      String   @db.Text
+  Products   Products @relation(fields: [productsId], references: [id])
+  productsId Int      @db.SmallInt
+}
+
+model Categories {
+  id       Int        @id @default(autoincrement()) @db.SmallInt
+  category String     @db.VarChar(50)
+  products Products[]
+}
+
+model Colors {
+  id       Int                 @id @default(autoincrement()) @db.SmallInt
+  colour   String              @db.VarChar(40)
+  products ProductsHasColors[]
+}
+
+model ProductsHasColors {
+  id         Int      @id @default(autoincrement()) @db.SmallInt
+  product    Products @relation(fields: [productsId], references: [id])
+  color      Colors   @relation(fields: [colorsId], references: [id])
+  productsId Int      @db.SmallInt
+  colorsId   Int      @db.SmallInt
+}
+
+model ProductsHasSales {
+  id         Int      @id @default(autoincrement()) @db.SmallInt
+  Products   Products @relation(fields: [productsId], references: [id])
+  productsId Int      @db.SmallInt
+  Sales      Sales    @relation(fields: [salesId], references: [id])
+  salesId    Int      @db.MediumInt
+}
+
+model Users {
+  id             Int          @id @default(autoincrement()) @db.MediumInt
+  name           String       @db.VarChar(100)
+  email          String       @db.VarChar(200)
+  password       String       @db.Text
+  city           String?      @db.VarChar(100)
+  postalCode     String?      @db.VarChar(40)
+  address        String?      @db.VarChar(150)
+  sales          Sales[]
+  Provinces      Provinces    @relation(fields: [provincesId], references: [id])
+  provincesId    Int          @db.SmallInt
+  userProfiles   userProfiles @relation(fields: [userProfilesId], references: [id])
+  userProfilesId Int          @db.SmallInt
+}
+
+model Provinces {
+  id       Int     @id @default(autoincrement()) @db.SmallInt
+  province String  @db.VarChar(45)
+  users    Users[]
+}
+
+model userProfiles {
+  id          Int     @id @default(autoincrement()) @db.SmallInt
+  userProfile String  @db.VarChar(45)
+  users       Users[]
+}
+
+model Sales {
+  id               Int                @id @default(autoincrement()) @db.MediumInt
+  date             DateTime           @default(now())
+  payMethod        String             @db.VarChar(45)
+  productsQuantity Int                @db.TinyInt
+  totalPrice       Decimal            @db.Decimal(8, 2)
+  Users            Users              @relation(fields: [usersId], references: [id])
+  usersId          Int                @db.MediumInt
+  products         ProductsHasSales[]
+}

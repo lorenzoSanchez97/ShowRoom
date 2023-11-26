@@ -144,9 +144,9 @@ ul.nav-bar-list {
     background-color: white;
     border-radius: 7px;
     display: none;
-    width: 140px;
+    width: 130px;
     top: 130%;
-    left: 2%;
+    left: 0%;
 }
 
 .transparent-stripe {
@@ -175,7 +175,6 @@ ul.nav-bar-list {
 }
 
 .subcategoria a:hover {
-    background-color: var(--fondo-transparente);
     color: var(--violeta);
     border-radius: 7px;
 }
@@ -186,16 +185,13 @@ ul.nav-bar-list {
     align-items: center;
     text-align: center;
     gap: 8px;
-    padding-bottom: 8px;
-    padding-top: 13px;
     transition: all 300ms;
     border-bottom: 4px solid white;
-    padding: 8px 10px;
+    padding: 8px 0px;
 }
 
 .nav-bar-element-container:hover {
     border-bottom: 4px solid var(--violeta);
-    background-color: var(--fondo-transparente);
 }
 
 .nav-bar-element-container:hover .nav-bar-category {
