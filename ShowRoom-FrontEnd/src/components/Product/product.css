@@ -47,13 +47,13 @@
 
 .product-card-cart-button {
     border: none;
-    border-radius: 5px;
-    background: none;
-    padding: 5px;
+    border-radius: 7px;
+    background-color: white;
+    padding: 11px;
     color: var(--violeta);
     position: absolute;
-    right: 1px;
-    top: 40px;
+    right: 0px;
+    top: 0px;
 }
 
 .product-card-cart-button i {
@@ -63,6 +63,7 @@
 
 .product-card-cart-button:hover {
     cursor: pointer;
+    border-radius: 0 7px 0 7px;
     background-color: var(--violeta);
 }
 
@@ -72,17 +73,23 @@
 
 .product-card-fav-button {
     border: none;
-    border-radius: 5px;
-    background: none;
-    padding: 5px;
+    border-radius: 7px;
+    background-color: white;
+    padding: 11px;
     color: var(--violeta);
     position: absolute;
-    right: 1px;
-    top: 13px;
+    left: 0px;
+    top: 0px;
+}
+
+.product-card-fav-button i,
+.product-card-cart-button i {
+    font-size: 1rem;
 }
 
 .product-card-fav-button:hover {
     cursor: pointer;
+    border-radius: 7px 0 7px 0;
     background-color: var(--violeta);
 }
 
