@@ -10,7 +10,7 @@ datasource db {
 model Products {
   id           Int                 @id @default(autoincrement()) @db.SmallInt
   name         String              @db.VarChar(200)
-  price        Decimal             @db.Decimal(8, 2)
+  price        Decimal             @db.Decimal(9, 2)
   description  String?             @default("Sin descripción") @db.Text
   discount     Int?                @default(0) @db.SmallInt
   freeShipping Int?                @default(0) @db.SmallInt
