@@ -147,7 +147,7 @@ ul.nav-bar-list {
     width: 130px;
     top: 130%;
     left: 0%;
-    box-shadow: 0px 0px 5px 2px var(--bordes);;
+    box-shadow: 0px 0px 5px 2px var(--bordes);
 }
 
 .transparent-stripe {

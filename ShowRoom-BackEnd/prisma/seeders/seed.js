@@ -120,9 +120,9 @@ let products = [
         categoriesId: 4,
     },
     {
-        name: "x6u Gomitas Para El Pelo Negras",
+        name: "x6u Gomitas Para El Pelo",
         price: 1090.0,
-        description: "Pack de 6 gomitas para el pelo resistentes de color negro.",
+        description: "Pack de 6 gomitas para el pelo resistentes.",
         discount: 5,
         freeShipping: 0,
         stock: 42,
@@ -316,6 +316,225 @@ let colors = [
     }
 ]
 
+let productsHasColors = [
+    {
+        productsID: 1,
+        colorsId: 14,
+    },
+    {
+        productsID: 2,
+        colorsId: 14,
+    },
+    {
+        productsID: 3,
+        colorsId: 14,
+    },
+    {
+        productsID: 4,
+        colorsId: 14,
+    },
+    {
+        productsID: 5,
+        colorsId: 14,
+    },
+    {
+        productsID: 6,
+        colorsId: 14,
+    },
+    {
+        productsID: 7,
+        colorsId: 14,
+    },
+    {
+        productsID: 8,
+        colorsId: 4,
+    },
+    {
+        productsID: 9,
+        colorsId: 14,
+    },
+    {
+        productsID: 10,
+        colorsId: 14,
+    },
+    {
+        productsID: 11,
+        colorsId: 14,
+    },
+    {
+        productsID: 12,
+        colorsId: 14,
+    },
+    {
+        productsID: 13,
+        colorsId: 4,
+    },
+    {
+        productsID: 14,
+        colorsId: 1,
+    },
+    {
+        productsID: 14,
+        colorsId: 2,
+    },
+    {
+        productsID: 14,
+        colorsId: 6,
+    },
+    {
+        productsID: 14,
+        colorsId: 12,
+    },
+    {
+        productsID: 15,
+        colorsId: 5,
+    },
+    {
+        productsID: 16,
+        colorsId: 1,
+    },
+    {
+        productsID: 16,
+        colorsId: 2,
+    }
+]
+
+let provinces = [
+    {
+        name: "Misiones"
+    },
+    {
+        name: "San Luis"
+    },
+    {
+        name: "San Juan"
+    },
+    {
+        name: "Entre Ríos"
+    },
+    {
+        name: "Santa Cruz"
+    },
+    {
+        name: "Río Negro"
+    },
+    {
+        name: "Chubut"
+    },
+    {
+        name: "Córdoba"
+    },
+    {
+        name: "Mendoza"
+    },
+    {
+        name: "La Rioja"
+    },
+    {
+        name: "Catamarca"
+    },
+    {
+        name: "La Pampa"
+    },
+    {
+        name: "Santiago del Estero"
+    },
+    {
+        name: "Corrientes"
+    },
+    {
+        name: "Santa Fe"
+    },
+    {
+        name: "Tucumán"
+    },
+    {
+        name: "Neuquén"
+    },
+    {
+        name: "Salta"
+    },
+    {
+        name: "Chaco"
+    },
+    {
+        name: "Formosa"
+    },
+    {
+        name: "Jujuy"
+    },
+    {
+        name: "Ciudad Autónoma de Buenos Aires"
+    },
+    {
+        name: "Buenos Aires"
+    },
+    {
+        name: "Tierra del Fuego, Antártida e Islas del Atlántico Sur"
+    }
+]
+
+let userProfiles = [
+    {
+        profile: "g6vh6b872gh6bj43hfn84j2bhdvhdf3g4v3vh4"
+    },
+    {
+        profile: "cs134gsdv2dfgv6841gh384bg3d84hb234h2d3"
+    }
+]
+
+let users = [
+    {
+        name: "Lorenzo Sanchez",
+        email: "lorenzo97sz@gmail.com",
+        password: "$2y$10$bUleYsoxNdRyAgnBA6FXJOL0N9Vm3eLD.7/3SZgiynzHtCQaIhokK",
+        avatar:"lorenzo-profile.jpeg",
+        userprofile_id: 1,
+    },
+    {
+        name: 'John Doe',
+        email: 'johndoe@gmail.com',
+        password: '$2a$10$aMYLt2jnLEEQqP6kc2DOAOWAOSqv.l50TrDXVMUpIslN37rvmAw8G',
+        avatar: "defaultUser.jpg",
+        userprofile_id: 2,
+    },
+    {
+        name: 'Jorge Rodríguez',
+        email: 'jorgito@gmail.com',
+        password: '$2a$10$RYPAxH7L9lp7jm9FxMyOY.T05J9Fo2tbx3U/gvv.O7fctgJWRlVgO',
+        avatar: "defaultUser.jpg",
+        userprofile_id: 2,
+    },
+    {
+        name: 'Juan Pérez',
+        email: 'juan.perez@example.com',
+        password: '$2a$10$uieRfLHEFIRtMjQtvFuq5.XZ3RQfZVlVKB7B8v3vXuq2HtB9hKsUu',
+        avatar: "defaultUser.jpg",
+        userprofile_id: 2,
+    },
+    {
+        name: 'María López',
+        email: 'maria.lopez@example.com',
+        password: '$2a$10$ds6P4b1R2R.s6Yer2O7jq.UXDAI0dmeAdgRIZzn6fyWZ5OnlCMC7q',
+        avatar: "defaultUser.jpg",
+        city: "Córdoba",
+        address: "Calle Falsa 456",
+        postalCode: "6871",
+        provincesId: 8,
+        userprofile_id: 2,
+    },
+    {
+        name: 'Luis González',
+        email: 'luis.gonzalez@example.com',
+        password: '$2a$10$KjZId4Nedf8X0r5f8v2Qsul.e1H6.c3S0YCV45z8sV0BEIw4sxSyq',
+        avatar: "defaultUser.jpg",
+        city: "La Plata",
+        address: "Calle Falsa 789",
+        postalCode: "1900",
+        provincesId: 23,
+        userprofile_id: 2,
+    },
+]
 
 async function seed() {
     try {

@@ -1,9 +1,9 @@
 .form-main-container {
     background-color: white;
     border-radius: 10px;
-    padding: 30px;
+    padding: 75px;
     width: 100%;
-    max-width: 360px;
+    max-width: 500px;
     height: fit-content;
     position: relative;
 }
