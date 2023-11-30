@@ -44,12 +44,11 @@ function Header({ setSideMenu }) {
                     </Link>
                     <Link to="/">
                         <li className="nav-bar-element-container" onMouseEnter={() => setMouseEvent(1)} onMouseLeave={() => setMouseEvent(5)}>
-                            <p className="nav-bar-category desplegable">Categorias <i class="fa-solid fa-angle-down"></i></p>
+                            <p className="nav-bar-category desplegable">Productos <i class="fa-solid fa-angle-down"></i></p>
                             <ul className={`lista-desplegable ${mouseEvent === 1 ? "lista-desplegable-mostrar" : ""}`}>
                                 <li className="transparent-stripe"></li>
                                 <li className="subcategoria"><a href="">Mascarillas</a></li>
                                 <li className="subcategoria"><a href="">Depilación</a></li>
-                                <li className="subcategoria"><a href="">Limpieza</a></li>
                                 <li className="subcategoria"><a href="">Maquillaje</a></li>
                                 <li className="subcategoria"><a href="">Accesorios</a></li>
                             </ul>
