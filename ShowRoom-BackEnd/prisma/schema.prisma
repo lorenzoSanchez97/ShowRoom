@@ -37,7 +37,7 @@ model Categories {
 
 model Colors {
   id       Int                 @id @default(autoincrement()) @db.SmallInt
-  colour   String              @db.VarChar(40)
+  color    String              @db.VarChar(40)
   products ProductsHasColors[]
 }
 
@@ -62,10 +62,10 @@ model Users {
   name           String       @db.VarChar(100)
   email          String       @db.VarChar(200)
   password       String       @db.Text
-  avatar         String       @db.Text @default("defaultUser.jpg")
-  city           String?      @db.VarChar(100)
-  postalCode     String?      @db.VarChar(40)
-  address        String?      @db.VarChar(150)
+  avatar         String       @default("defaultUser.jpg") @db.Text
+  city           String?      @default("Sin información") @db.VarChar(100)
+  postalCode     String?      @default("Sin información") @db.VarChar(40)
+  address        String?      @default("Sin información") @db.VarChar(150)
   sales          Sales[]
   Provinces      Provinces    @relation(fields: [provincesId], references: [id])
   provincesId    Int          @db.SmallInt
