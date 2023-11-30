@@ -45,41 +45,24 @@
     font-size: 1.2rem;
 }
 
-.product-card-cart-button {
+.product-card-cart-button,
+.product-card-fav-button {
     border: none;
-    border-radius: 7px;
-    background-color: white;
-    padding: 11px;
+    background-color: transparent;
+    padding: 7px;
     color: var(--violeta);
-    position: absolute;
-    right: 0px;
-    top: 0px;
+    border-radius: 5px;
 }
 
-.product-card-cart-button i {
-    font-size: .9rem;
-    color: var(--violeta);
-}
-
-.product-card-cart-button:hover {
+.product-card-cart-button:hover,
+.product-card-fav-button:hover {
     cursor: pointer;
-    border-radius: 0 7px 0 7px;
     background-color: var(--violeta);
 }
 
-.product-card-cart-button:hover .product-card-cart-icon {
+.product-card-cart-button:hover .product-card-cart-icon,
+.product-card-fav-button:hover .product-card-fav-icon {
     color: white;
-}
-
-.product-card-fav-button {
-    border: none;
-    border-radius: 7px;
-    background-color: white;
-    padding: 11px;
-    color: var(--violeta);
-    position: absolute;
-    left: 0px;
-    top: 0px;
 }
 
 .product-card-fav-button i,
@@ -87,14 +70,13 @@
     font-size: 1rem;
 }
 
-.product-card-fav-button:hover {
-    cursor: pointer;
-    border-radius: 7px 0 7px 0;
-    background-color: var(--violeta);
-}
-
-.product-card-fav-button:hover .product-card-fav-icon {
-    color: white;
+.product-card-buttons-container {
+    background-color: transparent;
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    display: flex;
+    flex-direction: row;
 }
 
 .product-card-envio-icon {
@@ -111,6 +93,15 @@
 
 .producto:hover .product-card-envio-icon {
     transform: rotate(360deg);
+}
+
+@media (width < 1150px) {
+
+    .product-card-buttons-container {
+        position: relative;
+        justify-content: center;
+        gap: 10px;
+    }
 }
 
 @media (width < 875px) {
@@ -138,5 +129,11 @@
     .producto {
         width: 100%;
         max-width: none;
+    }
+
+    .product-card-buttons-container {
+        position: absolute;
+        justify-content: center;
+        gap: 5px;
     }
 }

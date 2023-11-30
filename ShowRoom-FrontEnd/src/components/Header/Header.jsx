@@ -32,7 +32,7 @@ function Header({ setSideMenu }) {
                 </div>
                 <div>
                     <Link to="/cart"><button className="carrito" href="/cart"><i className="fa-solid fa-cart-shopping"></i></button></Link>
-                    <i className="fa-solid fa-cart-shopping responsive-carrito"></i>
+                    <button className="responsive-carrito-button"><i className="fa-solid fa-cart-shopping responsive-carrito"></i></button>
                 </div>
             </section>
             <nav className="nav-bar">

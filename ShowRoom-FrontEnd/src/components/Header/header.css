@@ -7,10 +7,9 @@ header {
 }
 
 #logo {
-    position: absolute;
-    top: 2px;
-    left: 350px;
-    width: 100px;
+    position: relative;
+    top: 26px;
+    width: 90px;
 }
 
 .header-top-bar {
@@ -20,12 +19,7 @@ header {
     justify-content: center;
     gap: 5%;
     align-items: center;
-
-}
-
-.header-top-bar i {
-    font-size: .8rem;
-    color: var(--color3);
+    max-height: 70px;
 }
 
 .search-bar button i {
@@ -57,7 +51,6 @@ ul.nav-bar-list {
 .carrito {
     font-size: 0.9rem;
     text-decoration: none;
-    border: none;
     background: none;
     transition: all 100ms;
     color: var(--color3);
@@ -214,20 +207,21 @@ ul.nav-bar-list {
     color: var(--bordes);
 }
 
-.menu-hamburguesa {
+.menu-hamburguesa,
+.responsive-carrito-button {
     display: none;
+    background: none;
+    padding: 1px 8px;
+    border-radius: 25px;
+    border: 2px solid var(--violeta);
 }
 
-.menu-hamburguesa i {
+.menu-hamburguesa i,
+.responsive-carrito  {
     padding: 10px;
-    background-color: white;
+    font-size: 1rem;
     color: var(--violeta);
     border-radius: 7px;
-}
-
-.responsive-carrito {
-    display: none;
-    font-size: 1.2rem;
 }
 
 @keyframes list-animation {
@@ -246,9 +240,9 @@ ul.nav-bar-list {
     }
 }
 
-@media (width < 950px) {
-    .search-bar {
-        width: 30%;
+@media (width < 1025px) {
+    #logo {
+        width: 75px;
     }
 }
 
@@ -258,16 +252,16 @@ ul.nav-bar-list {
     .carrito {
         font-size: 0.9rem;
     }
+}
 
-    .search-bar {
-        width: 26%;
+@media (width < 845px) {
+
+    .logo-container {
+        display: none;
     }
 }
 
 @media (width < 769px) {
-    #logo {
-        width: 90px;
-    }
 
     .user-session-buttons {
         display: none;
@@ -277,7 +271,8 @@ ul.nav-bar-list {
         display: none;
     }
 
-    .menu-hamburguesa {
+    .menu-hamburguesa,
+    .responsive-carrito-button {
         display: block;
     }
 
@@ -296,10 +291,6 @@ ul.nav-bar-list {
 }
 
 @media (width < 505px) {
-    .logo-container {
-        display: none;
-    }
-
     .search-bar {
         width: 65%;
     }
