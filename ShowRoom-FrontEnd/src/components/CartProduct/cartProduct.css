@@ -67,10 +67,6 @@
     color: var(--error);
 }
 
-.cart-product-delete-button:hover {
-    cursor: pointer;
-}
-
 .product-cart-quantity-selector form input {
     border: 1px solid var(--bordes);
     border-radius: 4px;
@@ -155,6 +151,7 @@
 .cart-product-delete-icon {
     background: none;
     border: none;
+    border-radius: 5px;
     padding: 10px;
     position: absolute;
     display: block;
@@ -168,6 +165,7 @@
 
 .cart-product-delete-icon:hover {
     cursor: pointer;
+    background-color: var(--rojo-transparente);
 }
 
 .fecha-de-compra {
@@ -215,6 +213,13 @@
     .cart-product-main-container {
         padding: 15px 15px;
     }
+
+    .cart-product-delete-icon {
+        top: auto;
+        right: auto;
+        bottom: 0px;
+        left: 5px;
+    }
 }
 
 @media (width < 570px) {
@@ -242,13 +247,6 @@
 
     .cart-product-envio-data p {
         font-size: 0.9rem;
-    }
-
-    .cart-product-delete-icon {
-        top: auto;
-        right: auto;
-        bottom: 0px;
-        left: 5px;
     }
 
     .product-cart-info-main-container {

@@ -9,6 +9,7 @@
     --bordes: rgb(206, 205, 205);
     --hover: rgb(241, 240, 240);
     --error: rgb(204, 51, 51);
+    --rojo-transparente: rgba(204, 51, 51, 0.151);
     --fondo-transparente: rgba(198, 169, 255, 0.151);
 }
 

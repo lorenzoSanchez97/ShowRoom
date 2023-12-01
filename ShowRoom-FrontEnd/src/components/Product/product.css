@@ -57,12 +57,7 @@
 .product-card-cart-button:hover,
 .product-card-fav-button:hover {
     cursor: pointer;
-    background-color: var(--violeta);
-}
-
-.product-card-cart-button:hover .product-card-cart-icon,
-.product-card-fav-button:hover .product-card-fav-icon {
-    color: white;
+    background-color: var(--fondo-transparente);
 }
 
 .product-card-fav-button i,

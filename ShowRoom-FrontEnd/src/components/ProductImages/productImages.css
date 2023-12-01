@@ -2,8 +2,6 @@
     display: flex;
     width: 60%;
     height: fit-content;
-    position: sticky;
-    top: 10vh;
 }
 
 .mini-imagenes-container {
