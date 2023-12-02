@@ -1,0 +1,65 @@
+.sidemenu {
+    position: fixed;
+    left: 0;
+    top:0;
+    background-color: #FF6700;
+    width: 60px;
+    height: 100%;
+    padding: 15px 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidemenu .logo {
+    display: none;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.sidemenu .logo-mobile {
+    display: block;
+    width: 30px;
+    margin-bottom: 20px;
+}
+
+.sidemenu .icon {
+    width: 20px;
+}
+
+.sidemenu .menu-button {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #FF8A35;
+    border:none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.sidemenu .menu-button span {
+    display: none;
+}
+
+.sidemenu hr {
+    width: 80%;
+    border-style: double;
+    margin: 5px 0px 20px 0px;
+}
+
+.link-button {
+    width: 80%;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.sidemenu a {
+    display: flex;
+    justify-content: center;
+}

@@ -12,7 +12,7 @@ function Product() {
                     <p className="descuento-producto">$10 OFF</p>
                     <div className="product-card-buttons-container">
                     <button className="product-card-cart-button"> <i className="fa-solid fa-cart-plus product-card-cart-icon"></i></button>
-                    <button className="product-card-fav-button"><i class="fa-regular fa-star product-card-fav-icon"></i></button>
+                    <button className="product-card-fav-button"><i className="fa-regular fa-star product-card-fav-icon"></i></button>
                     </div>
                 </div>
             </article>
@@ -25,7 +25,7 @@ function Product() {
                     <p className="descuento-producto">$10 OFF</p>
                     <div className="product-card-buttons-container">
                     <button className="product-card-cart-button"> <i className="fa-solid fa-cart-plus product-card-cart-icon"></i></button>
-                    <button className="product-card-fav-button"><i class="fa-regular fa-star product-card-fav-icon"></i></button>
+                    <button className="product-card-fav-button"><i className="fa-regular fa-star product-card-fav-icon"></i></button>
                     </div>
                 </div>
             </article>
@@ -38,7 +38,7 @@ function Product() {
                     <p className="descuento-producto">$10 OFF</p>
                     <div className="product-card-buttons-container">
                     <button className="product-card-cart-button"> <i className="fa-solid fa-cart-plus product-card-cart-icon"></i></button>
-                    <button className="product-card-fav-button"><i class="fa-regular fa-star product-card-fav-icon"></i></button>
+                    <button className="product-card-fav-button"><i className="fa-regular fa-star product-card-fav-icon"></i></button>
                     </div>
                 </div>
             </article>
@@ -51,7 +51,7 @@ function Product() {
                     <p className="descuento-producto">$10 OFF</p>
                     <div className="product-card-buttons-container">
                     <button className="product-card-cart-button"> <i className="fa-solid fa-cart-plus product-card-cart-icon"></i></button>
-                    <button className="product-card-fav-button"><i class="fa-regular fa-star product-card-fav-icon"></i></button>
+                    <button className="product-card-fav-button"><i className="fa-regular fa-star product-card-fav-icon"></i></button>
                     </div>
                 </div>
             </article>
@@ -64,7 +64,7 @@ function Product() {
                     <p className="descuento-producto">$10 OFF</p>
                     <div className="product-card-buttons-container">
                     <button className="product-card-cart-button"> <i className="fa-solid fa-cart-plus product-card-cart-icon"></i></button>
-                    <button className="product-card-fav-button"><i class="fa-regular fa-star product-card-fav-icon"></i></button>
+                    <button className="product-card-fav-button"><i className="fa-regular fa-star product-card-fav-icon"></i></button>
                     </div>
                 </div>
             </article>
@@ -77,7 +77,7 @@ function Product() {
                     <p className="descuento-producto">$10 OFF</p>
                     <div className="product-card-buttons-container">
                     <button className="product-card-cart-button"> <i className="fa-solid fa-cart-plus product-card-cart-icon"></i></button>
-                    <button className="product-card-fav-button"><i class="fa-regular fa-star product-card-fav-icon"></i></button>
+                    <button className="product-card-fav-button"><i className="fa-regular fa-star product-card-fav-icon"></i></button>
                     </div>
                 </div>
             </article>
@@ -90,7 +90,7 @@ function Product() {
                     <p className="descuento-producto">$10 OFF</p>
                     <div className="product-card-buttons-container">
                     <button className="product-card-cart-button"> <i className="fa-solid fa-cart-plus product-card-cart-icon"></i></button>
-                    <button className="product-card-fav-button"><i class="fa-regular fa-star product-card-fav-icon"></i></button>
+                    <button className="product-card-fav-button"><i className="fa-regular fa-star product-card-fav-icon"></i></button>
                     </div>
                 </div>
             </article>
@@ -103,7 +103,7 @@ function Product() {
                     <p className="descuento-producto">$10 OFF</p>
                     <div className="product-card-buttons-container">
                     <button className="product-card-cart-button"> <i className="fa-solid fa-cart-plus product-card-cart-icon"></i></button>
-                    <button className="product-card-fav-button"><i class="fa-regular fa-star product-card-fav-icon"></i></button>
+                    <button className="product-card-fav-button"><i className="fa-regular fa-star product-card-fav-icon"></i></button>
                     </div>
                 </div>
             </article>

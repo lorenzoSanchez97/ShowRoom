@@ -44,7 +44,7 @@ function Header({ setSideMenu }) {
                     </Link>
                     <Link to="/">
                         <li className="nav-bar-element-container" onMouseEnter={() => setMouseEvent(1)} onMouseLeave={() => setMouseEvent(5)}>
-                            <p className="nav-bar-category desplegable">Productos <i class="fa-solid fa-angle-down"></i></p>
+                            <p className="nav-bar-category desplegable">Productos <i className="fa-solid fa-angle-down"></i></p>
                             <ul className={`lista-desplegable ${mouseEvent === 1 ? "lista-desplegable-mostrar" : ""}`}>
                                 <li className="transparent-stripe"></li>
                                 <li className="subcategoria"><a href="">Mascarillas</a></li>
@@ -66,7 +66,7 @@ function Header({ setSideMenu }) {
                     </Link>
                     <Link to="/">
                         <li className="nav-bar-element-container" onMouseEnter={() => setMouseEvent(3)} onMouseLeave={() => setMouseEvent(5)}>
-                            <p className="nav-bar-category desplegable">Información <i class="fa-solid fa-angle-down"></i></p>
+                            <p className="nav-bar-category desplegable">Información <i className="fa-solid fa-angle-down"></i></p>
                             <ul className={`lista-desplegable ${mouseEvent === 3 ? "lista-desplegable-mostrar" : ""}`}>
                                 <li className="transparent-stripe"></li>
                                 <li className="subcategoria"><a href="">Cómo comprar</a></li>

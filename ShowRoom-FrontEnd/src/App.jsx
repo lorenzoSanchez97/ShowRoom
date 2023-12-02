@@ -8,6 +8,7 @@ import ProductDetail from './components/ProductDetail/ProductDetail'
 import Modal from "./components/Modal/Modal"
 import UserProfile from "./components/UserProfile/UserProfile"
 import SideMenu from "./components/SideMenu/SideMenu"
+import DashboardSideMenu from "./components/DashboardSideMenu/SideMenu"
 import { modalContext } from "./contexts/modalContext"
 
 function App() {
@@ -17,18 +18,38 @@ function App() {
 
   return (
     <>
-      <modalContext.Provider value={{ userOperation: modal, setModal: setModal }}>
-        {sideMenu && <SideMenu setSideMenu={setSideMenu} />}
-        <Header setSideMenu={setSideMenu} />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/productDetail" element={<ProductDetail />} />
-          <Route path="/profile" element={<UserProfile />} />
-        </Routes>
-        {modal ? <Modal /> : null}
-      </modalContext.Provider>
-      <Footer />
+      <Routes>
+        <Route
+          path="/*"
+          element={
+            <>
+              <modalContext.Provider value={{ userOperation: modal, setModal: setModal }}>
+                {sideMenu && <SideMenu setSideMenu={setSideMenu} />}
+                <Header setSideMenu={setSideMenu} />
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/cart" element={<Cart />} />
+                  <Route path="/productDetail" element={<ProductDetail />} />
+                  <Route path="/profile" element={<UserProfile />} />
+                </Routes>
+                {modal ? <Modal /> : null}
+              </modalContext.Provider>
+              <Footer />
+            </>
+          }
+        />
+
+        <Route 
+        
+        path="/dashboard"
+          element={
+            <>
+              <DashboardSideMenu/>
+            </>
+          }
+        />
+
+      </Routes>
     </>
   );
 }

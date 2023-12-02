@@ -1,0 +1,40 @@
+.mi-table {
+    width: 55vw;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0px 5px 10px #888888;
+    border-collapse: collapse;
+}
+
+.mi-table td {
+    padding: 5px 10px;
+}
+
+.mi-table .mi-row {
+    box-shadow: 0px 1px 0px lightgray;
+}
+
+.tabla-scrollable {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.tabla-scrollable table {
+    width: 100%;
+}
+
+.tabla-scrollable table td {
+    white-space: pre-wrap;
+}
+
+.table-body {
+    text-align: center;
+}
+
+.arrow-buttons,
+.page-button {
+    cursor: pointer;
+}
