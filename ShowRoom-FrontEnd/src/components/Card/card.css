@@ -1,25 +1,39 @@
 .card-main-container {
-    padding: 5px;
+    padding: 15px 15px;
     border-radius: 10px;
     background-color: var(--fondo-transparente);
-    width: 31%;
+    width: 32%;
+    max-width: 32%;
+    min-width: 210px;
     height: fit-content;
     overflow: visible;
+    box-shadow: 0px 2px 5px 1px var(--bordes);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card-title {
-    margin: 10px;
     color: rgb(19, 18, 18);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.card-header i {
+    font-size: 1.2rem;
+    margin-left: 5px;
 }
 
 .card-data {
     color: rgb(19, 18, 18);
-    font-size: 1.2rem;
-    margin: 10px;
+    font-size: 1.3rem;
+    margin-top: 15px;
     text-align: center;
     overflow-wrap: break-word;
 }
+
 
 @media (width < 769px) {
     .card-data {

@@ -13,7 +13,7 @@ function SideMenu() {
                 </button></Link>
                 <hr></hr>
                 <Link className="link-button" to="/users"><button className="menu-button">
-                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-users"></i>
                     <span>Usuarios</span>
                 </button></Link>
                 <Link className="link-button" to="/products"><button className="menu-button">

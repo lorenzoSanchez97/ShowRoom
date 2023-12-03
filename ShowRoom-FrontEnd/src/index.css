@@ -2,6 +2,8 @@
 
 :root {
     --violeta: #b99fee;
+    --violeta-claro: #d9cdf0;
+    --fondo-transparente: rgba(198, 169, 255, 0.151);
     --background: #f2ecf5 ;
     --clarito: #f0efef;
     --clarito2: #F4F4F4;
@@ -10,7 +12,6 @@
     --hover: rgb(241, 240, 240);
     --error: rgb(204, 51, 51);
     --rojo-transparente: rgba(204, 51, 51, 0.151);
-    --fondo-transparente: rgba(198, 169, 255, 0.151);
 }
 
 #root {
@@ -45,6 +46,20 @@ main {
 
 a {
     text-decoration: none;
+}
+
+/*------------------GENERAL DASHBOARD STYLES--------------*/
+
+.dashboard-main-container {
+    margin-left: 250px;
+    width: 75%;
+}
+
+@media (width < 768px) {
+    .dashboard-main-container {
+        margin-left: 60px;
+        width: 85%;
+    }
 }
 
 
