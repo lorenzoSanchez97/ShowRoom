@@ -9,7 +9,8 @@ header {
 #logo {
     position: relative;
     top: 26px;
-    width: 90px;
+    width: 115px;
+    border-radius: 100%;
 }
 
 .header-top-bar {

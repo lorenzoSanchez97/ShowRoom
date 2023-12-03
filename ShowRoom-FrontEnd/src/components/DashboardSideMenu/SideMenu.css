@@ -2,7 +2,7 @@
     position: fixed;
     left: 0;
     top:0;
-    background-color: #FF6700;
+    background-color: var(--violeta);
     width: 60px;
     height: 100%;
     padding: 15px 0px;
@@ -14,14 +14,20 @@
 
 .sidemenu .logo {
     display: none;
-    width: 80%;
-    margin-bottom: 30px;
+    width: 50%;
+    padding: 5px;
+    border-radius: 100%;
+    margin-bottom: 75px;
+    margin-top: 40px;
+    background-color: white;
+    box-shadow: inset 0px 0px 0px 4px var(--violeta);
+    border: 2px solid white;
+    transition: all 300ms;
 }
 
-.sidemenu .logo-mobile {
-    display: block;
-    width: 30px;
-    margin-bottom: 20px;
+.sidemenu .logo:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .sidemenu .icon {
@@ -34,13 +40,19 @@
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
+    gap: 8px;
     border-radius: 5px;
     padding: 10px;
-    background-color: #FF8A35;
+    background-color: white;
     border:none;
-    color: white;
-    font-size: 1em;
+    color: var(--violeta);
+    font-size: 1rem;
+    transition: all 300ms;
+}
+
+.sidemenu .menu-button:hover {
     cursor: pointer;
+    transform: translateX(5px);
 }
 
 .sidemenu .menu-button span {
@@ -62,4 +74,27 @@
 .sidemenu a {
     display: flex;
     justify-content: center;
+}
+
+/*Tablets*/
+@media (min-width: 768px) {
+
+    .sidemenu .logo {
+        display: block;
+    }
+    .sidemenu {
+        width: 250px;
+    }
+    .sidemenu .icon {
+        margin-right: 10px;
+    }
+    .sidemenu .menu-button {
+        border-radius: 10px;
+        width: 100%;
+        padding: 15px 40px;
+    }
+    
+    .sidemenu .menu-button span {
+        display: block;
+    }
 }

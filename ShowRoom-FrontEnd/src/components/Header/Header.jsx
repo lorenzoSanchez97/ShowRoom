@@ -17,7 +17,7 @@ function Header({ setSideMenu }) {
         <header>
             <section className="header-top-bar">
                 <figure className="logo-container">
-                    <img id="logo" src="/images/cat.png" alt="" />
+                    <img id="logo" src="/images/luna-store-logo.png" alt="" />
                 </figure>
                 <div className="menu-hamburguesa" onClick={() => setSideMenu(true)}>
                     <i className="fa-solid fa-bars"></i>
