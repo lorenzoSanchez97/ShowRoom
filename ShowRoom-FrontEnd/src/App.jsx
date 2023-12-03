@@ -10,6 +10,7 @@ import UserProfile from "./components/UserProfile/UserProfile"
 import SideMenu from "./components/SideMenu/SideMenu"
 import DashboardSideMenu from "./components/DashboardSideMenu/SideMenu"
 import DashboardHome from "./pages/DashboardHome/DashboardHome"
+import DashboardUsers from "./pages/DashboardUsers/DashboardUsers"
 import { modalContext } from "./contexts/modalContext"
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
               <DashboardSideMenu />
               <Routes>
                 <Route path="/" element={<DashboardHome />} />
+                <Route path="/users" element={<DashboardUsers />} />
               </Routes>
             </>
           }
