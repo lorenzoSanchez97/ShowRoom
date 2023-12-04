@@ -28,6 +28,10 @@ function SideMenu() {
                     <i class="fa-solid fa-truck-ramp-box"></i>
                     <span>Ventas</span>
                 </button></Link>
+                <Link className="link-button" to="/dashboard/financial-balance"><button className="menu-button">
+                <i class="fa-solid fa-chart-column"></i>
+                    <span>Balance</span>
+                </button></Link>
             </div >
         </>
     )

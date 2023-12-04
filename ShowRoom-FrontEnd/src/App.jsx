@@ -14,6 +14,7 @@ import DashboardUsers from "./pages/DashboardUsers/DashboardUsers"
 import DashboardProducts from "./pages/DashboardProducts/DashboardProducts"
 import DashboardCategories from "./pages/DashboardCategories/DashboardCategories"
 import DashboardSales from "./pages/DashboardSales/DashboardSales"
+import DashboardBalance from "./pages/DashboardBalance/DashboardBalance"
 import { modalContext } from "./contexts/modalContext"
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
                 <Route path="/products" element={<DashboardProducts />} />
                 <Route path="/categories" element={<DashboardCategories />} />
                 <Route path="/sales" element={<DashboardSales />} />
+                <Route path="/financial-balance" element={<DashboardBalance />} />
               </Routes>
             </>
           }
