@@ -57,7 +57,7 @@
 .product-card-cart-button:hover,
 .product-card-fav-button:hover {
     cursor: pointer;
-    background-color: var(--fondo-transparente);
+    transform: scale(1.2);
 }
 
 .product-card-fav-button i,

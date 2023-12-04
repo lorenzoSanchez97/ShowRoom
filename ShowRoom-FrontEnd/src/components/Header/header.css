@@ -49,11 +49,12 @@ ul.nav-bar-list {
 }
 
 .sesion,
-.carrito {
+.carrito,
+.dashboard-admin-button {
     font-size: 0.9rem;
     text-decoration: none;
     background: none;
-    transition: all 100ms;
+    transition: all 200ms;
     color: var(--color3);
     padding: 7px 15px;
     border-radius: 25px;
@@ -62,7 +63,9 @@ ul.nav-bar-list {
     color: var(--violeta);
 }
 
-.carrito i {
+.carrito i,
+.dashboard-admin-button i {
+    transition: all 200ms;
     color: var(--violeta);
     font-size: 1rem;
 }
@@ -73,9 +76,14 @@ ul.nav-bar-list {
 
 .sesion:hover,
 .carrito:hover,
-.carrito:hover i {
+.dashboard-admin-button:hover {
     cursor: pointer;
     background-color: var(--violeta);
+    color: white;
+}
+
+.dashboard-admin-button:hover i,
+.carrito:hover i {
     color: white;
 }
 
@@ -218,7 +226,7 @@ ul.nav-bar-list {
 }
 
 .menu-hamburguesa i,
-.responsive-carrito  {
+.responsive-carrito {
     padding: 10px;
     font-size: 1rem;
     color: var(--violeta);

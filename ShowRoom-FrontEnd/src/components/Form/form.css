@@ -106,7 +106,7 @@
     background: none;
     position: absolute;
     right: 0px;
-    top: 1px;
+    top: 0px;
     padding: 7px;
 }
 
@@ -116,7 +116,7 @@
 
 #form-close-button i {
     color: var(--violeta);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 .form-title-section {

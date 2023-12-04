@@ -31,7 +31,11 @@ function Header({ setSideMenu }) {
                     <button className="sesion login" href="" onClick={() => handleSessionButtonsClick("login")}>Iniciar sesión</button>
                 </div>
                 <div>
-                    <Link to="/cart"><button className="carrito" href="/cart"><i className="fa-solid fa-cart-shopping"></i></button></Link>
+                    <Link to="/cart"><button className="carrito"><i className="fa-solid fa-cart-shopping"></i></button></Link>
+                    <button className="responsive-carrito-button"><i className="fa-solid fa-cart-shopping responsive-carrito"></i></button>
+                </div>
+                <div>
+                    <Link to="/dashboard"><button className="dashboard-admin-button">Dashboard <i class="fa-solid fa-chart-pie"></i></button></Link>
                     <button className="responsive-carrito-button"><i className="fa-solid fa-cart-shopping responsive-carrito"></i></button>
                 </div>
             </section>
