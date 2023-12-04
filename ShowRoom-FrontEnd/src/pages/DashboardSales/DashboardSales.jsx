@@ -2,7 +2,7 @@ import '../../index.css';
 import { useState } from 'react';
 import Card from "../../components/Card/Card";
 
-function Users() {
+function Sales() {
 
     const [cantidadUsuarios, setCantidadUsuarios] = useState(0)
     const [cantidadProductos, setCantidadProductos] = useState(0)
@@ -35,42 +35,42 @@ function Users() {
     return (
         <div className='dashboard-main-container'>
             <div className='dasboard-title-container'>
-                <i class="fa-solid fa-users"></i>
-                <span>Usuarios</span>
+                <i class="fa-solid fa-truck-ramp-box"></i>
+                <span>Ventas</span>
             </div>
             <div className="dashboard-card-row">
                 <Card
-                    title={"Usuarios totales registrados"}
-                    data={100}
-                    icon={<i class="fa-solid fa-user-group"></i>}
+                    title={"Ventas totales"}
+                    data={220}
+                    icon={<i class="fa-solid fa-truck-ramp-box"></i>}
                 />
                 <Card
-                    title={"Porcentaje de compradores sobre registrados"}
-                    data={"30% (20)"}
-                    icon={<i class="fa-solid fa-percent"></i>}
+                    title={"Ingresos totales"}
+                    data={"$50000"}
+                    icon={<i class="fa-solid fa-wallet"></i>}
                 />
                 <Card
-                    title={"Variación en la cantidad de usuarios registrados en relación al mes pasado"}
+                    title={"Ventas el último mes"}
+                    data={35}
+                    icon={<i class="fa-solid fa-truck-ramp-box"></i>}
+                />
+                <Card
+                    title={"Ingresos del último mes"}
+                    data={"$10000"}
+                    icon={<i class="fa-solid fa-wallet"></i>}
+                />
+                <Card
+                    title={"Variación en las ventas en relación al mes pasado"}
                     data={"+2%"}
                     icon={<i class="fa-solid fa-percent"></i>}
                 />
                 <Card
-                    title={"Usuarios nuevos (registrados en los últimos 30 días)"}
-                    data={30}
-                    icon={<i class="fa-solid fa-user-plus"></i>}
+                    title={"Promedio de productos por venta"}
+                    data={"2"}
+                    icon={<i class="fa-solid fa-box"></i>}
                 />
                 <Card
-                    title={"Usuarios activos (han visitado el sitio en los últimos 30 días)"}
-                    data={45}
-                    icon={<i class="fa-solid fa-user-check"></i>}
-                />
-                <Card
-                    title={"Usuarios dados de baja"}
-                    data={4}
-                    icon={<i class="fa-solid fa-user-minus"></i>}
-                />
-                <Card
-                    title={"Región de origen predominante"}
+                    title={"Principal destino"}
                     data={"Córdoba"}
                     icon={<i class="fa-solid fa-map-location-dot"></i>}
                 />
@@ -79,4 +79,4 @@ function Users() {
     )
 }
 
-export default Users;
+export default Sales;

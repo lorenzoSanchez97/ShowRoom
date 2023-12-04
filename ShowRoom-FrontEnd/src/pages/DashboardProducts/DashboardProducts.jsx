@@ -2,7 +2,7 @@ import '../../index.css';
 import { useState } from 'react';
 import Card from "../../components/Card/Card";
 
-function Users() {
+function Products() {
 
     const [cantidadUsuarios, setCantidadUsuarios] = useState(0)
     const [cantidadProductos, setCantidadProductos] = useState(0)
@@ -35,48 +35,48 @@ function Users() {
     return (
         <div className='dashboard-main-container'>
             <div className='dasboard-title-container'>
-                <i class="fa-solid fa-users"></i>
-                <span>Usuarios</span>
+            <i class="fa-solid fa-boxes-stacked"></i>
+                <span>Productos</span>
             </div>
             <div className="dashboard-card-row">
                 <Card
-                    title={"Usuarios totales registrados"}
-                    data={100}
-                    icon={<i class="fa-solid fa-user-group"></i>}
+                    title={"Productos en venta"}
+                    data={50}
+                    icon={<i class="fa-solid fa-boxes-stacked"></i>}
                 />
                 <Card
-                    title={"Porcentaje de compradores sobre registrados"}
-                    data={"30% (20)"}
-                    icon={<i class="fa-solid fa-percent"></i>}
+                    title={"Productos en oferta"}
+                    data={20}
+                    icon={<i class="fa-solid fa-arrow-trend-down"></i>}
                 />
                 <Card
-                    title={"Variación en la cantidad de usuarios registrados en relación al mes pasado"}
-                    data={"+2%"}
-                    icon={<i class="fa-solid fa-percent"></i>}
+                    title={"Total de productos vendidos"}
+                    data={300}
+                    icon={<i class="fa-solid fa-truck-ramp-box"></i>}
                 />
                 <Card
-                    title={"Usuarios nuevos (registrados en los últimos 30 días)"}
-                    data={30}
-                    icon={<i class="fa-solid fa-user-plus"></i>}
+                    title={"Productos vendidos el último mes"}
+                    data={20}
+                    icon={<i class="fa-solid fa-truck-ramp-box"></i>}
                 />
                 <Card
-                    title={"Usuarios activos (han visitado el sitio en los últimos 30 días)"}
-                    data={45}
-                    icon={<i class="fa-solid fa-user-check"></i>}
+                    title={"Producto más vendido"}
+                    data={"Mascarilla de Coco"}
+                    icon={<i class="fa-solid fa-ranking-star"></i>}
                 />
                 <Card
-                    title={"Usuarios dados de baja"}
-                    data={4}
-                    icon={<i class="fa-solid fa-user-minus"></i>}
+                    title={"Producto más vendido en el último mes"}
+                    data={"Paleta de colores"}
+                    icon={<i class="fa-solid fa-ranking-star"></i>}
                 />
                 <Card
-                    title={"Región de origen predominante"}
-                    data={"Córdoba"}
-                    icon={<i class="fa-solid fa-map-location-dot"></i>}
+                    title={"Productos sin stock"}
+                    data={3}
+                    icon={<i class="fa-solid fa-circle-xmark"></i>}
                 />
             </div>
         </div>
     )
 }
 
-export default Users;
+export default Products;
