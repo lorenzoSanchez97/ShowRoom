@@ -587,9 +587,9 @@ async function seed() {
                 data: usersData
             }),
         ])
-        console.log("***** Seeding complete! *****");
+        console.log("***** SEEDING COMPLETE *****");
     } catch (error) {
-        console.log('Seeding error: ' + error);
+        console.log('SEEDING ERROR: ' + error);
     } finally {
         await prisma.$disconnect()
     }
