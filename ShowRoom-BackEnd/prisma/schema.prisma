@@ -63,9 +63,9 @@ model Users {
   email          String       @db.VarChar(200)
   password       String       @db.Text
   avatar         String       @default("defaultUser.jpg") @db.Text
-  city           String?      @default("Sin información") @db.VarChar(100)
-  postalCode     String?      @default("Sin información") @db.VarChar(40)
-  address        String?      @default("Sin información") @db.VarChar(150)
+  city           String?      @default("Sin info") @db.VarChar(100)
+  postalCode     String?      @default("Sin info") @db.VarChar(40)
+  address        String?      @default("Sin info") @db.VarChar(150)
   sales          Sales[]
   registerDate   DateTime     @default(now()) @db.Date
   lastVisit      DateTime     @default(now()) @db.Date
