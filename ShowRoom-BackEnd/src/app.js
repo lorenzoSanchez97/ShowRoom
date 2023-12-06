@@ -6,9 +6,6 @@ const publicPath = path.resolve(__dirname, "../public")
 
 app.use(express.static(publicPath))
 
-app.set("view engine", "ejs")
-app.set("views", path.join(__dirname, "views"))
-
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
@@ -17,3 +14,11 @@ app.use(express.json());
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Servidor corriendo en puerto ${port}`));
+
+// Rutas
+const adminsRoutes = require("./routes/adminsRoutes")
+const productsRoutes = require("./routes/productsRoutes")
+const usersRoutes = require("./routes/usersRoutes")
+
+app.use("/products", productsRoutes);
+app.use("/users", usersRoutes)

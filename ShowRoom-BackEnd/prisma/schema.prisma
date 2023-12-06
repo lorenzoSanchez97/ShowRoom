@@ -16,7 +16,7 @@ model Products {
   freeShipping Int?                @default(0) @db.SmallInt
   stock        Int?                @default(0) @db.SmallInt
   images       Images[]
-  Categories   Categories          @relation(fields: [categoriesId], references: [id])
+  categories   Categories          @relation(fields: [categoriesId], references: [id])
   categoriesId Int                 @db.SmallInt
   colors       ProductsHasColors[]
   sales        ProductsHasSales[]
