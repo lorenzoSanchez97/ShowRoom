@@ -4,6 +4,9 @@ const app = express();
 const path = require("path")
 const publicPath = path.resolve(__dirname, "../public")
 
+const cors = require("cors");
+app.use(cors());
+
 app.use(express.static(publicPath))
 
 app.use(express.urlencoded({ extended: false }));

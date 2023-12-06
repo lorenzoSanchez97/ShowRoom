@@ -1,6 +1,4 @@
-import React from "react";
 import "./home.css"
-import Product from "../Product/Product";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import ProductsList from "../ProductsList/ProductsList"
 

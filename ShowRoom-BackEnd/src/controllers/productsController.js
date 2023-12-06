@@ -29,7 +29,7 @@ const controller = {
             }
 
             const productWithImgUrl = products.map(product => {
-                const productImgs = product.images.map(image => ({ url: `${req.protocol}://${req.get('host')}/images/products/${image.image}` }))
+                const productImgs = product.images.map(image => ({ url: `${req.protocol}://${req.get('host')}/images/products/${image.name}` }))
 
                 return {
                     ...product,

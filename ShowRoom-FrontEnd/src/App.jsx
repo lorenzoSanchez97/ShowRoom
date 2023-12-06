@@ -8,6 +8,7 @@ import ProductDetail from './components/ProductDetail/ProductDetail'
 import Modal from "./components/Modal/Modal"
 import UserProfile from "./components/UserProfile/UserProfile"
 import SideMenu from "./components/SideMenu/SideMenu"
+import AllProductsList from "./pages/AllProductsList/AllProductsList"
 import DashboardSideMenu from "./components/DashboardSideMenu/SideMenu"
 import DashboardHome from "./pages/DashboardHome/DashboardHome"
 import DashboardUsers from "./pages/DashboardUsers/DashboardUsers"
@@ -34,6 +35,7 @@ function App() {
                 <Header setSideMenu={setSideMenu} />
                 <Routes>
                   <Route path="/" element={<Home />} />
+                  <Route path="/products" element={<AllProductsList />} />
                   <Route path="/cart" element={<Cart />} />
                   <Route path="/productDetail" element={<ProductDetail />} />
                   <Route path="/profile" element={<UserProfile />} />
