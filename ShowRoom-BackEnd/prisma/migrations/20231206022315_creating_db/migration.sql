@@ -15,7 +15,7 @@ CREATE TABLE `Products` (
 -- CreateTable
 CREATE TABLE `Images` (
     `id` SMALLINT NOT NULL AUTO_INCREMENT,
-    `image` TEXT NOT NULL,
+    `name` TEXT NOT NULL,
     `productsId` SMALLINT NOT NULL,
 
     PRIMARY KEY (`id`)
@@ -24,7 +24,7 @@ CREATE TABLE `Images` (
 -- CreateTable
 CREATE TABLE `Categories` (
     `id` SMALLINT NOT NULL AUTO_INCREMENT,
-    `category` VARCHAR(50) NOT NULL,
+    `name` VARCHAR(50) NOT NULL,
 
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -32,7 +32,7 @@ CREATE TABLE `Categories` (
 -- CreateTable
 CREATE TABLE `Colors` (
     `id` SMALLINT NOT NULL AUTO_INCREMENT,
-    `color` VARCHAR(40) NOT NULL,
+    `name` VARCHAR(40) NOT NULL,
 
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -76,7 +76,7 @@ CREATE TABLE `Users` (
 -- CreateTable
 CREATE TABLE `Provinces` (
     `id` SMALLINT NOT NULL AUTO_INCREMENT,
-    `province` VARCHAR(60) NOT NULL,
+    `name` VARCHAR(60) NOT NULL,
 
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -84,7 +84,7 @@ CREATE TABLE `Provinces` (
 -- CreateTable
 CREATE TABLE `userProfiles` (
     `id` SMALLINT NOT NULL AUTO_INCREMENT,
-    `userProfile` VARCHAR(45) NOT NULL,
+    `name` VARCHAR(45) NOT NULL,
 
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;

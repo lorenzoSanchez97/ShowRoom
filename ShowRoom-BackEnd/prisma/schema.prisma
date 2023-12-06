@@ -24,20 +24,20 @@ model Products {
 
 model Images {
   id         Int      @id @default(autoincrement()) @db.SmallInt
-  image      String   @db.Text
-  Products   Products @relation(fields: [productsId], references: [id])
+  name       String   @db.Text
+  products   Products @relation(fields: [productsId], references: [id])
   productsId Int      @db.SmallInt
 }
 
 model Categories {
   id       Int        @id @default(autoincrement()) @db.SmallInt
-  category String     @db.VarChar(50)
+  name     String     @db.VarChar(50)
   products Products[]
 }
 
 model Colors {
   id       Int                 @id @default(autoincrement()) @db.SmallInt
-  color    String              @db.VarChar(40)
+  name     String              @db.VarChar(40)
   products ProductsHasColors[]
 }
 
@@ -51,9 +51,9 @@ model ProductsHasColors {
 
 model ProductsHasSales {
   id         Int      @id @default(autoincrement()) @db.SmallInt
-  Products   Products @relation(fields: [productsId], references: [id])
+  products   Products @relation(fields: [productsId], references: [id])
   productsId Int      @db.SmallInt
-  Sales      Sales    @relation(fields: [salesId], references: [id])
+  sales      Sales    @relation(fields: [salesId], references: [id])
   salesId    Int      @db.MediumInt
 }
 
@@ -69,22 +69,22 @@ model Users {
   sales          Sales[]
   registerDate   DateTime     @default(now()) @db.Date
   lastVisit      DateTime     @default(now()) @db.Date
-  Provinces      Provinces    @relation(fields: [provincesId], references: [id])
+  provinces      Provinces    @relation(fields: [provincesId], references: [id])
   provincesId    Int          @db.SmallInt
   userProfiles   userProfiles @relation(fields: [userProfilesId], references: [id])
   userProfilesId Int          @db.SmallInt
 }
 
 model Provinces {
-  id       Int     @id @default(autoincrement()) @db.SmallInt
-  province String  @db.VarChar(60)
-  users    Users[]
+  id    Int     @id @default(autoincrement()) @db.SmallInt
+  name  String  @db.VarChar(60)
+  users Users[]
 }
 
 model userProfiles {
-  id          Int     @id @default(autoincrement()) @db.SmallInt
-  userProfile String  @db.VarChar(45)
-  users       Users[]
+  id    Int     @id @default(autoincrement()) @db.SmallInt
+  name  String  @db.VarChar(45)
+  users Users[]
 }
 
 model Sales {
@@ -92,7 +92,7 @@ model Sales {
   date       DateTime           @default(now()) @db.Date
   payMethod  String             @db.VarChar(45)
   totalPrice Decimal            @db.Decimal(8, 2)
-  Users      Users              @relation(fields: [usersId], references: [id])
+  users      Users              @relation(fields: [usersId], references: [id])
   usersId    Int                @db.MediumInt
   products   ProductsHasSales[]
 }

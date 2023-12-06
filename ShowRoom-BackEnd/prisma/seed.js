@@ -3,168 +3,168 @@ const prisma = new PrismaClient()
 
 let categoriesData = [
     {
-        category: "Mascarillas"
+        name: "Mascarillas"
     },
     {
-        category: "Depilación"
+        name: "Depilación"
     },
     {
-        category: "Maquillaje"
+        name: "Maquillaje"
     },
     {
-        category: "Accesorios"
+        name: "Accesorios"
     }
 ]
 
 let colorsData = [
     {
-        color: "Negro"
+        name: "Negro"
     },
     {
-        color: "Blanco"
+        name: "Blanco"
     },
     {
-        color: "Gris"
+        name: "Gris"
     },
     {
-        color: "Dorado"
+        name: "Dorado"
     },
     {
-        color: "Plateado"
+        name: "Plateado"
     },
     {
-        color: "Rojo"
+        name: "Rojo"
     },
     {
-        color: "Verde"
+        name: "Verde"
     },
     {
-        color: "Azul"
+        name: "Azul"
     },
     {
-        color: "Amarillo"
+        name: "Amarillo"
     },
     {
-        color: "Anaranjado"
+        name: "Anaranjado"
     },
     {
-        color: "Violeta"
+        name: "Violeta"
     },
     {
-        color: "Rosado"
+        name: "Rosado"
     },
     {
-        color: "No aplica"
+        name: "No aplica"
     }
 ]
 
 let imagesData = [
     {
-        image: "mascarillas-en-gel-con-colageno-pdormir-e-hidratar.png",
+        name: "mascarillas-en-gel-con-colageno-pdormir-e-hidratar.png",
         productsId: 1
     },
     {
-        image: "mascarilla-aloe-vera.png",
+        name: "mascarilla-aloe-vera.png",
         productsId: 2
     },
     {
-        image: "mascarilla-aloe-vera-2.png",
+        name: "mascarilla-aloe-vera-2.png",
         productsId: 2
     },
     {
-        image: "mascarilla-palta.png",
+        name: "mascarilla-palta.png",
         productsId: 3
     },
     {
-        image: "mascarilla-palta-2.png",
+        name: "mascarilla-palta-2.png",
         productsId: 3
     },
     {
-        image: "mascarilla-berenjena.jpg",
+        name: "mascarilla-berenjena.jpg",
         productsId: 4
     },
     {
-        image: "mascarilla-berenjena-2.png",
+        name: "mascarilla-berenjena-2.png",
         productsId: 4
     },
     {
-        image: "mascarilla-coco.jpg",
+        name: "mascarilla-coco.jpg",
         productsId: 5
     },
     {
-        image: "pinza-acero-inoxidable.jpg",
+        name: "pinza-acero-inoxidable.jpg",
         productsId: 6
     },
     {
-        image: "bandas-depilacion-descartable.jpg",
+        name: "bandas-depilacion-descartable.jpg",
         productsId: 7
     },
     {
-        image: "bandas-depilacion-descartable-2.png",
+        name: "bandas-depilacion-descartable-2.png",
         productsId: 7
     },
     {
-        image: "maquina-depiladora.jpg",
+        name: "maquina-depiladora.jpg",
         productsId: 8
     },
     {
-        image: "maquina-depiladora-2.jpg",
+        name: "maquina-depiladora-2.jpg",
         productsId: 8
     },
     {
-        image: "maquina-depiladora-3.jpg",
+        name: "maquina-depiladora-3.jpg",
         productsId: 8
     },
     {
-        image: "paleta-maquillaje.jpg",
+        name: "paleta-maquillaje.jpg",
         productsId: 9
     },
     {
-        image: "rimel-mascara-de-prestañas.jpg",
+        name: "rimel-mascara-de-prestañas.jpg",
         productsId: 10
     },
     {
-        image: "labial-plumping.png",
+        name: "labial-plumping.png",
         productsId: 11
     },
     {
-        image: "brocha.jpg",
+        name: "brocha.jpg",
         productsId: 12
     },
     {
-        image: "pulsera-corazón.jpg",
+        name: "pulsera-corazón.jpg",
         productsId: 13
     },
     {
-        image: "pulsera-corazón-2.jpg",
+        name: "pulsera-corazón-2.jpg",
         productsId: 13
     },
     {
-        image: "gomitas-pelo.jpg",
+        name: "gomitas-pelo.jpg",
         productsId: 14
     },
     {
-        image: "espejo-usb.jpg",
+        name: "espejo-usb.jpg",
         productsId: 15
     },
     {
-        image: "espejo-usb-2.jpg",
+        name: "espejo-usb-2.jpg",
         productsId: 15
     },
     {
-        image: "espejo-usb-3.jpg",
+        name: "espejo-usb-3.jpg",
         productsId: 15
     },
     {
-        image: "espejo-usb-4.jpg",
+        name: "espejo-usb-4.jpg",
         productsId: 15
     },
     {
-        image: "humificador.jpg",
+        name: "humificador.jpg",
         productsId: 16
     },
     {
-        image: "humificador-2.jpg",
+        name: "humificador-2.jpg",
         productsId: 16
     }
 ]
@@ -401,79 +401,79 @@ let productsHasColorsData = [
 
 let provincesData = [
     {
-        province: "Misiones"
+        name: "Misiones"
     },
     {
-        province: "San Luis"
+        name: "San Luis"
     },
     {
-        province: "San Juan"
+        name: "San Juan"
     },
     {
-        province: "Entre Ríos"
+        name: "Entre Ríos"
     },
     {
-        province: "Santa Cruz"
+        name: "Santa Cruz"
     },
     {
-        province: "Río Negro"
+        name: "Río Negro"
     },
     {
-        province: "Chubut"
+        name: "Chubut"
     },
     {
-        province: "Córdoba"
+        name: "Córdoba"
     },
     {
-        province: "Mendoza"
+        name: "Mendoza"
     },
     {
-        province: "La Rioja"
+        name: "La Rioja"
     },
     {
-        province: "Catamarca"
+        name: "Catamarca"
     },
     {
-        province: "La Pampa"
+        name: "La Pampa"
     },
     {
-        province: "Santiago del Estero"
+        name: "Santiago del Estero"
     },
     {
-        province: "Corrientes"
+        name: "Corrientes"
     },
     {
-        province: "Santa Fe"
+        name: "Santa Fe"
     },
     {
-        province: "Tucumán"
+        name: "Tucumán"
     },
     {
-        province: "Neuquén"
+        name: "Neuquén"
     },
     {
-        province: "Salta"
+        name: "Salta"
     },
     {
-        province: "Chaco"
+        name: "Chaco"
     },
     {
-        province: "Formosa"
+        name: "Formosa"
     },
     {
-        province: "Jujuy"
+        name: "Jujuy"
     },
     {
-        province: "Ciudad Autónoma de Buenos Aires"
+        name: "Ciudad Autónoma de Buenos Aires"
     },
     {
-        province: "Buenos Aires"
+        name: "Buenos Aires"
     },
     {
-        province: "Tierra del Fuego, Antártida e Islas del Atlántico Sur"
+        name: "Tierra del Fuego, Antártida e Islas del Atlántico Sur"
     },
     {
-        province: "Sin información"
+        name: "Sin información"
     }
 ]
 
@@ -536,10 +536,10 @@ let usersData = [
 
 let userProfilesData = [
     {
-        userProfile: "$2y$10$gQIUorwZWI1OHKxAwb1.uu6xu8gRdOF4trKLaRmriuyfpZrKEvaju"
+        name: "$2y$10$gQIUorwZWI1OHKxAwb1.uu6xu8gRdOF4trKLaRmriuyfpZrKEvaju"
     },
     {
-        userProfile: "$2y$10$TYj.v4CAuTy2nhU1qStLe.Gz9BICQOx1iCTU5tM6fswC0wkSoP78S"
+        name: "$2y$10$TYj.v4CAuTy2nhU1qStLe.Gz9BICQOx1iCTU5tM6fswC0wkSoP78S"
     }
 ]
 
@@ -587,9 +587,9 @@ async function seed() {
                 data: usersData
             }),
         ])
-        console.log("***** SEEDING COMPLETE *****");
+        console.log(">>> SEEDING COMPLETE");
     } catch (error) {
-        console.log('SEEDING ERROR: ' + error);
+        console.log('>>> SEEDING ERROR: ' + error);
     } finally {
         await prisma.$disconnect()
     }
